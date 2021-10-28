@@ -1,0 +1,443 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 50000000
+Simulation Instructions: 50000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 6400 MT/s
+CPU 0 runs ./micro_traces/srv567.trace.gz
+.gz
+ITLB has LRU replacement policy
+DTLB has LRU replacement policy
+STLB has LRU replacement policy
+FDIP Prefetcher at L1I
+L1I has LRU replacement policy
+L1D has LRU replacement policy
+Initialize SRRIP state for L2C
+Initialize DRRIP state for LLC
+Heartbeat_Variant_0 : 1344 0.21875 per_variant_size: 0 1344 0 0 0 0 0 0 0 
+Heartbeat_Variant_1 : 1310 0.213216 per_variant_size: 0 783 527 0 0 0 0 0 0 
+Heartbeat_Variant_2 : 1453 0.236491 per_variant_size: 0 725 387 179 162 0 0 0 0 
+Heartbeat_Variant_3 : 0 0 per_variant_size: 0 0 0 0 0 0 0 0 0 
+Heartbeat_Variant_0_evicts 0 : 5578 1 : 16 2 : 22 3 : 0 
+Heartbeat_Variant_1_evicts 0 : 11 1 : 0 2 : 207 3 : 0 
+Heartbeat_Variant_2_evicts 0 : 14 1 : 215 2 : 0 3 : 0 
+Heartbeat_Variant_3_evicts 0 : 0 1 : 0 2 : 0 3 : 0 
+Heartbeat CPU 0 instructions: 10000000 cycles: 2798048 heartbeat IPC: 3.57392 cumulative IPC: 3.57392 (Simulation time: 0 hr 2 min 3 sec) 
+Heartbeat_Variant_0 : 1382 0.224935 per_variant_size: 0 1382 0 0 0 0 0 0 0 
+Heartbeat_Variant_1 : 1344 0.21875 per_variant_size: 0 777 567 0 0 0 0 0 0 
+Heartbeat_Variant_2 : 1500 0.244141 per_variant_size: 0 735 402 192 171 0 0 0 0 
+Heartbeat_Variant_3 : 0 0 per_variant_size: 0 0 0 0 0 0 0 0 0 
+Heartbeat_Variant_0_evicts 0 : 5545 1 : 3 2 : 6 3 : 0 
+Heartbeat_Variant_1_evicts 0 : 4 1 : 0 2 : 201 3 : 0 
+Heartbeat_Variant_2_evicts 0 : 6 1 : 202 2 : 0 3 : 0 
+Heartbeat_Variant_3_evicts 0 : 0 1 : 0 2 : 0 3 : 0 
+Heartbeat CPU 0 instructions: 20000002 cycles: 5593148 heartbeat IPC: 3.57769 cumulative IPC: 3.5758 (Simulation time: 0 hr 4 min 2 sec) 
+Heartbeat_Variant_0 : 1382 0.224935 per_variant_size: 0 1382 0 0 0 0 0 0 0 
+Heartbeat_Variant_1 : 1349 0.219564 per_variant_size: 0 780 569 0 0 0 0 0 0 
+Heartbeat_Variant_2 : 1500 0.244141 per_variant_size: 0 733 404 192 171 0 0 0 0 
+Heartbeat_Variant_3 : 0 0 per_variant_size: 0 0 0 0 0 0 0 0 0 
+Heartbeat_Variant_0_evicts 0 : 5725 1 : 0 2 : 0 3 : 0 
+Heartbeat_Variant_1_evicts 0 : 0 1 : 0 2 : 199 3 : 0 
+Heartbeat_Variant_2_evicts 0 : 0 1 : 199 2 : 0 3 : 0 
+Heartbeat_Variant_3_evicts 0 : 0 1 : 0 2 : 0 3 : 0 
+Heartbeat CPU 0 instructions: 30000003 cycles: 8389339 heartbeat IPC: 3.57629 cumulative IPC: 3.57597 (Simulation time: 0 hr 6 min 7 sec) 
+Heartbeat_Variant_0 : 1395 0.227051 per_variant_size: 0 1395 0 0 0 0 0 0 0 
+Heartbeat_Variant_1 : 1363 0.221842 per_variant_size: 0 783 580 0 0 0 0 0 0 
+Heartbeat_Variant_2 : 1513 0.246257 per_variant_size: 0 733 411 193 176 0 0 0 0 
+Heartbeat_Variant_3 : 0 0 per_variant_size: 0 0 0 0 0 0 0 0 0 
+Heartbeat_Variant_0_evicts 0 : 5626 1 : 1 2 : 1 3 : 0 
+Heartbeat_Variant_1_evicts 0 : 3 1 : 0 2 : 201 3 : 0 
+Heartbeat_Variant_2_evicts 0 : 2 1 : 198 2 : 0 3 : 0 
+Heartbeat_Variant_3_evicts 0 : 0 1 : 0 2 : 0 3 : 0 
+Heartbeat CPU 0 instructions: 40000002 cycles: 11185586 heartbeat IPC: 3.57622 cumulative IPC: 3.57603 (Simulation time: 0 hr 8 min 15 sec) 
+Heartbeat_Variant_0 : 1396 0.227214 per_variant_size: 0 1396 0 0 0 0 0 0 0 
+Heartbeat_Variant_1 : 1367 0.222493 per_variant_size: 0 780 587 0 0 0 0 0 0 
+Heartbeat_Variant_2 : 1516 0.246745 per_variant_size: 0 731 414 195 176 0 0 0 0 
+Heartbeat_Variant_3 : 0 0 per_variant_size: 0 0 0 0 0 0 0 0 0 
+Heartbeat_Variant_0_evicts 0 : 5553 1 : 0 2 : 1 3 : 0 
+Heartbeat_Variant_1_evicts 0 : 0 1 : 0 2 : 195 3 : 0 
+Heartbeat_Variant_2_evicts 0 : 1 1 : 195 2 : 0 3 : 0 
+Heartbeat_Variant_3_evicts 0 : 0 1 : 0 2 : 0 3 : 0 
+Heartbeat CPU 0 instructions: 50000001 cycles: 13981961 heartbeat IPC: 3.57606 cumulative IPC: 3.57604 (Simulation time: 0 hr 10 min 21 sec) 
+
+Warmup complete CPU 0 instructions: 50000001 cycles: 13981961 (Simulation time: 0 hr 10 min 21 sec) 
+
+Cycle: 20000000 FTQ IN: 58225459 FTQ occupancy: 20.0469 DECODE IN: 58225378 DECODE occupancy: 52.3276 ROB IN: 58225318 ROB occupancy: 315.045 ROB OUT: 58224966
+Heartbeat_Variant_0 : 1396 0.227214 per_variant_size: 0 1396 0 0 0 0 0 0 0 
+Heartbeat_Variant_1 : 1368 0.222656 per_variant_size: 0 781 587 0 0 0 0 0 0 
+Heartbeat_Variant_2 : 1516 0.246745 per_variant_size: 0 728 416 200 172 0 0 0 0 
+Heartbeat_Variant_3 : 0 0 per_variant_size: 0 0 0 0 0 0 0 0 0 
+Heartbeat_Variant_0_evicts 0 : 5601 1 : 0 2 : 0 3 : 0 
+Heartbeat_Variant_1_evicts 0 : 0 1 : 0 2 : 196 3 : 0 
+Heartbeat_Variant_2_evicts 0 : 1 1 : 195 2 : 0 3 : 0 
+Heartbeat_Variant_3_evicts 0 : 0 1 : 0 2 : 0 3 : 0 
+Heartbeat CPU 0 instructions: 60000001 cycles: 21276544 heartbeat IPC: 1.37088 cumulative IPC: 1.37088 (Simulation time: 0 hr 12 min 43 sec) 
+Heartbeat_Variant_0 : 1406 0.228841 per_variant_size: 0 1406 0 0 0 0 0 0 0 
+Heartbeat_Variant_1 : 1374 0.223633 per_variant_size: 0 784 590 0 0 0 0 0 0 
+Heartbeat_Variant_2 : 1525 0.24821 per_variant_size: 0 737 416 194 178 0 0 0 0 
+Heartbeat_Variant_3 : 0 0 per_variant_size: 0 0 0 0 0 0 0 0 0 
+Heartbeat_Variant_0_evicts 0 : 5584 1 : 2 2 : 3 3 : 0 
+Heartbeat_Variant_1_evicts 0 : 1 1 : 0 2 : 196 3 : 0 
+Heartbeat_Variant_2_evicts 0 : 1 1 : 197 2 : 0 3 : 0 
+Heartbeat_Variant_3_evicts 0 : 0 1 : 0 2 : 0 3 : 0 
+Heartbeat CPU 0 instructions: 70000003 cycles: 28456558 heartbeat IPC: 1.39276 cumulative IPC: 1.38173 (Simulation time: 0 hr 14 min 59 sec) 
+Cycle: 30000000 FTQ IN: 13918037 FTQ occupancy: 13.0543 DECODE IN: 13918093 DECODE occupancy: 34.4733 ROB IN: 13918143 ROB occupancy: 237.986 ROB OUT: 13918234
+Heartbeat_Variant_0 : 1406 0.228841 per_variant_size: 0 1406 0 0 0 0 0 0 0 
+Heartbeat_Variant_1 : 1376 0.223958 per_variant_size: 0 788 588 0 0 0 0 0 0 
+Heartbeat_Variant_2 : 1524 0.248047 per_variant_size: 0 736 416 196 176 0 0 0 0 
+Heartbeat_Variant_3 : 0 0 per_variant_size: 0 0 0 0 0 0 0 0 0 
+Heartbeat_Variant_0_evicts 0 : 5601 1 : 0 2 : 0 3 : 0 
+Heartbeat_Variant_1_evicts 0 : 0 1 : 0 2 : 197 3 : 0 
+Heartbeat_Variant_2_evicts 0 : 0 1 : 196 2 : 0 3 : 0 
+Heartbeat_Variant_3_evicts 0 : 0 1 : 0 2 : 0 3 : 0 
+Heartbeat CPU 0 instructions: 80000002 cycles: 35720309 heartbeat IPC: 1.3767 cumulative IPC: 1.38005 (Simulation time: 0 hr 17 min 12 sec) 
+Cycle: 40000000 FTQ IN: 13783353 FTQ occupancy: 13.3004 DECODE IN: 13783269 DECODE occupancy: 34.8245 ROB IN: 13783259 ROB occupancy: 239.97 ROB OUT: 13783168
+Heartbeat_Variant_0 : 1406 0.228841 per_variant_size: 0 1406 0 0 0 0 0 0 0 
+Heartbeat_Variant_1 : 1384 0.22526 per_variant_size: 0 789 595 0 0 0 0 0 0 
+Heartbeat_Variant_2 : 1530 0.249023 per_variant_size: 0 739 417 200 174 0 0 0 0 
+Heartbeat_Variant_3 : 0 0 per_variant_size: 0 0 0 0 0 0 0 0 0 
+Heartbeat_Variant_0_evicts 0 : 5496 1 : 0 2 : 0 3 : 0 
+Heartbeat_Variant_1_evicts 0 : 0 1 : 0 2 : 193 3 : 0 
+Heartbeat_Variant_2_evicts 0 : 0 1 : 193 2 : 0 3 : 0 
+Heartbeat_Variant_3_evicts 0 : 0 1 : 0 2 : 0 3 : 0 
+Heartbeat CPU 0 instructions: 90000001 cycles: 42931769 heartbeat IPC: 1.38668 cumulative IPC: 1.3817 (Simulation time: 0 hr 19 min 35 sec) 
+Cycle: 50000000 FTQ IN: 13817508 FTQ occupancy: 13.232 DECODE IN: 13817536 DECODE occupancy: 34.4501 ROB IN: 13817496 ROB occupancy: 238.544 ROB OUT: 13817500
+Heartbeat_Variant_0 : 1406 0.228841 per_variant_size: 0 1406 0 0 0 0 0 0 0 
+Heartbeat_Variant_1 : 1384 0.22526 per_variant_size: 0 788 596 0 0 0 0 0 0 
+Heartbeat_Variant_2 : 1530 0.249023 per_variant_size: 0 739 417 199 175 0 0 0 0 
+Heartbeat_Variant_3 : 0 0 per_variant_size: 0 0 0 0 0 0 0 0 0 
+Heartbeat_Variant_0_evicts 0 : 5636 1 : 0 2 : 0 3 : 0 
+Heartbeat_Variant_1_evicts 0 : 0 1 : 0 2 : 197 3 : 0 
+Heartbeat_Variant_2_evicts 0 : 0 1 : 197 2 : 0 3 : 0 
+Heartbeat_Variant_3_evicts 0 : 0 1 : 0 2 : 0 3 : 0 
+Heartbeat CPU 0 instructions: 100000001 cycles: 50186567 heartbeat IPC: 1.3784 cumulative IPC: 1.38104 (Simulation time: 0 hr 22 min 23 sec) 
+Finished CPU 0 instructions: 50000000 cycles: 36204606 cumulative IPC: 1.38104 (Simulation time: 0 hr 22 min 23 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 1.38104 instructions: 50000000 cycles: 36204606
+ Fetch stage stalled: 53.2106  Sim cycles: 36204606 fetch stall cycle: 19264702
+ Empty decode stage: 33.8555  Sim cycles: 36204606 fetch stall cycle: 12257268
+ITLB TOTAL     ACCESS:    5859378  HIT:    5365872  MISS:     493506  HIT %:    91.5775  MISS %:     8.4225   MPKI: 9.87012
+ITLB LOAD TRANSLATION INSTRUCTION	ACCESS:    5736990  HIT:    5243484  MISS:     493506  HIT %:    91.3978  MISS %:    8.60218  MPKI: 9.87012
+ITLB TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:     122388  HIT:     122388  MISS:          0  HIT %:        100  MISS %:          0  MPKI: 0
+
+ITLB AVERAGE MISS LATENCY: 9.06501 cycles
+ITLB RQ	ACCESS:    8004507	FORWARD:          0	MERGED:    1703517	TO_CACHE:    6300990
+
+DTLB TOTAL     ACCESS:    8970074  HIT:    8499973  MISS:     470101  HIT %:    94.7592  MISS %:    5.24077   MPKI: 9.40202
+DTLB LOAD TRANSLATION DATA	ACCESS:    8970074  HIT:    8499973  MISS:     470101  HIT %:    94.7592  MISS %:    5.24077  MPKI: 9.40202
+
+DTLB AVERAGE MISS LATENCY: 9.33176 cycles
+DTLB RQ	ACCESS:   13339748	FORWARD:          0	MERGED:    4332574	TO_CACHE:    9007174
+
+STLB TOTAL     ACCESS:    1212202  HIT:    1210114  MISS:       2088  HIT %:    99.8278  MISS %:   0.172249   MPKI: 0.04176
+STLB LOAD TRANSLATION INSTRUCTION	ACCESS:     493506  HIT:     493225  MISS:        281  HIT %:    99.9431  MISS %:  0.0569395  MPKI: 0.00562
+STLB LOAD TRANSLATION DATA	ACCESS:     470101  HIT:     468332  MISS:       1769  HIT %:    99.6237  MISS %:   0.376302  MPKI: 0.03538
+STLB TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:     248595  HIT:     248557  MISS:         38  HIT %:    99.9847  MISS %:  0.0152859  MPKI: 0.00076
+
+STLB AVERAGE MISS LATENCY: 75.4277 cycles
+STLB RQ	ACCESS:    1333484	FORWARD:          0	MERGED:     121239	TO_CACHE:    1212245
+
+STLB Hit, L1D data hit: 0
+STLB Hit, L2C data hit: 0
+STLB Hit, LLC data hit: 0
+STLB Hit, LLC data miss: 0
+STLB STLB hints to L2: 0
+L1D TOTAL     ACCESS:   13084653  HIT:   11965634  MISS:    1119019  HIT %:    91.4479  MISS %:    8.55215   MPKI: 22.3804
+L1D LOAD DATA	ACCESS:    6553585  HIT:    5817490  MISS:     736095  HIT %:    88.7681  MISS %:    11.2319  MPKI: 14.7219
+L1D RFO DATA	ACCESS:    6202684  HIT:    5916017  MISS:     286667  HIT %:    95.3783  MISS %:    4.62166  MPKI: 5.73334
+L1D PREFETCH DATA	ACCESS:     328384  HIT:     232127  MISS:      96257  HIT %:    70.6877  MISS %:    29.3123  MPKI: 1.92514
+
+L1D PREFETCH  REQUESTED:     740122  ISSUED:     740122  USEFUL:      35407  USELESS:      69446
+L1D USEFUL LOAD PREFETCHES:      35407 PREFETCH ISSUED TO LOWER LEVEL:     104863  ACCURACY: 33.765
+ TIMELY PREFETCHES:      35407 LATE PREFETCHES: 8580 DROPPED PREFETCHES: 11
+L1D AVERAGE MISS LATENCY: 246585 cycles
+L1D RQ	ACCESS:   10695507	FORWARD:          0	MERGED:    3942270	TO_CACHE:    6588947
+L1D WQ	ACCESS:    6947799	FORWARD:     164658	MERGED:     196998	TO_CACHE:    6750801
+L1D PQ	ACCESS:     370245	FORWARD:          0	MERGED:          0	TO_CACHE:     369877
+
+L1D UNIQUE REGIONS ACCESSED: 0
+L1D REGIONS CONFLICTS: 0
+L1D Cross Page Prefetch Requests: 6950
+L1D Same Page Prefetch Requests: 749501
+L1D ROI Sum of L1D PQ occupancy: 4710141
+L1D PREFETCHES PUSHED FROM L2C: 0
+L1I TOTAL     ACCESS:    7161829  HIT:    4400636  MISS:    2761193  HIT %:    61.4457  MISS %:    38.5543   MPKI: 55.2239
+L1I LOAD INSTRUCTION	ACCESS:    6492954  HIT:    3731761  MISS:    2761193  HIT %:     57.474  MISS %:     42.526  MPKI: 55.2239
+L1I PREFETCH INSTRUCTION	ACCESS:     668875  HIT:     668875  MISS:          0  HIT %:        100  MISS %:          0  MPKI: 0
+
+L1I PREFETCH  REQUESTED:    1618876  ISSUED:    1618876  USEFUL:          0  USELESS:          0
+L1I USEFUL LOAD PREFETCHES:          0 PREFETCH ISSUED TO LOWER LEVEL:          0  ACCURACY: -nan
+ TIMELY PREFETCHES:          0 LATE PREFETCHES: 0 DROPPED PREFETCHES: 0
+L1I AVERAGE MISS LATENCY: 17.2618 cycles
+L1I RQ	ACCESS:    9502138	FORWARD:          0	MERGED:    2681093	TO_CACHE:    6821045
+L1I PQ	ACCESS:    1618876	FORWARD:          0	MERGED:     435414	TO_CACHE:    1183462
+
+L1BTB TOTAL     ACCESS:    5667988  HIT:    2041913  MISS:    3626075  HIT %:    36.0254  MISS %:    63.9746   MPKI: 72.5215
+L1BTB BRANCH_DIRECT_JUMP	ACCESS:     548038  HIT:     144579  MISS:     403459	AVERAGE STALL: 50.4184
+L1BTB BRANCH_INDIRECT	ACCESS:     182829  HIT:      66039  MISS:     116790	AVERAGE STALL: 101.378
+L1BTB BRANCH_CONDITIONAL	ACCESS:    2704929  HIT:    1412953  MISS:    1291976	AVERAGE STALL: 60.08
+L1BTB BRANCH_DIRECT_CALL	ACCESS:     944385  HIT:     106142  MISS:     838243	AVERAGE STALL: 74.8972
+L1BTB BRANCH_INDIRECT_CALL	ACCESS:     171712  HIT:      21413  MISS:     150299	AVERAGE STALL: 134.614
+L1BTB BRANCH_RETURN	ACCESS:    1116095  HIT:     290787  MISS:     825308	AVERAGE STALL: 49.5261
+L1BTB BRANCH_OTHER ACCESS:          0  HIT:          0  MISS:          0	AVERAGE STALL: -nan
+L1BTB TOTAL ROB OCCUPANCY AT BTB MISS: 2.44377
+
+L2BTB TOTAL     ACCESS:    3600746  HIT:    3539349  MISS:      61397  HIT %:    98.2949  MISS %:    1.70512   MPKI: 1.22794
+L2BTB BRANCH_DIRECT_JUMP	ACCESS:     399303  HIT:     396337  MISS:       2966	AVERAGE STALL: 50.4184
+L2BTB BRANCH_INDIRECT	ACCESS:     106540  HIT:     103941  MISS:       2599	AVERAGE STALL: 101.378
+L2BTB BRANCH_CONDITIONAL	ACCESS:    1291976  HIT:    1288394  MISS:       3582	AVERAGE STALL: 60.08
+L2BTB BRANCH_DIRECT_CALL	ACCESS:     838243  HIT:     837846  MISS:        397	AVERAGE STALL: 74.8972
+L2BTB BRANCH_INDIRECT_CALL	ACCESS:     140769  HIT:     130737  MISS:      10032	AVERAGE STALL: 134.614
+L2BTB BRANCH_RETURN	ACCESS:     823915  HIT:     782094  MISS:      41821	AVERAGE STALL: 49.5261
+L2BTB BRANCH_OTHER ACCESS:          0  HIT:          0  MISS:          0	AVERAGE STALL: -nan
+L2BTB TOTAL ROB OCCUPANCY AT BTB MISS: 144.328
+
+L2C TOTAL     ACCESS:    4495843  HIT:    3993259  MISS:     502584  HIT %:    88.8211  MISS %:    11.1789   MPKI: 10.0517
+L2C LOAD INSTRUCTION	ACCESS:    2761193  HIT:    2496118  MISS:     265075  HIT %:       90.4  MISS %:    9.60002  MPKI: 5.3015
+L2C LOAD TRANSLATION INSTRUCTION	ACCESS:        317  HIT:         77  MISS:        240  HIT %:    24.2902  MISS %:    75.7098  MPKI: 0.0048
+L2C LOAD DATA	ACCESS:     727494  HIT:     646542  MISS:      80952  HIT %:    88.8725  MISS %:    11.1275  MPKI: 1.61904
+L2C RFO DATA	ACCESS:     286608  HIT:     226654  MISS:      59954  HIT %:    79.0815  MISS %:    20.9185  MPKI: 1.19908
+L2C PREFETCH DATA	ACCESS:     195774  HIT:     118217  MISS:      77557  HIT %:    60.3844  MISS %:    39.6156  MPKI: 1.55114
+L2C WRITEBACK DATA	ACCESS:     522554  HIT:     505109  MISS:      17445  HIT %:    96.6616  MISS %:    3.33841  MPKI: 0.3489
+L2C LOAD TRANSLATION DATA	ACCESS:       1840  HIT:        497  MISS:       1343  HIT %:    27.0109  MISS %:    72.9891  MPKI: 0.02686
+L2C TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         63  HIT:         45  MISS:         18  HIT %:    71.4286  MISS %:    28.5714  MPKI: 0.00036
+
+L2C PREFETCH  REQUESTED:      98151  ISSUED:      98151  USEFUL:       7935  USELESS:      70141
+L2C USEFUL LOAD PREFETCHES:       7935 PREFETCH ISSUED TO LOWER LEVEL:      77882  ACCURACY: 10.1885
+ TIMELY PREFETCHES:       7935 LATE PREFETCHES: 325 DROPPED PREFETCHES: 0
+L2C AVERAGE MISS LATENCY: 38.5703 cycles
+L2C RQ	ACCESS:    3777571	FORWARD:          0	MERGED:          0	TO_CACHE:    3777517
+L2C WQ	ACCESS:     522554	FORWARD:         54	MERGED:          0	TO_CACHE:     522554
+L2C PQ	ACCESS:     203014	FORWARD:          0	MERGED:       3663	TO_CACHE:     199351
+
+L2C Dense regions hint from L2: 0
+PSCL5 TOTAL     ACCESS:       4202  HIT:       2101  MISS:       2101  HIT %:         50  MISS %:         50   MPKI: 0.04202
+PSCL5 LOAD TRANSLATION INSTRUCTION	ACCESS:       4076  HIT:       2038  MISS:       2038  HIT %:         50  MISS %:         50  MPKI: 0.04076
+PSCL5 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:        126  HIT:         63  MISS:         63  HIT %:         50  MISS %:         50  MPKI: 0.00126
+
+
+PSCL4 TOTAL     ACCESS:       3982  HIT:       1987  MISS:       1995  HIT %:    49.8995  MISS %:    50.1005   MPKI: 0.0399
+PSCL4 LOAD TRANSLATION INSTRUCTION	ACCESS:       3005  HIT:       1925  MISS:       1080  HIT %:    64.0599  MISS %:    35.9401  MPKI: 0.0216
+PSCL4 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:         97  HIT:         62  MISS:         35  HIT %:    63.9175  MISS %:    36.0825  MPKI: 0.0007
+PSCL4 LOAD TRANSLATION DATA	ACCESS:        853  HIT:          0  MISS:        853  HIT %:          0  MISS %:        100  MPKI: 0.01706
+PSCL4 TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         27  HIT:          0  MISS:         27  HIT %:          0  MISS %:        100  MPKI: 0.00054
+
+
+PSCL3 TOTAL     ACCESS:       4034  HIT:       2013  MISS:       2021  HIT %:    49.9008  MISS %:    50.0992   MPKI: 0.04042
+PSCL3 LOAD TRANSLATION INSTRUCTION	ACCESS:       3031  HIT:       1951  MISS:       1080  HIT %:    64.3682  MISS %:    35.6318  MPKI: 0.0216
+PSCL3 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:         97  HIT:         62  MISS:         35  HIT %:    63.9175  MISS %:    36.0825  MPKI: 0.0007
+PSCL3 LOAD TRANSLATION DATA	ACCESS:        879  HIT:          0  MISS:        879  HIT %:          0  MISS %:        100  MPKI: 0.01758
+PSCL3 TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         27  HIT:          0  MISS:         27  HIT %:          0  MISS %:        100  MPKI: 0.00054
+
+
+PSCL2 TOTAL     ACCESS:       4098  HIT:       1997  MISS:       2101  HIT %:    48.7311  MISS %:    51.2689   MPKI: 0.04202
+PSCL2 LOAD TRANSLATION INSTRUCTION	ACCESS:       2215  HIT:       1934  MISS:        281  HIT %:    87.3138  MISS %:    12.6862  MPKI: 0.00562
+PSCL2 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:         63  HIT:         63  MISS:          0  HIT %:        100  MISS %:          0  MPKI: 0
+PSCL2 LOAD TRANSLATION DATA	ACCESS:       1757  HIT:          0  MISS:       1757  HIT %:          0  MISS %:        100  MPKI: 0.03514
+PSCL2 TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         63  HIT:          0  MISS:         63  HIT %:          0  MISS %:        100  MPKI: 0.00126
+
+
+LLC TOTAL     ACCESS:     568997  HIT:     539275  MISS:      29722  HIT %:    94.7764  MISS %:    5.22358   MPKI: 0.59444
+LLC LOAD INSTRUCTION	ACCESS:     265075  HIT:     264199  MISS:        876  HIT %:    99.6695  MISS %:   0.330473  MPKI: 0.01752
+LLC LOAD TRANSLATION INSTRUCTION	ACCESS:        240  HIT:        203  MISS:         37  HIT %:    84.5833  MISS %:    15.4167  MPKI: 0.00074
+LLC LOAD DATA	ACCESS:      80633  HIT:      77221  MISS:       3412  HIT %:    95.7685  MISS %:    4.23152  MPKI: 0.06824
+LLC RFO DATA	ACCESS:      59946  HIT:      44736  MISS:      15210  HIT %:    74.6272  MISS %:    25.3728  MPKI: 0.3042
+LLC PREFETCH DATA	ACCESS:      77881  HIT:      68133  MISS:       9748  HIT %:    87.4835  MISS %:    12.5165  MPKI: 0.19496
+LLC WRITEBACK DATA	ACCESS:      83861  HIT:      83495  MISS:        366  HIT %:    99.5636  MISS %:   0.436436  MPKI: 0.00732
+LLC LOAD TRANSLATION DATA	ACCESS:       1343  HIT:       1270  MISS:         73  HIT %:    94.5644  MISS %:    5.43559  MPKI: 0.00146
+LLC TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         18  HIT:         18  MISS:          0  HIT %:        100  MISS %:          0  MPKI: 0
+
+LLC AVERAGE MISS LATENCY: 160.885 cycles
+LLC RQ	ACCESS:     407257	FORWARD:          0	MERGED:          0	TO_CACHE:     407255
+LLC WQ	ACCESS:      83861	FORWARD:          3	MERGED:          0	TO_CACHE:      83861
+LLC PQ	ACCESS:      77882	FORWARD:          0	MERGED:          0	TO_CACHE:      77881
+
+LLC Dense regions hint to LLC: 0
+
+RAW hits: 1942756
+Loads Generated: 12638263
+Loads sent to L1D: 10695507
+Stores Generated: 6947803
+Stores sent to L1D: 6947799
+Major fault: 0 Minor fault: 2539
+Allocated PAGES: 2539
+
+stream: 
+stream:times selected: 1189176
+stream:pref_filled: 123196
+stream:pref_useful: 24398
+stream:pref_late: 6757
+stream:misses: 7984
+stream:misses_by_poll: 0
+
+CS: 
+CS:times selected: 180822
+CS:pref_filled: 59590
+CS:pref_useful: 36010
+CS:pref_late: 7531
+CS:misses: 17280
+CS:misses_by_poll: 10
+
+CPLX: 
+CPLX:times selected: 1007122
+CPLX:pref_filled: 19423
+CPLX:pref_useful: 4504
+CPLX:pref_late: 3104
+CPLX:misses: 92827
+CPLX:misses_by_poll: 0
+
+NL_L1: 
+NL:times selected: 21072
+NL:pref_filled: 783
+NL:pref_useful: 328
+NL:pref_late: 284
+NL:misses: 1763
+NL:misses_by_poll: 0
+
+total selections: 2398192
+total_filled: 96257
+total_useful: 35407
+total_late: 19104
+total_polluted: 10
+total_misses_after_warmup: 771461
+conflicts: 5515965
+
+test: 116425
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:      11020  ROW_BUFFER_MISS:      18329
+ DBUS_CONGESTED:         13
+ WQ ROW_BUFFER_HIT:       1385  ROW_BUFFER_MISS:      12959  FULL:          0
+
+ AVG_CONGESTED_CYCLE: 4
+
+CPU 0 Branch Prediction Accuracy: 99.8221% MPKI: 0.32538 Average ROB Occupancy at Mispredict: 189.478
+Branch types
+NOT_BRANCH: 40855869 81.7117%
+BRANCH_DIRECT_JUMP: 548038 1.09608%
+BRANCH_INDIRECT: 182829 0.365658%
+BRANCH_CONDITIONAL: 6180761 12.3615%
+BRANCH_DIRECT_CALL: 944385 1.88877%
+BRANCH_INDIRECT_CALL: 171712 0.343424%
+BRANCH_RETURN: 1116095 2.23219%
+BRANCH_OTHER: 0 0%
+
+DRAM PAGES: 1048576
+Allocated PAGES: 2539
+Average_ROB_Occupancy: 239.759
+Average_Decode_Occupancy: 34.529
+Average_FTQ_Occupancy: 13.1875
+Indirect max targets: 14 Average targets: 1.14527
+Branch_type:  BRANCH_DIRECT_JUMP:  Count Percentage: 4.03058 4.7638 4.93335 3.0079 3.06429 6.01233 7.27984 66.9079 
+Branch_type:  BRANCH_INDIRECT:  Count Percentage: 13.7445 0.811102 2.56881 0 0 17.7484 17.4902 47.637 
+Branch_type:  BRANCH_CONDITIONAL:  Count Percentage: 26.2716 1.94536 1.54049 6.25447 1.55418 5.09183 5.62217 51.7199 
+Branch_type:  BRANCH_DIRECT_CALL:  Count Percentage: 0.885197 1.47925 1.16308 2.38365 2.50939 3.52069 6.166 81.8927 
+Branch_type:  BRANCH_INDIRECT_CALL:  Count Percentage: 9.52115 0 2.98392 6.41717 0 2.4763 5.11579 73.4857 
+Branch_type:  BRANCH_RETURN:  Count Percentage: 10.4596 1.45934 1.49155 6.79354 1.66171 6.47523 6.53457 65.1245 
+Branch_type:  BRANCH_DIRECT_JUMP:  Total Count: 44169 52204 54062 32962 33580 65886 79776 733209 
+Branch_type:  BRANCH_INDIRECT:  Total Count: 50311 2969 9403 0 0 64967 64022 174373 
+Branch_type:  BRANCH_CONDITIONAL:  Total Count: 3246774 240417 190382 772960 192073 629275 694816 6391816 
+Branch_type:  BRANCH_DIRECT_CALL:  Total Count: 16692 27894 21932 44948 47319 66389 116271 1544236 
+Branch_type:  BRANCH_INDIRECT_CALL:  Total Count: 32674 0 10240 22022 0 8498 17556 252183 
+Branch_type:  BRANCH_RETURN:  Total Count: 233211 32538 33256 151471 37050 144374 145697 1452037 
+Number of unique branch instructions: 9804
+Upper 32 bits: 
+aaaa
+ffff
+ffff0000
+Unique upper 32 bits: 3
+Unique upper 36 bits: 3
+Unique upper 40 bits: 5
+Unique upper 44 bits: 32
+Unique upper 48 bits: 154
+Variant_0 : 1406 0.228841
+Variant_1 : 1384 0.22526
+Variant_2 : 1530 0.249023
+Variant_3 : 0 0
+Offset_3 4030
+Offset_4 244
+Offset_5 449
+Offset_6 498
+Offset_7 571
+Offset_8 508
+Offset_9 463
+Offset_10 374
+Offset_11 301
+Offset_12 269
+Offset_13 203
+Offset_14 227
+Offset_15 184
+Offset_16 220
+Offset_17 145
+Offset_18 118
+Offset_19 234
+Offset_20 136
+Offset_21 235
+Offset_22 392
+Offset_23 241
+Offset_24 331
+Offset_25 88
+Offset_47 82
+Offset_64 1
+decode_dispatch_called: 25643514 70.8294
+Dispatch_width: 0 13813505 53.8674 38.154
+Dispatch_width: 1 956516 3.73005 2.64197
+Dispatch_width: 2 832129 3.24499 2.29841
+Dispatch_width: 3 493692 1.92521 1.36362
+Dispatch_width: 4 5622205 21.9245 15.529
+Dispatch_width: 5 143631 0.560107 0.39672
+Dispatch_width: 6 3781836 14.7477 10.4457
+Empty_decode_cycles: 10561092 29.1706
+ROB_full_cycles: 9035648 24.9572
+Starvation_cycles_per_kilo_instr: 233.871
+Starvation_cycles_per_kilo_instr_3: 176.213
+Starvation_cycles_per_kilo_instr_0: 153.389
+Branch_type_1  (3,1)  (4,9)  (5,37)  (6,68)  (7,113)  (8,128)  (9,122)  (10,97)  (11,67)  (12,43)  (13,5)  (14,2)  (15,3)  (16,4)  (18,1)  (19,4)  (20,2)  (21,1)  (22,3)  (23,2)  (24,10)  (25,12) 
+Branch_type_2  (3,1)  (5,1)  (8,3)  (9,3)  (12,1)  (13,1)  (14,1)  (16,3)  (17,2)  (20,2)  (21,2)  (23,5)  (24,1)  (47,38) 
+Branch_type_3  (3,4028)  (4,235)  (5,407)  (6,415)  (7,429)  (8,316)  (9,255)  (10,151)  (11,120)  (12,50)  (13,4)  (64,1) 
+Branch_type_4  (6,3)  (7,8)  (8,25)  (9,51)  (10,60)  (11,58)  (12,96)  (13,88)  (14,100)  (15,86)  (16,98)  (17,64)  (18,53)  (19,115)  (20,71)  (21,124)  (22,209)  (23,136)  (24,192)  (25,72) 
+Branch_type_5  (8,2)  (9,1)  (10,3)  (11,5)  (12,3)  (13,14)  (14,16)  (15,11)  (16,20)  (17,11)  (18,16)  (19,12)  (20,10)  (21,13)  (22,42)  (23,26)  (24,37) 
+Branch_type_6  (5,4)  (6,12)  (7,21)  (8,34)  (9,31)  (10,63)  (11,51)  (12,76)  (13,91)  (14,108)  (15,84)  (16,95)  (17,68)  (18,48)  (19,103)  (20,51)  (21,95)  (22,138)  (23,72)  (24,91)  (25,4)  (47,44) 
+Unique trigger count: 
+Variant_0_evicts_0 : 0
+Variant_0_evicts_1 : 0
+Variant_0_evicts_2 : 0
+Variant_0_evicts_3 : 0
+Variant_1_evicts_0 : 0
+Variant_1_evicts_1 : 0
+Variant_1_evicts_2 : 0
+Variant_1_evicts_3 : 0
+Variant_2_evicts_0 : 0
+Variant_2_evicts_1 : 0
+Variant_2_evicts_2 : 0
+Variant_2_evicts_3 : 0
+Variant_3_evicts_0 : 0
+Variant_3_evicts_1 : 0
+Variant_3_evicts_2 : 0
+Variant_3_evicts_3 : 0
+BTB PER SET UNIQUE ADDR: 8 4 5 7 4 6 7 3 5 6 6 7 2 6 8 7 4 6 5 6 5 3 3 3 5 9 6 5 3 9 5 8 3 6 10 7 7 3 4 4 8 5 3 7 3 5 5 6 6 5 4 6 4 6 5 4 6 4 7 2 5 5 4 5 8 5 5 5 8 5 4 6 3 5 7 5 10 5 7 8 10 8 8 6 5 6 3 7 5 7 4 5 5 3 6 6 8 5 6 4 4 5 5 8 4 5 5 4 8 7 6 3 2 4 7 6 4 6 6 5 7 5 7 4 6 8 6 4 7 5 5 6 4 3 5 7 3 4 5 7 3 7 3 4 11 7 8 5 4 5 6 9 5 6 6 4 3 5 8 7 4 3 6 6 5 4 6 5 7 6 9 6 5 5 5 6 5 9 4 3 4 5 5 7 2 3 4 3 4 6 7 5 5 3 5 4 4 5 4 5 6 6 4 9 6 9 4 6 6 7 6 9 3 7 4 6 5 2 5 6 3 4 8 4 5 6 7 5 6 6 2 8 8 5 6 11 8 8 5 9 4 8 7 6 8 9 4 6 7 5 4 8 5 3 4 6 7 4 6 5 8 7 6 4 4 3 7 8 8 4 12 6 5 6 8 6 4 3 8 4 8 8 2 8 3 9 6 6 7 5 4 4 5 4 5 9 7 4 6 7 5 6 4 7 6 4 5 6 8 4 4 4 6 5 7 5 7 8 5 5 7 5 5 4 8 5 6 5 3 5 5 8 6 2 4 3 3 6 7 4 5 9 7 8 4 8 6 5 6 6 5 8 4 5 4 7 5 7 4 5 6 6 4 8 3 4 5 5 4 6 7 4 8 7 5 5 7 4 4 6 6 4 5 4 5 5 3 4 5 10 4 8 5 5 5 4 5 8 4 4 5 5 8 6 4 6 10 5 7 8 4 2 3 5 7 5 7 7 5 8 5 6 5 7 8 4 8 9 7 4 8 3 7 2 3 4 9 2 5 6 8 4 3 8 3 3 6 4 4 4 7 7 6 5 7 9 7 5 7 8 5 6 3 9 7 5 7 6 4 4 6 5 4 5 6 8 5 5 5 4 5 7 5 6 5 3 4 5 7 6 12 7 5 6 3 8 9 5 5 8 6 4 5 6 9 5 4 8 5 4 5 5 4 3 2 2 5 2 5 3 4 2 4 3 4 3 2 3 4 3 3 3 4 3 4 6 6 5 4 4 3 6 5 4 4 3 4 10 2 4 3 6 2 3 3 6 4 1 7 2 3 3 3 5 2 2 4 5 3 2 2 3 0 3 1 5 4 3 5 5 2 4 3 3 3 4 3 3 4 3 5 4 3 4 3 5 5 4 3 4 5 2 2 2 3 3 5 3 3 3 3 4 3 4 2 5 5 4 5 4 3 2 5 3 3 4 1 4 3 5 2 5 5 3 4 1 5 3 4 4 2 4 1 2 2 4 3 5 2 4 2 4 3 4 4 4 4 1 2 3 2 3 3 4 2 1 3 2 7 4 4 3 3 3 3 1 3 4 3 5 4 5 2 4 6 3 3 6 6 2 5 3 2 2 1 5 3 3 2 6 4 2 3 2 4 4 5 3 3 4 4 1 1 3 4 6 2 3 3 3 5 6 2 3 3 5 4 5 2 4 2 3 5 2 4 2 6 2 4 6 5 4 4 5 3 1 6 4 4 2 5 3 5 4 7 5 2 3 3 3 3 2 3 5 4 5 6 9 2 6 4 4 2 2 3 4 4 5 1 5 3 3 3 5 8 7 3 4 5 7 3 3 5 6 4 2 8 3 4 2 5 3 3 1 6 3 5 3 3 2 3 3 0 4 3 4 3 3 3 5 4 3 5 3 5 3 4 2 5 5 5 4 2 3 5 2 5 4 2 4 1 5 2 2 3 3 6 3 4 4 4 2 3 5 5 2 6 5 1 4 3 5 3 6 5 3 6 2 4 4 5 1 6 1 2 3 2 3 3 3 3 4 3 5 1 2 7 4 2 0 5 2 2 3 5 2 1 3 3 5 4 3 4 3 3 3 5 5 4 3 3 3 4 3 4 2 3 2 5 3 2 3 4 7 3 1 6 5 2 5 2 3 4 2 4 3 3 3 2 6 6 5 1 6 3 2 3 3 5 3 3 4 4 4 7 5 4 3 3 2 3 3 4 3 3 1 6 3 2 6 5 4 2 4 2 3 1 5 4 3 3 3 3 4 3 1 4 3 5 4 3 2 4 4 4 3 2 5 2 3 6 2 3 2 3 4 3 4 3 2 3 4 4 3 3 4 2 3 3 6 2 2 4 6 5 4 4 3 5 3 2 4 6 4 3 5 7 3 3 3 2 4 3 5 7 2 5 5 2 4 3 3 5 3 6 5 5 4 2 2 2 7 5 3 3 2 6 4 3 2 3 6 3 5 4 3 3 4 5 2 4 1 2 5 1 4 5 2 3 5 3 6 5 8 5 3 4 3 4 3 5 4 5 6 3 4 2 5 2 2 3 5 3 3 7 3 6 3 5 5 4 3 2 5 4 6 4 5 4 2 5 3 3 1 3 4 4 2 3 1 5 3 2 2 4 3 3 4 4 2 5 5 1 2 5 1 3 6 4 3 3 3 3 1 2 2 3 4 6 4 7 6 6 3 3 5 4 3 1 3 6 1 7 5 4 5 5 3 5 5 3 5 2 0 3 4 4 2 4 2 3 4 2 5 4 1 4 2 4 2 3 4 5 2 2 5 5 4 3 4 7 2 2 5 4 5 4 3 4 2 6 1 3 3 5 5 2 2 4 1 5 3 5 3 4 4 2 4 2 6 3 2 4 2 3 3 3 3 2 4 2 3 6 3 2 3 5 5 2 5 8 3 4 4 2 4 5 5 4 2 3 2 4 5 3 2 2 4 3 3 7 5 5 3 3 3 4 5 3 3 2 2 2 6 4 3 2 3 3 3 6 7 5 2 2 5 5 2 3 4 3 5 2 4 6 3 3 3 5 3 3 3 5 5 5 3 6 5 4 8 3 4 3 3 5 5 4 3 5 2 3 3 4 7 4 1 3 3 5 4 5 2 2 3 3 3 1 4 1 5 3 3 2 5 4 4 3 5 3 4 1 2 4 3 3 2 3 5 4 2 3 3 4 5 2 4 2 2 2 4 3 4 4 2 1 3 6 4 2 7 4 4 4 4 3 2 3 2 2 4 4 4 4 5 5 3 3 5 2 4 5 2 3 4 6 5 2 5 5 2 3 4 4 2 5 5 3 3 4 3 2 3 3 2 2 6 4 1 4 5 5 2 4 8 3 4 1 3 4 3 5 2 3 1 4 4 4 2 6 7 3 3 3 4 4 4 4 2 2 4 3 3 3 3 5 4 5 3 2 4 5 2 6 5 4 5 4 3 4 1 2 6 4 4 2 2 3 5 3 6 3 2 2 5 4 2 6 4 4 3 3 3 3 1 5 4 
+BTB PER SET COUNT: 8 1467 1467 1468 4 7 7 3 5 501 108 7 2 6 712 7 4 6 5 7 6 3 3 3 500 865 6 359 4 482 5 507 3 6 10 7 7 3 4 5 8 2928 3 8 3 5 70 6 9 6 4 6 4 8 5 4 501 4 9 2 5 6 5 7 8 5 214 5 9 5 6 6 3 5 7 277 12 5 982 8 12 8 997 6 5 7 3 7 500 1941 4 14 641 3 7 6 9 5 6 5 5 5 5 8 4 5 5 4 8 2929 6 3 3 4 10 6 6 8 6 5 10 5 713 7 6 9 7 4 453 5 972 6 4 3 5 9 4 4 5 10 3 7 3 4 12 7 16 5 4 24 8 482 5 6 6 971 3 5 10 9 4 3 6 7 6 5 6 5 7 1169 12 6 6 5 5 6 5 9 4 3 4 5 5 7 2 3 4 3 4 501 7 5 5 993 5 4 4 5 4 5 6 1471 4 13 10 11 5 6 41 7 8 15 6 8 4 9 5 3 359 6 3 4 8 4 5 6 7 12 6 6 276 9 8 14634 995 15 8 8 5 9 4 8 7 503 8 9 7857 157 1469 5 4 8 9 3 4 17 8 4 7 5 8 7 6 4 4 4 10 8 1472 5 1021 6 5 8 13 7 4 3 8 4 8 8 2 9 3 9 6 6 7 5 5 4 6 4 8 13 7 645 6 7 5 7 4 8 7 4 5 6 9 14 993 4 6 5 11 5 7 8 5 5 8 5 5 4 1942 5 6 7 3 5 5 8 16 2 4 3 3 8 7 4 5 10 7 11 4 9 6 5 67 7 5 9 4 5 4 11 5 8 11 115 8 9 1467 8 3 4 100 5 4 14 7 4 1964 7 5 5 7 4 4 6 7 352 5 4 5 5 3 4 5 10 4 8 5 6 5 4 1325 8 356 4 6 10 9 6 4 6 1946 48 7 8 4 2 3 6 7 5 7 70 5 8 5 6 5 9 9 336 8 11 7 5 8 993 7 2 3 4 9 3 6 6 8 6 3 8 420 3 1469 5 4 5 8 14 7 5 360 9 9 5 7 48 995 504 993 9 272 5 10 6 4 4 2294 479 4 9 9 12 5 5 5 4 5 7 5 1468 60 9 995 5 10 6 980 7 5 6 3 8 12 5 5 8 155 4 5 6 15 5 4 8 6 4 5 1259 4 4 3 2 5 2 6 3 4 2 4 3 6 4 2 3 5 3 3 3 4 7 26 6 6 92 5 4 3 6 5 4 4 1465 4 999 2 4 3 10 992 3 3 6 4 1 7 3 993 3 3 5 2 2 4 5 7 2 2 3 0 3 1 5 4 3 185 5 5 4 3 5 6 4 5 3 4 950 5 4 3 994 3 5 1467 5 3 4 14 2 992 2 7 3 994 3 3 3 3 4 3 4 2 5 1467 4 5 4 3 2 592 3 3 4 1 4 3 5 991 5 5 3 6 1 5 4 4 4 2 5 1 3 2 5 3 5 2 4 2 5 3 4 4 4 4 1 2 3 2 1465 6 4 2 1 3 2 7 5 4 3 3 2927 3 1 3 4 3 5 971 399 2 4 6 3 3 1468 6 2 5 3 2 2 1 5 3 3 2 6 4 2 3 2 4 4 5 3 3 4 4 1 1 3 4 997 2 3 3 4 6 6 2 3 5 5 4 5 2 6 2 3 5 2 5 2 6 3 4 6 5 4 7 5 3 1 2769 4 4 2 6 3 5 4 10 5 2 3 3 3 4 2 3 34 4 7 6 3430 2 6 11 6 2 2 3 4 4 5 1 5 3 3 3 5 8 7 3 4 231 7 4 3 5 6 4 2 8 3 5 2 5 3 4 1 6 4 5 4 4 7 4 3 0 4 3 4 3 3 3 6 4 3 5 3 5 3 4 2 127 502 7 4 3 3 5 2 5 4 2 4 1 972 2 2 3 3 977 3 5 4 4 2 3 8 1985 2 6 5 1 4 3 5 3 6 500 3 6 2 5 4 5 1 139 1 2 3 2 3 3 3 3 4 3 5 1 2 7 4 2 0 1467 2 2 207 7 2 1 3 3 5 4 3 4 992 6 3 6 10 6 3 4 3 4 3 4 475 3 2 5 3 1486 3 4 9 3 1 1470 5 2 5 2 3 4 2 4 3 3 3 2 6 7 6 2 6 3 2 3 3 5 3 3 4 4 4 996 5 4 3 3 2 4 3 4 3 3 1 503 3 2 6 5 4 3 12 3 3 1 9 4 3 3 3 3 4 3 3 4 1014 6 4 3 2 4 6 4 3 2 1467 2 3 6 3 3 1981 3 4 3 4 102 2 4 4 4 3 3 5 2 3 3 7 2 2 4 6 5 4 4 3 5 3 2 4 6 4 3 6 7 3 3 3 2 499 3 5 10 2 500 8 2 4 3 3 5 3 6 5 5 1466 2 2 2 7 5 3 3 2 8 4 3 2 3 441 3 5 7 3 3 4 10 3 4 1 2 972 1 4 5 2 3 5 3 6 7 13 5 3 4 3 112 3 8 5 6 2436 355 4 2 5 2 2 3 5 3 4 8 3 6 108 5 5 5 3 3 5 4 6 4 5 5 2 5 3 3 1 3 4 4 2 3 1 5 20484 2 2 4 4 3 4 4 2 5 5 1 2 5 1 4 7 4 3 3 3 3 1 2 2 4 4 7 4 502 6 7 993 4 5 5 3 2 3 1468 1 7 7 261 6 972 3 5 5 3 5 2 0 12 498 4 2 4 2 3 5 2 6 4 1 4 3 4 2 4 4 6 2 2 6 5 4 3 4 7 2 2 5 4 5 4 5 5 2 6 1 3 3 5 5 2 2 4 1 5 11 5 5 4 4 1464 4 2 6 3 497 4 2 3 3 3 3 2 4 2 42 6 3 969 3 5 5 2 9 8 3 4 4 2 4 9 5 4 2 3 2 4 972 3 2 2 4 3 3 7 6 5 3 3 3 4 5 3 3 3 2 2 6 4 3 2 4 3 3 992 11 5 2 2 5 7 2 3 4 4 5 2 4 6 3 4 1465 5 3 3 3 6 8 5 3 7 5 4 9 3 4 5 3 5 5 5 3 5 2 3 3 4 7 4 1 3 3 8 4 14 2 2 3 3 3 1 4 1 5 3 3 2 9 9 4 3 5 3 499 1 1365 4 3 3 2 3 11 4 2 3 3 4 5 2 4 2 2 2 4 3 4 4 2 1 3 7 4 2 111 4 4 4 4 3 2 3 2 2 4 4 4 4 5 5 5 5 5 4 2433 5 2 3 2906 8 5 2 27 5 3 3 5 6 2 5 7 3 3 5 3 2 3 3 2 2 6 4 1 4 5 5 2 4 8 3 1468 1 3 4 3 5 2 4 1 4 5 4 2 11 8 3 3 970 4 5 4 4 2 2 4 3 3 3 3 5 4 5 3 2 4 251 2 6 7 4 972 4 3 4 1 2 6 4 4 3 2 4 5 5 975 5 2 2 1467 4 2 7 4 971 3 3 3 4 1 5 4 
+To predecode: 0
+Predecoding something: 0
+Predecode request dropped: 0
+sizeofblock_0 0
+sizeofblock_1 33800
+sizeofblock_2 45262
+sizeofblock_3 31518
+sizeofblock_4 18901
+sizeofblock_5 0
+sizeofblock_6 0
+sizeofblock_7 0
+sizeofblock_8 0
+Variant_0 Correct: 1612540 Incorrect: 0 Accuracy: 1
+Variant_1 Correct: 2088926 Incorrect: 0 Accuracy: 1
+Variant_2 Correct: 3638349 Incorrect: 6168 Accuracy: 0.998308
+Variant_3 Correct: 0 Incorrect: 0 Accuracy: -nan

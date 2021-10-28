@@ -1,0 +1,354 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 50000000
+Simulation Instructions: 50000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 6400 MT/s
+CPU 0 runs ./micro_traces/srv271.trace.gz
+.gz
+ITLB has LRU replacement policy
+DTLB has LRU replacement policy
+STLB has LRU replacement policy
+FDIP Prefetcher at L1I
+L1I has LRU replacement policy
+L1D has LRU replacement policy
+Initialize SRRIP state for L2C
+Initialize DRRIP state for LLC
+Heartbeat CPU 0 instructions: 10000001 cycles: 2798448 heartbeat IPC: 3.57341 cumulative IPC: 3.57341 (Simulation time: 0 hr 2 min 7 sec) 
+Heartbeat CPU 0 instructions: 20000001 cycles: 5594296 heartbeat IPC: 3.57673 cumulative IPC: 3.57507 (Simulation time: 0 hr 4 min 8 sec) 
+Heartbeat CPU 0 instructions: 30000002 cycles: 8390208 heartbeat IPC: 3.57665 cumulative IPC: 3.5756 (Simulation time: 0 hr 5 min 55 sec) 
+Heartbeat CPU 0 instructions: 40000003 cycles: 11186934 heartbeat IPC: 3.57561 cumulative IPC: 3.5756 (Simulation time: 0 hr 7 min 59 sec) 
+Heartbeat CPU 0 instructions: 50000003 cycles: 13983038 heartbeat IPC: 3.5764 cumulative IPC: 3.57576 (Simulation time: 0 hr 9 min 55 sec) 
+
+Warmup complete CPU 0 instructions: 50000003 cycles: 13983038 (Simulation time: 0 hr 9 min 55 sec) 
+
+Cycle: 20000000 FTQ IN: 58429866 FTQ occupancy: 20.5889 DECODE IN: 58429866 DECODE occupancy: 53.6053 ROB IN: 58429866 ROB occupancy: 319.813 ROB OUT: 58429698
+Heartbeat CPU 0 instructions: 60000000 cycles: 21124133 heartbeat IPC: 1.40035 cumulative IPC: 1.40035 (Simulation time: 0 hr 12 min 25 sec) 
+Heartbeat CPU 0 instructions: 70000003 cycles: 28294912 heartbeat IPC: 1.39455 cumulative IPC: 1.39744 (Simulation time: 0 hr 14 min 41 sec) 
+Cycle: 30000000 FTQ IN: 13969191 FTQ occupancy: 15.1772 DECODE IN: 13969191 DECODE occupancy: 38.8817 ROB IN: 13969191 ROB occupancy: 253.71 ROB OUT: 13969144
+Heartbeat CPU 0 instructions: 80000002 cycles: 35405869 heartbeat IPC: 1.40628 cumulative IPC: 1.40038 (Simulation time: 0 hr 17 min 1 sec) 
+Cycle: 40000000 FTQ IN: 14063973 FTQ occupancy: 15.0432 DECODE IN: 14063849 DECODE occupancy: 38.7567 ROB IN: 14063789 ROB occupancy: 253.417 ROB OUT: 14063655
+Heartbeat CPU 0 instructions: 90000001 cycles: 42592174 heartbeat IPC: 1.39154 cumulative IPC: 1.39815 (Simulation time: 0 hr 19 min 29 sec) 
+*** Reached end of trace for Core: 0 Repeating trace: ./micro_traces/srv271.trace.gz
+Heartbeat CPU 0 instructions: 100000002 cycles: 49698978 heartbeat IPC: 1.4071 cumulative IPC: 1.39994 (Simulation time: 0 hr 21 min 48 sec) 
+Finished CPU 0 instructions: 50000003 cycles: 35715941 cumulative IPC: 1.39994 (Simulation time: 0 hr 21 min 48 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 1.39994 instructions: 50000003 cycles: 35715941
+ Fetch stage stalled: 45.017  Sim cycles: 35715941 fetch stall cycle: 16078241
+ Empty decode stage: 24.3148  Sim cycles: 35715941 fetch stall cycle: 8684258
+ITLB TOTAL     ACCESS:    5835423  HIT:    5340514  MISS:     494909  HIT %:    91.5189  MISS %:    8.48112   MPKI: 9.89818
+ITLB LOAD TRANSLATION INSTRUCTION	ACCESS:    5702602  HIT:    5207693  MISS:     494909  HIT %:    91.3213  MISS %:    8.67865  MPKI: 9.89818
+ITLB TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:     132821  HIT:     132821  MISS:          0  HIT %:        100  MISS %:          0  MPKI: 0
+
+ITLB AVERAGE MISS LATENCY: 9.04523 cycles
+ITLB RQ	ACCESS:    7955781	FORWARD:          0	MERGED:    1635218	TO_CACHE:    6320563
+
+DTLB TOTAL     ACCESS:    8941307  HIT:    8471350  MISS:     469957  HIT %:     94.744  MISS %:    5.25602   MPKI: 9.39914
+DTLB LOAD TRANSLATION DATA	ACCESS:    8941307  HIT:    8471350  MISS:     469957  HIT %:     94.744  MISS %:    5.25602  MPKI: 9.39914
+
+DTLB AVERAGE MISS LATENCY: 9.30986 cycles
+DTLB RQ	ACCESS:   13315693	FORWARD:          0	MERGED:    4337938	TO_CACHE:    8977755
+
+STLB TOTAL     ACCESS:    1210911  HIT:    1209011  MISS:       1900  HIT %:    99.8431  MISS %:   0.156907   MPKI: 0.038
+STLB LOAD TRANSLATION INSTRUCTION	ACCESS:     494909  HIT:     494712  MISS:        197  HIT %:    99.9602  MISS %:  0.0398053  MPKI: 0.00394
+STLB LOAD TRANSLATION DATA	ACCESS:     469957  HIT:     468274  MISS:       1683  HIT %:    99.6419  MISS %:   0.358118  MPKI: 0.03366
+STLB TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:     246045  HIT:     246025  MISS:         20  HIT %:    99.9919  MISS %: 0.00812859  MPKI: 0.0004
+
+STLB AVERAGE MISS LATENCY: 72.6211 cycles
+STLB RQ	ACCESS:    1331570	FORWARD:          0	MERGED:     120616	TO_CACHE:    1210954
+
+STLB Hit, L1D data hit: 0
+STLB Hit, L2C data hit: 0
+STLB Hit, LLC data hit: 0
+STLB Hit, LLC data miss: 0
+STLB STLB hints to L2: 0
+L1D TOTAL     ACCESS:   13067302  HIT:   11949074  MISS:    1118228  HIT %:    91.4425  MISS %:    8.55745   MPKI: 22.3646
+L1D LOAD DATA	ACCESS:    6534400  HIT:    5795002  MISS:     739398  HIT %:    88.6845  MISS %:    11.3155  MPKI: 14.788
+L1D RFO DATA	ACCESS:    6206458  HIT:    5921585  MISS:     284873  HIT %:    95.4101  MISS %:    4.58994  MPKI: 5.69746
+L1D PREFETCH DATA	ACCESS:     326444  HIT:     232487  MISS:      93957  HIT %:     71.218  MISS %:     28.782  MPKI: 1.87914
+
+L1D PREFETCH  REQUESTED:     733808  ISSUED:     733808  USEFUL:      33415  USELESS:      68061
+L1D USEFUL LOAD PREFETCHES:      33415 PREFETCH ISSUED TO LOWER LEVEL:     101548  ACCURACY: 32.9056
+ TIMELY PREFETCHES:      33415 LATE PREFETCHES: 7528 DROPPED PREFETCHES: 15
+L1D AVERAGE MISS LATENCY: 217555 cycles
+L1D RQ	ACCESS:   10672296	FORWARD:          0	MERGED:    3937351	TO_CACHE:    6568347
+L1D WQ	ACCESS:    6946617	FORWARD:     167000	MERGED:     199271	TO_CACHE:    6747346
+L1D PQ	ACCESS:     367105	FORWARD:          0	MERGED:          0	TO_CACHE:     366703
+
+L1D UNIQUE REGIONS ACCESSED: 0
+L1D REGIONS CONFLICTS: 0
+L1D Cross Page Prefetch Requests: 6859
+L1D Same Page Prefetch Requests: 746276
+L1D ROI Sum of L1D PQ occupancy: 4655873
+L1D PREFETCHES PUSHED FROM L2C: 0
+L1I TOTAL     ACCESS:    7132104  HIT:    4365749  MISS:    2766355  HIT %:    61.2126  MISS %:    38.7874   MPKI: 55.3271
+L1I LOAD INSTRUCTION	ACCESS:    6458752  HIT:    3692397  MISS:    2766355  HIT %:    57.1689  MISS %:    42.8311  MPKI: 55.3271
+L1I PREFETCH INSTRUCTION	ACCESS:     673352  HIT:     673352  MISS:          0  HIT %:        100  MISS %:          0  MPKI: 0
+
+L1I PREFETCH  REQUESTED:    1627405  ISSUED:    1627405  USEFUL:          0  USELESS:          0
+L1I USEFUL LOAD PREFETCHES:          0 PREFETCH ISSUED TO LOWER LEVEL:          0  ACCURACY: -nan
+ TIMELY PREFETCHES:          0 LATE PREFETCHES: 0 DROPPED PREFETCHES: 0
+L1I AVERAGE MISS LATENCY: 17.0427 cycles
+L1I RQ	ACCESS:    9568715	FORWARD:          0	MERGED:    2813033	TO_CACHE:    6755682
+L1I PQ	ACCESS:    1627405	FORWARD:          0	MERGED:     427306	TO_CACHE:    1200099
+
+L1BTB TOTAL     ACCESS:    5671233  HIT:    2038421  MISS:    3632812  HIT %:    35.9432  MISS %:    64.0568   MPKI: 72.6562
+L1BTB BRANCH_DIRECT_JUMP	ACCESS:     548042  HIT:     144707  MISS:     403335	AVERAGE STALL: 63.8885
+L1BTB BRANCH_INDIRECT	ACCESS:     182488  HIT:      65654  MISS:     116834	AVERAGE STALL: 112.033
+L1BTB BRANCH_CONDITIONAL	ACCESS:    2700193  HIT:    1406589  MISS:    1293604	AVERAGE STALL: 90.2488
+L1BTB BRANCH_DIRECT_CALL	ACCESS:     947774  HIT:     107336  MISS:     840438	AVERAGE STALL: 77.1509
+L1BTB BRANCH_INDIRECT_CALL	ACCESS:     172484  HIT:      21916  MISS:     150568	AVERAGE STALL: 143.997
+L1BTB BRANCH_RETURN	ACCESS:    1120252  HIT:     292219  MISS:     828033	AVERAGE STALL: 50.1061
+L1BTB BRANCH_OTHER ACCESS:          0  HIT:          0  MISS:          0	AVERAGE STALL: -nan
+L1BTB TOTAL ROB OCCUPANCY AT BTB MISS: 2.37264
+
+L2BTB TOTAL     ACCESS:    3607561  HIT:    3549068  MISS:      58493  HIT %:    98.3786  MISS %:     1.6214   MPKI: 1.16986
+L2BTB BRANCH_DIRECT_JUMP	ACCESS:     399225  HIT:     395342  MISS:       3883	AVERAGE STALL: 63.8885
+L2BTB BRANCH_INDIRECT	ACCESS:     106567  HIT:     103970  MISS:       2597	AVERAGE STALL: 112.033
+L2BTB BRANCH_CONDITIONAL	ACCESS:    1293604  HIT:    1292386  MISS:       1218	AVERAGE STALL: 90.2488
+L2BTB BRANCH_DIRECT_CALL	ACCESS:     840438  HIT:     839092  MISS:       1346	AVERAGE STALL: 77.1509
+L2BTB BRANCH_INDIRECT_CALL	ACCESS:     141096  HIT:     131126  MISS:       9970	AVERAGE STALL: 143.997
+L2BTB BRANCH_RETURN	ACCESS:     826631  HIT:     787152  MISS:      39479	AVERAGE STALL: 50.1061
+L2BTB BRANCH_OTHER ACCESS:          0  HIT:          0  MISS:          0	AVERAGE STALL: -nan
+L2BTB TOTAL ROB OCCUPANCY AT BTB MISS: 147.357
+
+L2C TOTAL     ACCESS:    4490721  HIT:    4043436  MISS:     447285  HIT %:    90.0398  MISS %:     9.9602   MPKI: 8.9457
+L2C LOAD INSTRUCTION	ACCESS:    2766354  HIT:    2524728  MISS:     241626  HIT %:    91.2655  MISS %:    8.73446  MPKI: 4.83252
+L2C LOAD TRANSLATION INSTRUCTION	ACCESS:        226  HIT:         59  MISS:        167  HIT %:    26.1062  MISS %:    73.8938  MPKI: 0.00334
+L2C LOAD DATA	ACCESS:     731842  HIT:     661309  MISS:      70533  HIT %:    90.3623  MISS %:    9.63774  MPKI: 1.41066
+L2C RFO DATA	ACCESS:     284766  HIT:     235874  MISS:      48892  HIT %:    82.8308  MISS %:    17.1692  MPKI: 0.97784
+L2C PREFETCH DATA	ACCESS:     183884  HIT:     112340  MISS:      71544  HIT %:    61.0929  MISS %:    38.9071  MPKI: 1.43088
+L2C WRITEBACK DATA	ACCESS:     521853  HIT:     508611  MISS:      13242  HIT %:    97.4625  MISS %:     2.5375  MPKI: 0.26484
+L2C LOAD TRANSLATION DATA	ACCESS:       1749  HIT:        483  MISS:       1266  HIT %:    27.6158  MISS %:    72.3842  MPKI: 0.02532
+L2C TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         47  HIT:         32  MISS:         15  HIT %:    68.0851  MISS %:    31.9149  MPKI: 0.0003
+
+L2C PREFETCH  REQUESTED:      90044  ISSUED:      90044  USEFUL:       8227  USELESS:      63834
+L2C USEFUL LOAD PREFETCHES:       8227 PREFETCH ISSUED TO LOWER LEVEL:      72057  ACCURACY: 11.4174
+ TIMELY PREFETCHES:       8227 LATE PREFETCHES: 513 DROPPED PREFETCHES: 0
+L2C AVERAGE MISS LATENCY: 38.5997 cycles
+L2C RQ	ACCESS:    3785057	FORWARD:          0	MERGED:          0	TO_CACHE:    3784985
+L2C WQ	ACCESS:     521853	FORWARD:         72	MERGED:          0	TO_CACHE:     521853
+L2C PQ	ACCESS:     191592	FORWARD:          0	MERGED:       3527	TO_CACHE:     188065
+
+L2C Dense regions hint from L2: 0
+PSCL5 TOTAL     ACCESS:       3842  HIT:       1921  MISS:       1921  HIT %:         50  MISS %:         50   MPKI: 0.03842
+PSCL5 LOAD TRANSLATION INSTRUCTION	ACCESS:       3748  HIT:       1874  MISS:       1874  HIT %:         50  MISS %:         50  MPKI: 0.03748
+PSCL5 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:         94  HIT:         47  MISS:         47  HIT %:         50  MISS %:         50  MPKI: 0.00094
+
+
+PSCL4 TOTAL     ACCESS:       3706  HIT:       1849  MISS:       1857  HIT %:    49.8921  MISS %:    50.1079   MPKI: 0.03714
+PSCL4 LOAD TRANSLATION INSTRUCTION	ACCESS:       2386  HIT:       1809  MISS:        577  HIT %:    75.8173  MISS %:    24.1827  MPKI: 0.01154
+PSCL4 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:         49  HIT:         40  MISS:          9  HIT %:    81.6327  MISS %:    18.3673  MPKI: 0.00018
+PSCL4 LOAD TRANSLATION DATA	ACCESS:       1240  HIT:          0  MISS:       1240  HIT %:          0  MISS %:        100  MPKI: 0.0248
+PSCL4 TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         31  HIT:          0  MISS:         31  HIT %:          0  MISS %:        100  MPKI: 0.00062
+
+
+PSCL3 TOTAL     ACCESS:       3720  HIT:       1856  MISS:       1864  HIT %:    49.8925  MISS %:    50.1075   MPKI: 0.03728
+PSCL3 LOAD TRANSLATION INSTRUCTION	ACCESS:       2393  HIT:       1816  MISS:        577  HIT %:     75.888  MISS %:     24.112  MPKI: 0.01154
+PSCL3 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:         49  HIT:         40  MISS:          9  HIT %:    81.6327  MISS %:    18.3673  MPKI: 0.00018
+PSCL3 LOAD TRANSLATION DATA	ACCESS:       1247  HIT:          0  MISS:       1247  HIT %:          0  MISS %:        100  MPKI: 0.02494
+PSCL3 TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         31  HIT:          0  MISS:         31  HIT %:          0  MISS %:        100  MPKI: 0.00062
+
+
+PSCL2 TOTAL     ACCESS:       3753  HIT:       1833  MISS:       1920  HIT %:    48.8409  MISS %:    51.1591   MPKI: 0.0384
+PSCL2 LOAD TRANSLATION INSTRUCTION	ACCESS:       1983  HIT:       1786  MISS:        197  HIT %:    90.0656  MISS %:    9.93444  MPKI: 0.00394
+PSCL2 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:         47  HIT:         47  MISS:          0  HIT %:        100  MISS %:          0  MPKI: 0
+PSCL2 LOAD TRANSLATION DATA	ACCESS:       1676  HIT:          0  MISS:       1676  HIT %:          0  MISS %:        100  MPKI: 0.03352
+PSCL2 TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         47  HIT:          0  MISS:         47  HIT %:          0  MISS %:        100  MPKI: 0.00094
+
+
+LLC TOTAL     ACCESS:     505168  HIT:     478166  MISS:      27002  HIT %:    94.6548  MISS %:    5.34515   MPKI: 0.54004
+LLC LOAD INSTRUCTION	ACCESS:     241626  HIT:     241040  MISS:        586  HIT %:    99.7575  MISS %:   0.242524  MPKI: 0.01172
+LLC LOAD TRANSLATION INSTRUCTION	ACCESS:        167  HIT:        152  MISS:         15  HIT %:     91.018  MISS %:    8.98204  MPKI: 0.0003
+LLC LOAD DATA	ACCESS:      70056  HIT:      66631  MISS:       3425  HIT %:    95.1111  MISS %:    4.88895  MPKI: 0.0685
+LLC RFO DATA	ACCESS:      48848  HIT:      35942  MISS:      12906  HIT %:    73.5793  MISS %:    26.4207  MPKI: 0.25812
+LLC PREFETCH DATA	ACCESS:      72057  HIT:      62348  MISS:       9709  HIT %:    86.5259  MISS %:    13.4741  MPKI: 0.19418
+LLC WRITEBACK DATA	ACCESS:      71133  HIT:      70844  MISS:        289  HIT %:    99.5937  MISS %:   0.406281  MPKI: 0.00578
+LLC LOAD TRANSLATION DATA	ACCESS:       1266  HIT:       1195  MISS:         71  HIT %:    94.3918  MISS %:    5.60821  MPKI: 0.00142
+LLC TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         15  HIT:         14  MISS:          1  HIT %:    93.3333  MISS %:    6.66667  MPKI: 2e-05
+
+LLC AVERAGE MISS LATENCY: 155.745 cycles
+LLC RQ	ACCESS:     361987	FORWARD:          0	MERGED:          0	TO_CACHE:     361979
+LLC WQ	ACCESS:      71133	FORWARD:          8	MERGED:          0	TO_CACHE:      71133
+LLC PQ	ACCESS:      72057	FORWARD:          0	MERGED:          0	TO_CACHE:      72057
+
+LLC Dense regions hint to LLC: 0
+
+RAW hits: 1958376
+Loads Generated: 12630672
+Loads sent to L1D: 10672296
+Stores Generated: 6946601
+Stores sent to L1D: 6946617
+Major fault: 0 Minor fault: 2569
+Allocated PAGES: 2569
+
+stream: 
+stream:times selected: 1183225
+stream:pref_filled: 121564
+stream:pref_useful: 24454
+stream:pref_late: 6707
+stream:misses: 7900
+stream:misses_by_poll: 0
+
+CS: 
+CS:times selected: 176872
+CS:pref_filled: 59971
+CS:pref_useful: 36525
+CS:pref_late: 6498
+CS:misses: 15513
+CS:misses_by_poll: 4
+
+CPLX: 
+CPLX:times selected: 1005141
+CPLX:pref_filled: 19300
+CPLX:pref_useful: 4631
+CPLX:pref_late: 3255
+CPLX:misses: 93695
+CPLX:misses_by_poll: 2
+
+NL_L1: 
+NL:times selected: 20436
+NL:pref_filled: 779
+NL:pref_useful: 350
+NL:pref_late: 236
+NL:misses: 1760
+NL:misses_by_poll: 0
+
+total selections: 2385674
+total_filled: 93957
+total_useful: 33415
+total_late: 18061
+total_polluted: 6
+total_misses_after_warmup: 773346
+conflicts: 5514839
+
+test: 114376
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:       9955  ROW_BUFFER_MISS:      16751
+ DBUS_CONGESTED:         14
+ WQ ROW_BUFFER_HIT:       1225  ROW_BUFFER_MISS:      11624  FULL:          0
+
+ AVG_CONGESTED_CYCLE: 5
+
+CPU 0 Branch Prediction Accuracy: 99.8271% MPKI: 0.3164 Average ROB Occupancy at Mispredict: 196.437
+Branch types
+NOT_BRANCH: 40847909 81.6958%
+BRANCH_DIRECT_JUMP: 548042 1.09608%
+BRANCH_INDIRECT: 182488 0.364976%
+BRANCH_CONDITIONAL: 6180902 12.3618%
+BRANCH_DIRECT_CALL: 947774 1.89555%
+BRANCH_INDIRECT_CALL: 172484 0.344968%
+BRANCH_RETURN: 1120252 2.2405%
+BRANCH_OTHER: 0 0%
+
+DRAM PAGES: 1048576
+Allocated PAGES: 2569
+Average_ROB_Occupancy: 254.908
+Average_Decode_Occupancy: 38.7628
+Average_FTQ_Occupancy: 15.1
+Indirect max targets: 14 Average targets: 1.17572
+Branch_type:  BRANCH_DIRECT_JUMP:  Count Percentage: 3.79161 5.76312 4.06002 8.28967 2.4059 6.00671 2.54917 67.1338 
+Branch_type:  BRANCH_INDIRECT:  Count Percentage: 11.7553 3.42045 2.52459 9.69829 3.3447 2.80872 2.94353 63.5045 
+Branch_type:  BRANCH_CONDITIONAL:  Count Percentage: 21.185 3.19296 1.57329 5.61653 1.74841 4.01243 6.13137 56.54 
+Branch_type:  BRANCH_DIRECT_CALL:  Count Percentage: 0.388012 1.7793 0.740769 4.21864 2.86261 2.72889 4.27718 83.0046 
+Branch_type:  BRANCH_INDIRECT_CALL:  Count Percentage: 9.54532 0 2.9911 5.2591 1.14229 2.03075 3.84899 75.1824 
+Branch_type:  BRANCH_RETURN:  Count Percentage: 3.94191 1.9997 1.48821 6.19417 2.96022 3.84986 6.97672 72.5892 
+Branch_type:  BRANCH_DIRECT_JUMP:  Total Count: 41574 63191 44517 90894 26380 65862 27951 736104 
+Branch_type:  BRANCH_INDIRECT:  Total Count: 42987 12508 9232 35465 12231 10271 10764 232225 
+Branch_type:  BRANCH_CONDITIONAL:  Total Count: 2618201 394609 194438 694132 216081 495885 757759 6987618 
+Branch_type:  BRANCH_DIRECT_CALL:  Total Count: 7330 33613 13994 79695 54078 51552 80801 1568054 
+Branch_type:  BRANCH_INDIRECT_CALL:  Total Count: 32790 0 10275 18066 3924 6976 13222 258266 
+Branch_type:  BRANCH_RETURN:  Total Count: 88042 44663 33239 138346 66116 85986 155824 1621270 
+Number of unique branch instructions: 10506
+Upper 32 bits: 
+aaaa
+ffff
+ffff0000
+Unique upper 32 bits: 3
+Unique upper 36 bits: 3
+Unique upper 40 bits: 5
+Unique upper 44 bits: 32
+Unique upper 48 bits: 157
+Offset_3 4349
+Offset_4 251
+Offset_5 470
+Offset_6 530
+Offset_7 619
+Offset_8 561
+Offset_9 501
+Offset_10 411
+Offset_11 331
+Offset_12 305
+Offset_13 234
+Offset_14 243
+Offset_15 196
+Offset_16 219
+Offset_17 162
+Offset_18 144
+Offset_19 255
+Offset_20 144
+Offset_21 239
+Offset_22 404
+Offset_23 241
+Offset_24 338
+Offset_25 117
+Offset_47 92
+Offset_64 2
+decode_dispatch_called: 26524402 74.2649
+Dispatch_width: 0 14290041 53.8751 40.0103
+Dispatch_width: 1 1051938 3.96593 2.94529
+Dispatch_width: 2 868217 3.27328 2.43089
+Dispatch_width: 3 504774 1.90306 1.4133
+Dispatch_width: 4 6526657 24.6062 18.2738
+Dispatch_width: 5 105969 0.399515 0.296699
+Dispatch_width: 6 3176806 11.9769 8.89464
+Empty_decode_cycles: 9191539 25.7351
+ROB_full_cycles: 10477983 29.337
+Starvation_cycles_per_kilo_instr: 220.612
+Starvation_cycles_per_kilo_instr_3: 154.285
+Starvation_cycles_per_kilo_instr_0: 130.036
+Branch_type_1  (3,1)  (4,7)  (5,38)  (6,73)  (7,122)  (8,146)  (9,133)  (10,107)  (11,72)  (12,47)  (13,11)  (14,2)  (15,3)  (16,4)  (18,1)  (19,5)  (20,2)  (21,1)  (22,3)  (23,2)  (24,10)  (25,12) 
+Branch_type_2  (3,1)  (4,1)  (5,1)  (8,4)  (9,4)  (10,1)  (12,1)  (13,1)  (14,1)  (16,3)  (17,2)  (20,2)  (21,2)  (23,5)  (24,1)  (47,41) 
+Branch_type_3  (3,4347)  (4,243)  (5,427)  (6,441)  (7,465)  (8,346)  (9,271)  (10,163)  (11,124)  (12,54)  (13,10)  (64,2) 
+Branch_type_4  (6,3)  (7,8)  (8,26)  (9,55)  (10,67)  (11,69)  (12,112)  (13,99)  (14,109)  (15,92)  (16,96)  (17,75)  (18,61)  (19,122)  (20,73)  (21,127)  (22,213)  (23,136)  (24,194)  (25,101) 
+Branch_type_5  (8,3)  (9,1)  (10,4)  (11,5)  (12,3)  (13,14)  (14,16)  (15,11)  (16,22)  (17,11)  (18,23)  (19,14)  (20,12)  (21,13)  (22,43)  (23,26)  (24,37) 
+Branch_type_6  (5,4)  (6,13)  (7,24)  (8,36)  (9,37)  (10,69)  (11,61)  (12,88)  (13,99)  (14,115)  (15,90)  (16,94)  (17,74)  (18,59)  (19,114)  (20,55)  (21,96)  (22,145)  (23,72)  (24,96)  (25,4)  (47,51) 
+aaaaab1fc620: 2ac9e77e 2aca717c 2aca8eff 2acaf6bc 2acaf9aa 2acaf9f1 2acb1abc 2acb1b7f 2acd4e22 2acdb712 2acf5f9e 2ad0ef44 2ad3f15c 2ad414e6 2ad60e42 2ad8609c 2ad99830 2ada35cc 2ada4676 2ada6612 2adf183e 2adf30e5 2adf5602 2adf785c 2ae11572 2aeb2dcf 2aee101b 2aee1ae1 2b156a8c 2b156b61 2b156bea 2b167f35 2b177656 2b17feec 2b1a3e5a 
+aaaaab1fc640: 2ac9ec07 2aca656e 2aca801d 2acaea11 2acaee73 2acb13ee 2acb1470 2acd462b 2ad0ef5d 2ad3f3fe 2ad86e9b 2ada1641 2ada4115 2ada6638 2adf30d4 2ae12e57 2aee1033 2b1693ab 2b16948c 2b169491 2b17d915 2b17fa85 2b17fccd 
+aaaaab1fcb00: 2acf2d72 2acf3734 2acf604c 2acfa5b7 2ad397b5 2ad3b800 2ae8af7d 2ae8aff0 2ae9aaba 2aea9fc6 2aeaa358 2aee910b 2aee91cf 2aee928e 2aee92e4 2af6fe87 2af70dfe 2b16850c 2b16c4a2 2b1765f4 2b178094 2b17d925 2b17db06 2b17ec8f 
+aaaaab1fcb10: 2acf2d95 2acf3758 2acf6052 2acfa5f4 2ad397c3 2ad3b81c 2ae8af88 2ae8affe 2ae9aacf 2aeaa017 2aeaa36d 2aee9114 2aee91d8 2aee934d 2aee9353 2af6fe8c 2af70e22 2b168526 2b16c542 2b176609 2b1780a3 2b17d95d 2b17db44 2b17ecac 
+aaaaac68f310: 2ac9ec8c 2ac9fb44 2ac9fbd2 2aca59ab 2acac04c 2acaf6e0 2acaf6ec 2acaf6f9 2acaf700 2acaf708 2acf2d90 2ad3cfbd 2ad3cfc4 2ad3d000 2ad3f35f 2ad4955d 2ad49571 2ad4f3f2 2ad4f400 2ad5f240 2ad5f37c 2ad5f86a 2ad5f86f 2ad5f880 2ad5fc0d 2ad5fc14 2ad5fc21 2ad5fe1b 2ad873bb 2ad873e3 2ad8a6b2 2ad9086e 2ad93096 2ad9bbb2 2ada152c 2ada1554 2ada3332 2ada5522 2adf3130 2adf313c 2adf3a3f 2adf3bd9 2adf5788 2adf7a8d 2ae07f6b 2ae0857a 2ae0857e 2ae08630 2ae08634 2ae08637 2ae08642 2ae0866f 2ae086e4 2ae086ec 2ae08717 2ae0871b 2aee0170 2aee1d38 2aee75f4 2aee7662 2aee85ca 2aee85e4 2aee8eef 2af70b84 2af74e8f 2b17d843 
+aaaaac690ef0: 2aca598b 2acb111b 2acb175f 2acb1772 2acbfaf4 2acbfb00 2acf374f 2acf6d43 2acfa5c8 2ad3baf1 2ad3d4ac 2ad3d4b8 2ad3f1cf 2ad486b2 2ad5a59b 2ad5fc64 2ad5fcf9 2ad6121c 2ad906e9 2ad907bf 2ad9bada 2ada16ce 2ada1ad5 2ada43df 2ada64c0 2ada72ee 2adeb71a 2adf3bcb 2adf7a38 2adf7c6a 2adf8872 2adf8880 2adf9959 2adf9abe 2ae07f78 2ae08503 2ae08754 2ae12e80 2aea3bea 2aecb509 2aee00b0 2aee2bdd 2aee5467 2aee5601 2aee8f20 2af703fd 2af7048b 2af74e74 
+Unique trigger count: 
+1 10005
+2 548
+3 84
+4 32
+5 14
+6 11
+7 7
+8 2
+9 2
+10 2
+11 1
+12 1
+13 2
+14 2
+16 2
+19 2
+23 1
+24 2
+35 1
+48 1
+66 1
+BTB PER SET UNIQUE ADDR: 0 1 1 1 0 0 0 0 0 0 1 0 1 0 0 1 1 0 0 1 0 1 1 1 0 1 0 1 1 0 1 1 1 0 1 0 0 1 4 0 1 0 1 2 1 1 1 0 1 1 0 0 1 0 0 1 1 2 0 0 0 0 0 1 0 1 0 0 0 1 1 0 1 0 0 0 1 2 1 1 1 0 1 1 1 2 0 1 3 1 1 3 1 1 1 0 0 0 0 0 0 2 1 1 1 1 0 0 0 0 1 1 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 2 0 1 0 0 1 1 0 0 0 0 1 0 0 1 0 2 1 1 1 1 1 0 4 1 0 1 1 0 1 0 0 0 0 0 1 2 1 0 0 2 2 1 0 1 0 0 0 0 1 0 0 0 0 1 0 1 1 1 0 0 0 2 0 1 2 0 1 1 0 0 1 0 1 0 0 0 0 0 1 1 0 0 1 1 1 1 0 0 1 0 0 0 1 1 1 1 0 0 0 0 2 1 0 0 0 0 2 1 0 0 1 1 0 2 1 3 2 0 0 1 0 1 0 0 1 0 3 1 0 0 0 2 1 1 0 2 3 1 0 1 0 0 0 0 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 2 0 0 1 0 1 0 1 0 2 0 0 0 1 0 0 0 2 0 1 1 0 2 0 0 0 0 0 1 1 2 0 0 0 0 1 0 1 0 1 0 2 0 2 0 0 0 0 1 1 0 1 1 0 2 1 2 1 0 1 0 2 0 0 2 1 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 1 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 1 1 0 0 0 0 1 1 0 0 0 0 0 1 1 0 3 0 0 1 1 0 1 2 1 3 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 1 1 0 1 0 2 1 2 0 1 1 0 0 2 0 1 2 0 0 1 1 2 0 0 1 1 0 0 0 0 2 0 0 1 0 1 1 2 0 0 1 0 2 0 1 0 0 1 0 0 0 0 0 0 0 0 1 1 1 2 2 2 0 0 1 1 3 1 0 1 1 3 1 1 1 1 2 2 1 0 2 1 1 0 0 3 0 0 2 1 1 0 1 3 1 0 1 1 0 0 1 0 1 1 0 2 1 2 0 0 0 0 0 0 0 2 3 1 0 1 1 0 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 2 0 2 0 1 0 0 1 0 1 0 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0 2 0 1 2 0 0 0 0 2 0 0 2 0 2 0 1 0 1 1 0 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 0 0 1 1 1 0 1 1 1 1 0 0 0 1 1 1 0 1 1 0 1 1 0 1 0 1 0 0 0 1 1 1 0 0 1 0 1 0 1 1 1 0 1 0 1 0 1 0 0 0 0 0 0 1 1 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 3 1 1 0 1 1 1 0 1 0 1 0 1 1 0 0 1 0 0 1 1 2 0 0 1 0 0 0 0 0 1 0 0 0 2 0 0 0 0 1 3 0 1 1 1 0 0 0 1 1 1 2 0 0 1 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 0 0 2 0 1 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 1 0 0 0 0 1 0 1 0 2 1 0 1 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 1 0 1 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 1 0 0 0 2 0 1 0 0 1 0 0 0 0 0 1 0 0 1 0 0 1 0 0 0 0 0 1 0 2 0 0 2 0 1 1 0 1 4 1 0 1 0 0 0 0 1 0 1 3 0 0 2 1 1 2 1 0 0 2 2 0 2 1 0 0 1 0 0 1 0 2 0 0 1 0 1 1 2 0 0 0 0 0 1 0 0 0 1 2 0 1 1 1 4 2 0 0 0 1 1 1 3 2 1 1 1 0 0 1 1 0 0 0 0 2 0 1 3 0 2 3 0 1 0 2 1 1 2 1 1 0 0 0 0 0 2 0 1 1 2 0 1 3 0 2 0 0 3 0 0 1 0 0 0 1 1 3 1 2 0 2 0 2 1 2 1 0 2 0 0 1 0 2 1 0 1 1 1 1 0 1 0 2 1 1 1 1 1 0 1 2 1 1 1 0 0 1 1 2 1 1 1 1 1 0 2 1 0 0 1 0 0 0 1 0 1 0 0 2 1 2 0 2 1 0 1 0 1 1 0 0 0 0 0 3 0 1 1 1 0 1 0 0 1 0 3 0 0 1 2 4 2 1 0 3 4 0 2 0 0 0 0 1 1 0 1 0 2 3 1 0 0 0 2 1 0 1 0 0 0 2 1 3 0 2 0 1 0 1 2 3 3 0 5 0 0 0 1 1 2 0 2 1 1 1 0 0 0 1 1 1 0 1 1 2 2 0 2 1 0 2 2 2 1 1 0 1 0 0 1 3 4 1 1 1 0 1 2 1 2 0 0 1 1 0 5 2 1 0 0 0 1 1 0 1 1 0 0 1 2 2 0 0 2 0 0 1 0 1 1 0 1 0 0 1 2 0 2 1 3 1 1 1 1 0 1 1 0 2 1 0 0 2 0 1 2 0 0 0 0 1 0 1 0 1 0 2 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 2 1 0 1 0 0 0 1 2 1 1 1 1 0 2 0 2 2 0 1 0 0 1 1 2 1 1 1 0 1 1 0 0 1 2 0 1 1 0 1 0 0 1 1 1 1 1 1 0 4 1 1 1 0 0 1 3 0 1 0 2 0 1 2 0 0 0 0 1 0 0 0 0 0 1 1 1 0 1 0 0 1 0 1 0 0 0 0 1 1 0 0 0 0 1 1 1 3 1 1 0 1 1 1 0 1 0 0 3 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 1 0 2 0 1 0 2 0 1 0 0 2 0 0 2 1 1 1 1 0 1 1 0 0 2 0 1 1 1 1 0 0 1 0 2 1 0 0 2 1 0 1 0 2 1 1 1 1 0 1 1 1 0 1 1 0 1 0 2 0 1 0 0 0 0 0 0 1 1 0 1 2 1 1 0 0 1 0 0 1 0 0 0 1 1 0 0 1 1 1 1 0 0 1 1 3 1 0 0 1 2 0 0 0 3 1 2 0 2 0 2 1 0 1 1 2 3 0 1 0 2 1 0 5 2 2 1 2 3 0 0 2 0 1 1 0 1 0 1 0 0 1 0 1 2 0 0 0 1 1 2 1 3 0 0 0 3 0 0 2 1 0 0 0 0 3 0 1 0 2 1 0 1 2 1 1 1 1 1 1 1 0 1 0 0 0 1 1 1 2 0 0 1 1 0 1 1 0 0 1 2 0 0 1 0 0 0 2 1 0 0 2 1 0 0 0 0 1 0 0 1 1 2 1 1 1 4 0 1 3 3 2 2 1 0 2 0 0 1 1 0 0 0 0 1 1 2 0 0 1 1 1 1 0 0 0 0 1 2 1 1 1 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 2 0 2 1 0 0 0 0 0 2 0 0 0 0 0 0 1 0 3 0 1 1 0 0 1 1 0 0 0 0 0 0 0 0 2 1 1 0 1 0 0 1 1 0 0 4 0 0 0 0 1 1 0 0 2 1 3 0 0 1 0 2 1 1 2 0 1 0 3 0 2 0 1 0 1 0 1 1 0 0 1 1 0 0 0 0 1 1 1 0 1 1 1 1 1 0 0 0 0 1 1 0 0 0 0 0 0 2 2 2 0 0 0 1 0 0 0 0 0 1 1 0 0 1 0 0 1 1 0 1 2 0 0 0 0 1 1 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 1 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 2 2 1 0 0 1 0 0 0 0 0 1 0 2 0 2 0 1 2 4 0 0 0 0 1 1 2 0 0 0 1 1 0 0 0 0 1 3 1 0 1 0 0 0 0 0 2 0 0 1 0 0 0 1 0 0 0 1 2 0 0 0 2 0 0 0 1 1 0 0 0 2 0 1 0 2 0 0 0 0 0 0 2 0 1 0 1 0 2 0 1 1 1 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 1 1 0 0 0 1 2 1 1 0 1 0 1 1 1 0 0 1 2 0 0 1 0 1 3 0 1 0 0 1 0 0 1 2 1 0 1 2 1 1 0 2 1 1 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 0 1 0 0 1 0 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 1 1 1 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0 2 1 0 1 0 0 0 0 0 1 3 1 1 0 1 1 2 1 2 1 0 0 2 0 1 1 0 1 1 0 2 1 1 1 1 1 2 0 3 0 2 1 3 3 2 2 1 2 2 0 3 0 0 0 1 0 0 1 1 0 3 0 1 1 1 0 1 1 0 0 1 1 0 2 2 1 1 2 1 1 1 1 1 1 1 0 3 1 0 2 2 0 2 2 2 1 0 1 3 2 2 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 1 1 2 2 0 1 1 2 0 1 0 0 0 1 0 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 1 1 0 2 0 1 0 0 0 0 2 0 1 2 0 1 0 1 0 0 0 0 0 2 0 1 0 1 2 2 0 1 0 1 2 2 3 0 0 0 3 1 1 1 0 0 2 0 1 2 0 0 1 0 0 0 0 1 0 0 0 1 2 3 0 0 1 1 1 2 5 2 1 2 0 0 0 1 0 1 2 1 2 3 2 0 1 0 1 0 0 0 1 3 1 1 1 1 0 3 1 0 1 2 1 1 0 2 0 3 2 1 0 0 1 2 0 1 1 0 0 0 0 0 2 1 0 0 0 0 2 0 2 1 1 2 2 0 1 0 0 1 1 1 2 1 0 1 2 0 1 2 0 2 1 0 0 0 0 1 0 1 1 1 2 0 0 1 0 1 0 1 1 2 1 0 1 2 1 0 2 1 1 2 1 3 1 2 0 0 2 3 0 0 0 2 3 0 1 2 0 1 0 0 1 1 0 1 0 2 1 0 2 0 2 1 1 0 1 1 0 0 0 1 0 1 1 1 1 0 0 0 3 0 1 0 1 0 1 1 3 0 0 0 3 0 2 1 1 0 0 1 1 0 0 2 1 1 1 0 1 0 0 1 1 1 0 1 1 0 0 1 1 0 0 0 1 1 0 0 0 1 1 0 0 1 1 0 1 0 0 0 0 0 0 2 2 0 1 1 1 0 0 0 0 0 2 2 1 1 3 0 0 2 0 2 0 2 0 4 2 3 3 1 2 1 0 0 2 0 0 0 0 0 2 0 0 0 0 0 2 2 0 0 2 1 1 1 0 1 2 1 1 2 1 3 4 1 1 1 0 0 0 1 0 0 1 1 1 0 0 1 1 0 0 0 0 1 0 1 0 0 1 0 1 3 2 1 2 0 1 1 4 0 0 1 2 0 0 1 1 3 0 0 2 1 0 0 1 1 1 0 1 1 0 3 0 3 0 0 2 0 1 0 1 3 0 1 0 1 1 3 1 0 1 5 0 0 0 1 0 0 0 1 1 0 1 1 0 2 2 0 1 0 2 2 2 1 0 1 1 1 1 1 2 1 0 1 0 0 2 0 2 1 0 1 2 0 0 0 1 0 3 1 1 3 1 1 1 0 1 0 1 2 0 2 1 0 0 1 1 0 0 3 3 0 0 0 1 0 1 0 1 1 1 2 0 0 0 2 1 2 1 1 0 1 1 0 0 1 0 1 0 1 1 0 1 0 0 0 1 1 1 0 0 1 1 2 0 2 0 1 1 0 0 0 1 0 1 1 1 1 1 1 2 0 2 0 1 2 0 0 2 0 0 0 1 1 3 0 4 0 0 1 2 1 3 0 1 0 2 2 1 0 0 0 0 2 2 0 3 2 1 2 2 1 0 1 2 3 0 0 0 0 0 0 0 0 0 3 1 1 2 1 2 1 2 1 1 2 1 0 2 0 1 0 0 2 0 1 0 1 1 1 0 0 1 2 3 1 0 2 3 2 1 1 2 1 1 2 1 0 0 0 1 2 1 1 1 3 0 0 2 1 1 0 2 2 1 0 1 1 0 0 1 1 0 1 1 0 2 0 1 2 0 2 1 0 0 3 1 1 0 1 0 1 0 1 0 1 1 0 0 2 1 0 1 2 0 0 0 1 1 0 1 0 1 1 1 2 1 1 3 0 0 0 0 0 0 0 1 2 1 1 1 0 0 1 1 1 3 2 0 0 0 2 0 0 1 1 1 1 1 1 1 0 1 0 2 0 1 0 2 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 3 1 0 1 0 3 0 0 2 0 0 3 1 1 0 0 1 0 1 1 0 0 0 0 0 1 0 1 1 1 0 2 0 2 0 4 1 1 1 1 1 1 3 1 0 3 0 1 1 1 1 1 1 1 0 1 1 1 1 2 1 0 1 0 0 1 0 0 1 1 1 1 1 1 1 1 1 2 0 1 0 1 1 2 0 2 0 1 0 1 1 1 0 0 0 1 1 1 1 0 1 0 2 1 0 0 2 0 1 1 0 1 1 2 0 3 0 3 1 1 1 1 2 0 0 1 0 1 0 1 0 1 0 1 0 1 2 1 1 1 0 1 2 0 2 1 0 0 1 1 0 1 0 0 0 1 0 1 0 1 0 1 0 0 1 2 1 1 0 1 1 0 1 0 0 2 0 2 2 4 0 0 1 0 1 1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 1 0 0 1 1 0 1 1 0 0 1 1 1 1 1 1 0 2 0 0 0 0 1 2 0 1 1 1 1 1 0 1 0 1 2 1 1 0 0 1 1 3 1 0 1 0 1 3 0 1 0 1 0 0 1 2 0 2 0 0 0 0 2 1 0 2 0 0 0 2 4 1 1 1 0 1 1 0 1 0 0 0 0 0 1 0 1 0 0 0 2 0 0 0 0 0 1 0 0 0 0 1 0 0 1 2 1 0 0 2 0 2 0 0 0 0 1 0 0 2 1 0 0 0 0 0 0 0 0 0 1 1 1 0 2 0 1 2 1 1 0 0 0 2 0 3 1 2 1 0 2 0 0 1 0 1 0 2 0 2 0 1 0 1 0 2 3 0 0 1 0 0 1 1 0 0 0 2 1 0 0 0 1 1 1 2 1 3 0 0 3 1 3 1 1 1 0 2 2 2 1 1 1 2 0 1 0 1 0 2 1 0 1 1 1 2 0 2 1 4 0 0 1 1 1 3 1 1 0 3 0 0 1 2 0 0 0 1 3 1 0 0 0 2 2 1 1 1 4 0 1 1 1 4 0 0 0 1 1 2 1 0 1 1 1 1 1 1 1 0 1 1 1 1 0 1 0 2 1 1 0 2 1 0 2 1 0 1 1 1 0 1 1 1 1 1 1 3 1 1 2 1 0 1 0 0 0 0 2 1 0 0 0 1 1 0 0 1 1 1 1 1 0 2 0 3 1 1 0 0 1 0 1 2 1 0 1 1 1 1 1 0 0 0 0 0 0 1 0 0 2 0 0 0 1 2 0 1 0 1 1 1 1 1 0 1 2 1 1 1 1 1 1 0 0 0 0 1 1 1 2 0 1 1 0 0 1 1 0 2 2 1 0 0 2 0 2 0 1 1 1 0 2 1 0 0 0 0 0 0 1 0 2 3 0 0 0 0 2 1 0 1 2 1 1 0 0 0 0 1 0 0 1 0 2 0 2 0 0 1 1 1 0 1 0 0 1 0 0 0 1 0 0 2 1 0 0 1 4 0 2 1 1 1 0 1 0 1 1 1 2 0 0 2 0 0 1 1 0 0 2 0 1 0 2 0 0 0 1 0 0 0 0 0 1 1 1 1 0 0 0 2 0 0 0 0 1 0 0 0 2 1 0 1 1 1 0 1 0 1 0 0 0 1 1 0 0 2 0 0 1 1 0 0 0 0 0 1 1 1 1 0 1 1 2 1 1 0 0 0 1 0 0 1 1 0 1 0 0 1 0 1 0 1 1 1 2 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 2 1 1 1 0 1 1 0 1 2 0 1 0 2 1 0 0 0 0 0 0 1 0 1 2 0 1 1 1 0 0 1 0 2 0 1 1 0 0 0 0 0 0 1 2 1 1 1 2 0 0 1 1 1 1 3 0 1 2 3 0 0 2 0 1 2 0 0 1 1 1 1 0 2 1 0 1 0 1 1 0 1 0 3 1 0 0 1 1 0 0 1 0 0 1 1 0 1 1 1 1 0 0 0 0 0 2 0 1 0 1 1 1 2 1 2 1 1 1 1 2 0 0 1 0 2 1 0 0 0 3 1 3 0 0 0 3 0 0 0 0 0 0 1 1 1 0 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1 0 0 1 2 0 0 0 0 0 2 2 0 1 1 1 0 0 2 0 0 1 1 1 1 0 0 1 1 3 0 1 0 0 1 0 0 1 1 1 1 0 0 0 1 1 1 1 1 0 1 1 1 1 0 2 0 0 2 0 0 0 2 2 1 0 0 1 1 3 0 1 1 1 0 0 1 2 1 1 1 1 2 2 1 0 3 4 0 2 1 4 1 0 2 1 1 1 4 0 0 0 1 0 3 2 0 1 3 0 1 2 1 1 2 1 0 1 3 0 1 3 0 1 2 1 1 1 1 3 0 0 1 3 1 1 2 1 2 1 0 2 2 2 0 1 1 1 1 1 2 2 0 1 0 1 1 0 0 1 1 2 3 2 0 0 0 1 2 2 1 1 2 0 2 1 0 0 2 1 1 0 0 0 0 2 2 0 1 3 0 1 2 1 1 1 0 1 0 3 1 1 3 5 2 2 1 2 0 1 1 2 1 0 0 1 0 0 1 0 0 2 0 1 0 0 0 1 0 0 0 0 1 1 0 1 1 0 1 1 0 0 0 0 2 1 0 2 2 0 1 4 3 1 2 1 1 2 0 1 1 0 0 0 1 3 1 1 1 2 1 0 1 1 0 0 2 1 2 2 2 1 2 1 2 0 1 2 0 1 1 2 2 1 1 2 1 1 0 3 1 1 2 1 1 1 2 2 1 1 1 0 0 1 2 0 1 2 0 0 1 1 2 0 1 1 2 1 2 3 3 1 1 2 2 1 0 1 1 1 0 1 1 2 2 0 2 0 2 0 0 3 0 1 2 2 1 1 2 2 0 0 0 0 1 2 2 0 1 0 2 1 1 2 0 1 2 0 0 1 0 0 0 0 2 2 1 1 0 0 0 1 1 2 0 1 1 2 1 1 3 0 0 1 2 0 0 1 1 2 1 1 2 1 2 2 0 3 0 0 1 2 0 3 1 1 0 0 1 0 1 0 0 1 1 0 0 1 1 1 1 0 1 2 0 1 1 0 0 1 3 0 0 3 1 2 3 2 1 1 0 0 2 3 1 2 1 1 2 1 1 3 0 0 0 2 0 0 2 0 1 1 0 2 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 0 0 0 1 1 0 0 2 1 0 2 0 1 1 1 1 0 0 1 0 2 0 2 0 0 1 0 2 1 0 0 1 2 1 2 2 0 0 1 2 0 2 0 0 2 0 0 2 0 2 2 0 3 0 2 0 0 3 0 0 0 0 0 2 2 0 5 0 3 2 4 3 1 3 2 2 0 0 0 0 0 1 4 0 1 2 1 0 0 1 1 1 2 0 0 3 1 0 0 1 0 0 0 1 0 0 1 0 0 4 1 1 2 2 0 2 1 2 1 0 0 2 0 0 1 2 0 0 1 0 2 0 1 1 2 1 2 0 2 0 2 1 3 1 3 0 1 0 2 2 1 0 1 1 0 0 2 2 0 0 1 1 4 1 2 2 0 0 2 0 2 0 1 1 3 1 1 0 3 0 1 2 2 1 3 2 1 0 0 1 0 0 3 1 0 0 3 1 0 0 1 2 0 0 1 2 2 1 0 1 1 1 0 2 1 0 1 2 2 2 2 1 0 1 0 1 1 1 0 1 0 0 0 1 0 1 1 0 0 0 0 2 1 0 1 1 0 1 1 1 0 2 3 1 1 0 1 1 3 0 0 0 0 1 0 2 0 0 2 1 1 1 0 0 0 2 0 0 1 1 1 0 0 1 0 2 0 1 2 1 0 0 0 2 0 0 1 1 0 1 0 0 1 1 0 0 2 2 2 2 0 0 0 3 0 0 1 2 2 1 1 0 2 2 1 2 1 1 1 4 0 1 0 1 1 0 2 1 0 0 0 3 1 0 0 0 2 1 1 0 1 4 1 0 1 1 3 0 1 0 2 2 0 1 0 1 0 0 3 0 2 0 1 0 2 1 2 2 0 0 1 0 0 0 0 1 4 1 1 0 1 0 1 1 1 2 1 0 2 2 1 0 1 0 1 0 0 0 1 1 0 0 2 0 1 2 1 1 2 0 0 1 1 0 0 0 1 2 0 1 0 3 3 2 0 0 1 2 0 1 1 2 4 0 2 1 1 0 3 0 1 1 3 1 2 2 1 1 1 0 0 1 1 1 0 2 2 2 0 2 1 0 1 0 4 1 1 0 4 0 2 1 0 1 1 1 2 3 3 1 2 1 1 1 0 2 2 1 2 1 1 2 1 1 0 1 0 1 1 1 0 1 1 0 1 2 1 1 2 1 1 2 0 1 1 1 1 2 1 2 0 1 2 0 2 0 1 2 2 1 1 2 2 0 3 2 0 2 2 0 0 0 0 2 1 0 2 0 0 0 0 0 2 0 1 1 0 1 1 1 1 0 0 0 3 0 0 2 0 0 1 1 0 1 1 0 0 0 0 1 1 2 0 1 3 0 0 1 4 0 1 0 1 1 2 1 0 2 1 1 2 2 2 2 1 0 0 0 2 1 1 1 1 4 0 0 2 0 0 0 2 0 1 0 2 3 1 1 1 1 0 2 3 1 0 1 1 0 2 0 0 3 1 1 1 1 0 3 0 1 2 1 0 2 0 0 0 3 1 0 0 0 1 1 1 0 0 1 2 1 1 0 2 0 0 0 2 0 1 1 1 3 0 1 4 0 0 3 1 1 0 0 0 3 0 3 0 0 0 1 2 0 0 0 2 0 0 1 0 1 0 0 0 2 1 1 1 0 0 0 1 2 0 1 2 0 0 1 0 0 0 1 2 1 0 0 0 1 0 0 2 0 0 2 1 0 1 1 0 3 0 2 0 0 0 3 1 1 0 1 0 0 1 1 1 3 2 1 0 0 2 0 0 0 1 1 0 0 1 1 1 1 0 0 0 2 0 1 3 0 0 1 0 0 3 1 2 0 0 0 0 1 1 0 1 1 1 0 1 0 4 0 0 1 0 3 1 0 0 0 0 1 0 0 1 1 1 1 0 1 1 0 0 1 1 0 0 2 1 1 0 1 1 0 1 1 0 1 2 2 1 2 0 0 2 0 2 1 0 2 1 1 1 0 0 0 2 0 1 1 1 0 0 0 0 0 1 2 1 1 0 1 1 0 1 0 0 2 0 1 0 1 0 1 0 1 3 0 3 0 3 2 0 1 1 1 2 0 0 0 3 0 1 1 1 2 1 0 2 0 1 0 1 1 0 1 0 1 1 1 2 0 0 1 1 4 2 0 1 0 0 1 2 0 0 2 0 1 1 0 0 1 0 0 1 1 0 1 0 2 1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 2 0 0 0 0 0 0 2 1 0 0 0 2 0 0 0 1 1 1 0 1 0 0 0 0 0 1 0 1 0 1 0 0 1 1 0 0 0 0 1 0 1 0 0 2 1 1 1 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 1 1 0 2 1 1 2 1 0 1 0 1 0 1 0 0 0 1 0 2 1 0 0 0 0 2 0 0 0 0 1 0 0 0 0 1 0 0 1 1 1 1 2 3 0 2 0 0 0 1 1 1 0 1 1 1 1 1 0 0 0 2 0 0 1 0 1 1 0 2 0 0 0 1 0 1 1 2 0 0 2 0 1 0 1 0 0 2 1 1 1 2 1 3 0 1 0 1 0 1 1 0 3 1 0 0 0 0 2 2 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 2 1 0 1 1 0 1 1 1 1 1 0 0 0 0 1 1 1 0 0 0 1 1 0 1 0 1 1 0 0 0 1 1 3 0 0 1 1 0 1 2 1 0 0 0 0 0 2 2 0 0 0 0 1 2 0 0 1 0 0 1 1 0 1 1 0 2 2 0 0 0 2 0 1 1 1 0 0 0 0 0 0 2 0 1 0 1 0 1 0 2 1 1 1 0 3 0 1 0 1 0 1 1 0 0 0 0 1 1 0 0 1 0 0 1 1 1 1 0 1 2 0 2 0 0 0 1 1 1 2 1 0 2 2 2 1 1 2 3 0 0 3 0 1 1 1 1 4 2 0 1 1 2 0 2 0 2 2 1 2 0 0 1 0 0 1 0 2 0 1 1 2 1 1 3 1 1 1 2 0 1 0 3 0 2 2 2 2 2 1 0 0 1 0 0 0 1 1 0 0 0 1 0 0 0 3 0 1 2 2 2 1 2 0 0 2 2 1 1 1 1 0 0 2 2 1 1 0 0 1 0 0 0 0 0 1 0 1 2 0 0 1 0 0 0 1 1 1 1 0 1 0 2 2 1 0 1 1 1 1 1 2 1 2 1 0 1 0 2 1 0 1 0 1 1 0 1 2 0 1 0 1 0 0 2 1 0 2 2 2 0 1 0 2 1 0 0 1 3 1 1 1 1 1 2 0 0 0 2 4 0 3 1 0 2 0 1 1 1 1 0 1 0 1 0 1 2 1 1 0 0 2 2 1 0 0 0 3 1 0 2 2 1 0 3 1 0 0 1 2 0 0 0 2 1 0 2 0 0 0 1 2 1 0 1 0 1 1 2 1 0 2 3 1 3 0 1 1 0 1 0 0 1 0 0 0 0 0 3 0 0 1 1 0 2 2 2 2 1 1 2 1 0 2 1 1 3 1 2 2 2 2 0 3 1 1 1 1 1 2 3 2 1 3 0 1 1 1 1 0 0 1 1 0 2 1 0 1 0 1 1 0 0 3 1 3 0 0 0 2 0 2 0 0 0 2 1 0 0 0 0 2 0 1 0 1 2 1 0 1 0 0 2 0 1 1 1 1 1 0 1 0 0 1 0 2 0 0 0 4 1 2 0 2 1 0 2 1 0 0 0 1 1 0 1 1 2 2 2 0 2 2 0 1 2 1 1 1 0 1 1 3 0 2 0 1 1 2 1 2 0 0 1 1 0 1 2 3 3 1 1 0 0 1 1 1 1 1 1 2 0 1 2 3 0 0 1 0 0 2 3 3 1 1 0 1 1 0 0 1 2 1 1 1 2 3 0 0 2 2 0 2 1 2 0 1 0 0 1 2 2 0 0 1 1 0 1 2 1 1 1 1 1 1 0 1 3 1 2 1 2 1 1 2 1 1 0 0 3 1 3 3 0 1 0 1 1 0 0 3 2 1 1 2 1 1 0 1 2 0 0 2 0 1 2 1 1 0 0 1 1 0 0 1 0 1 1 0 3 1 1 2 0 2 0 0 0 1 0 2 0 0 0 1 1 1 1 1 1 1 0 0 0 0 3 1 0 0 0 0 1 0 3 1 1 1 3 2 0 1 1 0 1 1 1 0 0 0 0 2 2 0 1 1 1 0 1 0 0 2 0 0 0 2 2 1 1 0 1 0 1 1 1 0 1 1 1 1 0 0 0 1 0 0 2 0 0 1 0 3 0 1 0 1 0 1 3 2 0 1 1 1 2 1 2 0 1 1 1 0 1 0 1 0 0 0 1 1 1 1 1 2 1 0 1 0 1 1 4 0 0 2 0 0 0 0 0 0 0 1 1 0 1 0 0 0 1 1 2 1 0 1 1 2 3 0 2 0 1 0 2 3 1 1 1 1 0 3 0 1 0 0 0 0 3 0 0 1 0 3 0 2 1 1 0 0 0 1 1 1 0 0 2 1 1 0 0 0 0 0 0 1 0 0 2 0 0 0 2 0 0 1 1 1 0 0 1 1 1 0 0 0 0 1 1 0 0 0 1 1 0 0 1 1 3 0 2 1 1 2 3 0 0 1 2 1 0 2 1 3 2 0 0 0 0 0 2 0 3 2 0 0 1 0 2 4 2 3 0 2 1 2 2 0 1 2 1 3 3 0 1 1 3 1 0 2 0 2 2 3 1 2 1 0 1 4 3 0 1 0 0 0 0 3 1 0 2 2 2 0 0 1 1 2 0 0 1 0 1 1 0 1 2 3 0 0 3 1 0 1 0 0 0 0 1 0 1 1 1 2 0 0 0 2 0 3 1 1 2 0 1 0 0 0 1 0 2 0 1 1 0 0 2 2 0 2 2 1 1 0 2 0 1 3 0 0 2 0 2 0 3 1 1 0 1 1 1 2 2 0 1 4 2 0 0 1 1 1 0 0 3 0 3 1 2 1 0 1 1 1 1 0 0 1 0 2 0 2 0 0 2 1 1 0 2 1 1 0 0 0 0 0 2 1 0 1 0 0 0 0 0 1 0 2 1 1 1 1 1 1 2 1 0 0 0 2 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 1 3 1 2 1 1 0 3 2 2 0 1 1 2 0 0 2 0 2 0 0 0 2 1 2 0 3 2 0 0 0 0 2 1 0 2 0 1 3 2 1 1 2 1 0 2 0 2 2 1 0 2 1 0 1 2 0 2 1 0 1 0 1 2 1 2 1 0 1 1 0 1 0 0 0 0 0 2 2 1 1 2 0 1 0 2 1 1 1 4 1 2 1 2 2 2 1 2 2 3 1 2 1 2 2 2 0 3 0 0 1 3 2 0 0 0 3 3 0 0 1 0 1 1 2 0 4 4 1 0 1 2 2 0 2 2 1 1 0 2 4 1 0 1 1 0 1 3 0 3 2 2 0 0 0 1 1 0 2 0 1 3 0 1 3 1 1 1 1 0 1 1 3 1 3 2 2 2 2 4 1 1 4 1 0 1 1 2 3 2 2 2 2 2 1 1 1 0 2 2 2 0 0 1 1 1 3 0 0 0 3 3 0 2 1 0 3 2 0 1 0 0 1 0 2 1 1 0 0 0 1 1 1 1 2 1 5 1 3 2 2 0 1 3 2 2 0 0 1 1 0 2 1 1 2 0 1 5 0 2 0 1 2 2 0 1 0 2 0 1 1 0 1 0 0 2 1 0 2 1 1 2 0 0 1 2 0 2 1 1 3 1 1 0 1 0 0 2 1 0 0 1 1 2 0 0 1 2 1 1 1 0 1 0 1 1 1 1 0 0 1 1 1 0 1 1 2 1 2 0 1 2 1 0 1 1 0 0 1 0 0 2 1 1 2 1 1 1 3 1 0 0 2 3 0 1 1 1 2 1 0 2 0 2 1 1 0 2 2 2 3 0 1 2 3 2 1 2 0 0 1 0 3 0 0 0 0 1 1 0 0 2 0 0 2 1 1 2 0 2 1 1 2 0 0 2 1 1 3 0 1 0 1 1 1 2 1 0 2 2 1 0 3 0 1 2 1 0 2 1 0 0 1 0 0 0 2 1 0 0 0 1 1 1 0 0 2 1 1 1 1 0 0 0 0 1 1 0 1 2 2 0 1 1 0 1 0 1 3 2 1 0 1 0 0 1 0 0 0 2 0 1 1 0 2 2 0 2 0 0 1 1 2 2 1 1 2 3 2 0 0 0 2 2 2 0 0 2 2 0 1 2 2 0 2 1 1 0 4 1 2 2 4 0 0 2 0 0 0 2 1 2 5 1 3 0 1 1 4 0 3 0 4 3 1 0 1 0 0 1 1 1 2 1 2 2 1 3 1 3 1 0 2 0 4 2 3 1 0 0 1 1 0 1 1 4 0 1 0 0 0 0 1 1 3 1 0 0 2 1 1 2 1 2 1 1 0 1 1 2 0 2 1 3 1 1 0 1 2 0 0 0 3 0 3 4 0 0 0 1 0 2 2 2 0 1 3 1 3 1 2 0 1 0 1 1 1 2 1 3 0 0 0 3 0 0 2 3 2 2 3 0 0 1 0 2 1 0 0 0 0 0 0 0 2 0 1 0 2 0 3 1 0 1 3 1 0 2 0 3 0 0 1 2 1 0 2 0 3 2 0 0 1 1 2 1 1 0 1 4 1 0 2 2 0 1 0 1 0 3 0 0 1 1 2 1 0 0 0 0 0 1 2 0 2 1 2 0 0 0 1 1 1 1 0 0 1 0 1 0 2 0 2 0 0 0 0 0 0 0 2 0 0 1 2 1 0 2 0 0 2 0 0 0 1 0 1 0 0 1 0 0 1 0 0 2 2 0 1 1 1 0 2 0 3 2 1 1 0 2 0 1 2 2 2 0 1 0 0 0 2 0 0 3 0 1 1 1 1 0 0 0 1 0 4 3 2 2 1 2 0 1 1 2 1 0 0 0 0 1 0 1 1 1 2 3 0 1 1 2 1 2 0 0 4 0 0 2 2 0 3 1 1 1 3 2 2 0 1 0 4 1 1 0 1 1 2 3 1 1 1 2 0 0 3 1 2 0 2 2 0 3 0 1 1 0 4 3 1 1 0 1 1 2 0 1 1 1 0 1 2 0 2 0 0 0 0 1 2 0 0 1 1 2 0 2 0 3 0 3 1 1 0 4 0 3 1 2 1 1 4 0 1 1 3 3 3 0 2 0 3 3 0 2 2 1 1 3 1 1 1 0 3 0 1 0 2 0 2 0 1 2 2 1 1 0 4 1 1 1 1 1 3 0 1 0 1 1 2 0 3 0 3 1 1 1 3 1 2 2 1 2 0 2 2 0 5 0 4 3 1 1 1 1 0 2 1 2 1 2 2 1 2 2 1 0 4 2 1 2 1 0 2 0 1 4 2 1 2 3 1 1 1 3 2 1 1 1 2 0 1 0 0 0 1 0 0 2 0 1 1 0 0 0 1 0 2 0 1 2 2 0 1 1 2 1 1 1 0 0 0 0 1 1 2 1 3 0 0 0 1 0 1 0 1 2 3 0 0 1 0 1 1 0 1 1 1 1 1 0 0 2 1 0 2 1 0 0 1 1 1 1 0 2 0 0 1 1 2 0 1 1 2 1 1 0 0 3 0 0 0 2 2 0 2 2 4 2 1 1 1 1 0 0 1 1 0 0 1 2 1 3 0 1 0 0 0 2 1 1 1 1 0 0 4 1 0 3 1 1 2 0 1 1 2 2 1 2 0 2 0 1 2 2 3 1 3 0 0 1 0 3 2 2 1 0 2 0 0 0 0 0 0 1 1 1 0 1 0 3 0 2 1 0 0 0 1 1 1 4 1 1 0 0 1 0 0 0 3 1 0 0 1 0 1 1 1 0 0 0 2 1 2 0 0 0 1 2 0 1 1 1 2 0 0 2 2 2 2 1 1 0 4 0 2 2 0 1 0 0 1 1 1 1 1 1 1 1 1 3 0 1 1 1 0 0 1 2 0 1 0 
+BTB PER SET COUNT: 0 1 1 1 0 0 0 0 0 0 1 0 1 0 0 1 1 0 0 1 0 1 1 1 0 1 0 1 1468 0 1 1 1 0 1 0 0 1 4 0 1 0 1 2 1 1 1 0 1 1 0 0 1 0 0 1 2 2 0 0 0 0 0 1 0 1 0 0 0 1 1 0 1 0 0 0 487 2 1 1 1 0 1 1 1 2 0 1 3 1 1 499 1 1 1 0 0 0 0 0 0 2 2 1 1 1 0 0 0 0 1 1 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 2 0 1 0 0 1 1 0 0 0 0 1 0 0 1 0 2 1 1 2 1 1 0 25 1 0 1 1 0 1 0 0 0 0 0 1 2 1 0 0 1966 2 1 0 1 0 0 0 0 1 0 0 0 0 1 0 1 1 1 0 0 0 2 0 1 2 0 1 1 0 0 1 0 1 0 0 0 0 0 1 1 0 0 1 1 1 1 0 0 1 0 0 0 1 1 1 1 0 0 0 0 2 1 0 0 0 0 2 1 0 0 1 1 0 2 1 3 2 0 0 1 0 1 0 0 1 0 3 1 0 0 0 2 1 1 0 2 3 1 0 1 0 0 0 0 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 2 0 0 1 0 1 0 1 0 3 0 0 0 1 0 0 0 2 0 1 1 0 2 0 0 0 0 0 1 1 2 0 0 0 0 1 0 1 0 1 0 2 0 2 0 0 0 0 1 1 0 1 1 0 2 1 2 1 0 1 0 2 0 0 2 1 0 4 1 0 0 0 0 1 0 0 0 0 1 0 1 1 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 1 1 0 0 0 0 1468 3 0 0 0 0 0 1 1 0 3 0 0 86 1 0 1 2 1 3 0 0 0 0 0 0 1 1 2 0 0 0 0 0 0 2 0 2 0 0 0 0 0 0 0 0 0 1 1 0 1 0 2 1 3 0 1 1 0 0 2 0 1 2 0 0 1 486 2 0 0 1 1 0 0 0 0 487 0 0 1 0 1 1 2 0 0 1 0 2 0 1 0 0 1 0 0 0 0 0 0 0 0 1 1 1 2 2 2 0 0 1 1 489 1 0 1 1 4 1 1 1 1 2 2 1 0 2 1 1 0 0 6 0 0 2 1 1 0 1 3 1 0 1 1 0 0 1 0 1 2 0 2 1 2 0 0 0 0 0 0 0 2 3 1 0 1 1 0 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 2 0 2 0 1 0 0 1 0 1 0 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0 2 0 2 2 0 0 0 0 487 0 0 6 0 2 0 1 0 1 1 0 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 0 0 1 1 1 0 1 1 1 1 0 0 0 1 1 1 0 1 1 0 1 1 0 1 0 1 0 0 0 1 1468 1 0 0 1 0 1 0 1 1 1 0 1 0 1 0 1 0 0 0 0 0 0 1 1 0 0 1 0 1468 1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 3 1 1 0 1 1 1 0 1 0 1 0 1 1 0 0 1 0 0 1 1 2 0 0 1 0 0 0 0 0 1 0 0 0 2 0 0 0 0 1 3 0 1 1 1 0 0 0 1 1 1 2 0 0 1 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 3 0 0 0 2 0 1 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 1 0 0 0 0 1 0 1 0 2 1 0 1 1 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 1 0 1 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 1 0 0 0 2 0 1 0 0 1 0 0 0 0 0 1 0 0 1 0 0 1 0 0 0 0 0 1 0 2 0 0 2 0 1 1 0 1 4 1 0 1 0 0 0 0 1 0 1 3 0 0 2 2 1 2 1 0 0 2 2 0 2 1 0 0 1 0 0 1 0 3 0 0 1 0 1 1 2 0 0 0 0 0 2449 0 0 0 1 2 0 1 1 1 5 2 0 0 0 1 1 1 3 2 1 1 1 0 0 1 1 0 0 0 0 2 0 1 3 0 2 3 0 1 0 2 1 1 2 1 1 0 0 0 0 0 2 0 1 1 2 0 1 3 0 2 0 0 3 0 0 1 0 0 0 1 1 3 1 2 0 3 0 2 1 2 1 0 2 0 0 1 0 2 1 0 1 1 1 1 0 1 0 2 1 1 1 1 1 0 3 4 1 1 1 0 0 1 1 2 1 1 1 1 1 0 2 1 0 0 1 0 0 0 1 0 1 0 0 2 1 2 0 2 1 0 1 0 1 1 0 0 0 0 0 3 0 1 1 1 0 1 0 0 1 0 3 0 0 1 2 5 2 1 0 3 4 0 2 0 0 0 0 1 1 0 1 0 2 161 1 0 0 0 2 1 0 1 0 0 0 2 1 4 0 2 0 1 0 1 2 5 983 0 8 0 0 0 1 2 2 0 2 1 1 1 0 0 0 1 1 1 0 1 1 2 2 0 2 1 0 2 2 1979 1 1 0 1 0 0 1 3 4 1 1 1 0 1 2 1 2 0 0 1 1 0 3435 2 1 0 0 0 1 1 0 1 1 0 0 1 2 2 0 0 2 0 0 1 0 1 1 0 1 0 0 1 2 0 2 1 3 1 1 1 1 0 1 1 0 2 1 0 0 2 0 1 2 0 0 0 0 1 0 1 0 1 0 2 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 2 3 0 1 0 0 0 1 3 3 1 1 1 0 2 0 2 2 0 1 0 0 1 1 2 1 1 1 0 1 2 0 0 1 2 0 1 1 0 1 0 0 1 1 1 1 1 1 0 4 1 1 1 0 0 1 137 0 1 0 2 0 1 2 0 0 0 0 3 0 0 0 0 0 1 1 1 0 1 0 0 1 0 2 0 0 0 0 1 1 0 0 0 0 1 1 1 3 1 1 0 1 1 1 0 1 0 0 3 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 1 0 2 0 1 0 2 0 1 0 0 2 0 0 2 1 1 1 1 0 1 1 0 0 2 0 1 1 1 1 0 0 1 0 2 348 0 0 2 1 0 1 0 2 1 1 1 1 0 2 1 1 0 1 1 0 1 0 2 0 1 0 0 0 0 0 0 1 1 0 1 434 2 1 0 0 1 0 0 2 0 0 0 1 1 0 0 1 1 1 7 0 0 1 1 4 1 0 0 1 2 0 0 0 3 1 2 0 2 0 2 1 0 1 1 2 3 0 1 0 2 1 0 22 2 2 1 2 3 0 0 2 0 1 1 0 1 0 1 0 0 982 0 1 2 0 0 0 1 1 2 1 3 0 0 0 3 0 0 2 1 0 0 0 0 3 0 1 0 282 1 0 1 2 1 1 5 1 1 1 2 0 1 0 0 0 1 1 1 2 0 0 1 1 0 1 1 0 0 1 2 0 0 1 0 0 0 2 1 0 0 2 1 0 0 0 0 1 0 0 1 1 2 1 2 1 621 0 1 6 3 2 4 1 0 2 0 0 1 1 0 0 0 0 1 1 2 0 0 1 1 1 131 0 0 0 0 1468 148 1 1 1 0 0 1 734 0 0 0 0 1 0 0 0 0 705 0 1 0 0 3 0 2 1 0 0 0 0 0 2 0 0 0 0 0 0 1 0 3 0 1 528 0 0 1 1 0 0 0 0 0 0 0 0 2 1 1 0 3 0 0 1 1 0 0 5 0 0 0 0 1 1 0 0 2 1 409 0 0 1 0 2 238 1 151 0 1 0 3 0 186 0 1 0 1 0 1 1 0 0 1 1 0 0 0 0 4 2 1 0 1 377 1 2 1 0 0 0 0 1 1 0 0 0 0 0 0 2 188 2 0 0 0 1 0 0 0 0 0 1 1 0 0 1 0 0 1 12 0 1 2 0 0 0 0 1 1 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 2 1 0 0 141 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 2 2 1 0 0 1 0 0 0 0 0 1 0 2 0 2 0 1 2 4 0 0 0 0 1 1 2 0 0 0 1 1 0 0 0 0 6 3 1 0 1 0 0 0 0 0 2 0 0 1 0 0 0 1 0 0 0 1 2 0 0 0 2 0 0 0 1 1 0 0 0 2 0 1 0 2 0 0 0 0 0 0 2 0 1 0 1 0 2 0 1 2 206 0 0 0 0 0 9 2 0 0 1 1 1 0 1 1 1 1 1 0 0 0 1 2 2 1 0 1 0 1469 1 2 0 0 1 3 0 0 1 0 1 3 0 1 0 0 2938 0 0 1 2 1 0 1 2 1 1 0 2 1 1 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 0 1 0 0 1 0 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 1 1 1 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1 0 2 1 0 1 0 0 0 0 0 1 3 1 1 0 1 1 2 1 2 1 0 0 2 0 1 1 0 1 1 0 2 1 1 1 1 1 2 0 3 0 2 1 3 3 2 2 1 1966 2 0 3 0 0 0 1 0 0 1 1 0 3 0 1 1 1 0 1 1 0 0 1 1 0 2 3 1 1 2 1 1 1 1 1 2 1 0 5 1 0 1470 2 0 2 2 2 1 0 1 3 2 2 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 1 1 2 2 0 1 1 2 0 1 0 0 0 1 0 1 1 0 1 0 0 0 1468 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 1 1 0 2 0 1 0 0 0 0 2 0 1 2 0 4 0 1 0 0 0 0 0 3 0 1 0 1 2 2 0 1 0 1 3 2 4 0 0 0 3 1 1 1 0 0 2 0 1 2 0 0 1 0 0 0 0 1 0 0 0 1 2 4 0 0 1 1 1 2 7 2 1 2 0 0 0 2 0 1 2 1 2 3 2 0 1 0 1 0 0 0 1 4 1 2 1 1 0 3 1 0 1 2 1 1 0 3 0 3 2 1 0 0 1 1469 0 1 1 0 0 0 0 0 2 1 0 0 0 0 2 0 2 982 1 137 2 0 1 0 0 1 2 1 2 1 0 1 3 0 1 2 0 2 1 0 0 0 0 1 0 1 1 1 2 0 0 1 0 1 0 1 1 2 1 0 1 487 1 0 2 1 1 2 1 3 1 2 0 0 2 26 0 0 0 2 3 0 2 2 0 1 0 0 1 1 0 1 0 2 1 0 2 0 4 1 1 0 1 1 0 0 0 1 0 1 1 1 1 0 0 0 3 0 1 0 1 0 1 1 1470 0 0 0 3 0 2 1 1 0 0 1 1 0 0 3 1 1 1 0 1 0 0 1 1 1 0 1 1 0 0 1 1 0 0 0 1 1 0 0 0 1 1 0 0 1 1 0 1 0 0 0 0 0 0 2 2 0 1 1 35 0 0 0 0 0 2 2 1 1 3 0 0 2 0 2 0 2 0 4 2 3 3 1 2 1 0 0 2 0 0 0 0 0 2 0 0 0 0 0 488 2 0 0 2 1 1 1 0 1 1469 1 1 2 1 3 4 1 1 1 0 0 0 1 0 0 1 2 2 0 0 1 1 0 0 0 0 1 0 1 0 0 1 0 1 2939 2 1 2 0 1 1 6 0 0 1 2 0 0 1 2 3 0 0 2 1 0 0 1 1 3 0 1 1 0 3 0 3 0 0 2 0 1 0 1 3 0 1 0 1 1 5 1 0 1 7 0 0 0 1 0 0 0 1 1 0 1 1 0 2 2 0 1 0 2 2 2 1 0 1 2 1 1 1 2 487 0 1 0 0 2 0 4 1 0 1 2 0 0 0 1 0 3 1 1 3 1 1 1 0 1 0 1 2 0 2 1 0 0 1 1 0 0 3 3 0 0 0 1 0 1 0 1 1 1 2 0 0 0 2 1 2 3 1 0 1 1 0 0 1 0 1 0 1 2 0 1 0 0 0 1 1 1 0 0 1 1 2 0 2 0 1 1 0 0 0 1 0 1 1 1 1 1472 1 2 0 2 0 1 2 0 0 4 0 0 0 1 1 3 0 4 0 0 3 983 1 3 0 1 0 2 2 1 0 0 0 0 2 2 0 3 2 1 4 2 1 0 1 2 3 0 0 0 0 0 0 0 0 0 3 1 1 2 1 2 1 2 1 1 2 1 0 2 0 1 0 0 2 0 1 0 1 1 1 0 0 1 2 3 1 0 2 3 2 1 1 2 1 1 2 1 0 0 0 1 2 241 1 1 3 0 0 2 1 1 0 2 2 1 0 1 1 0 0 1 1 0 1 1 0 2 0 1 2 0 982 1 0 0 3 1 1 0 1 0 1 0 1 0 1 1 0 0 2 1 0 1 3 0 0 0 1 1 0 1 0 1 1 1 2 1 1 4 0 0 0 0 0 0 0 1 2 1 1 1 0 0 1 1 1 3 2 0 0 0 3 0 0 2 1 1 1 1 1 1 0 1 0 2 0 1 0 2 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 3 1 0 1 0 3 0 0 2 0 0 3 1 1 0 0 1 0 1 1 0 0 0 0 0 1 0 3 1 1 0 2 0 2 0 4 1 1 1 1 1 1 3 1 0 3 0 2 2 1 1 1 1 1 0 1 1 1 1 2 1 0 1 0 0 1 0 0 1 1 1 1 1 1 1 1 1 489 0 1 0 1 1 2 0 2 0 1 0 1 1 1 0 0 0 1 1 1 1 0 1 0 2 1 0 0 2 0 1 1 0 1 1 2 0 983 0 6 1 1 1 1 2 0 0 1 0 1 0 1 0 1 0 1 0 1 2 1 1 1 0 1 3 0 2 1 0 0 1 1 0 1 0 0 0 1 0 1 0 1 0 2 0 0 1 3 1 1 0 1 1 0 1 0 0 2 0 2 2 4 0 0 1 0 1 1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 1 0 0 1 1 0 1 1 0 0 1 1 1 1 1 1 0 2 0 0 0 0 1 2 0 1 1 1 1 1 0 1 0 1 2 1 1 0 0 1 1 3 1 0 1 0 1 3 0 1 0 1 0 0 1 2 0 2 0 0 0 0 2 1 0 2 0 0 0 2 4 1 1 1 0 1 1 0 1 0 0 0 0 0 1 0 1 0 0 0 2 0 0 0 0 0 1 0 0 0 0 1 0 0 1 2 981 0 0 6 0 2 0 0 0 0 1 0 0 3 1 0 0 0 0 0 0 0 0 0 1 1 1 0 2 0 1 2 1 1 0 0 0 3 0 3 1 2 1 0 2 0 0 1 0 1 0 2 0 2 0 1 0 1 0 499 3 0 0 1 0 0 1 1 0 0 0 2 1 0 0 0 1 1 1 2 1 3 0 0 3 1 3 1 1 2 0 4 2 2 1 1 1 2 0 1 0 1 0 2 1 0 1 971 1 9 0 2 1 4 0 0 1 1 1 5 3 1 0 20561 0 0 1 2 0 0 0 1 3 1 0 0 0 2 2 1 1 1 4 0 1 1 1 4 0 0 0 1 1 2 1 0 1 1 1 1 1 1 1 0 1 1 1 1 0 2 0 2 1 1 0 2 1 0 2 1 0 1 1 1 0 1 1 1 1 1 1 4 1 1 2 1 0 1 0 0 0 0 2 982 0 0 0 1 1 0 0 1 1 1 3 1 0 2 0 3 1 1 0 0 1 0 1 17 1 0 1 1 1 1 1 0 0 0 0 0 0 1 0 0 2 0 0 0 3 2 0 1 0 1 1 1 1 1 0 1 2 1 1 1 1 1 1 0 0 0 0 1 1 1 22 0 1 1 0 0 1 1 0 2 2 1 0 0 2 0 2 0 1 1 1 0 2 1 0 0 0 0 0 0 1 0 2 3 0 0 0 0 2 1 0 1 2 1 1 0 0 0 0 1 0 0 1 0 2 0 2 0 0 1 1 1468 0 1 0 0 1 0 0 0 1 0 0 2 1 0 0 1 4 0 1470 1 1 1 0 1 0 1 1 1 2 0 0 2 0 0 1 1 0 0 3 0 1 0 2 0 0 0 1 0 0 0 0 0 1 1 1 1 0 0 0 2 0 0 0 0 1 0 0 0 2 1 0 1 1 1 0 1 0 1 0 0 0 1 1 0 0 2 0 0 1 1 0 0 0 0 0 1 1 1 1 0 1 1 2 1 1 0 0 0 1 0 0 1 1 0 1 0 0 1 0 1 0 1 2 1 499 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 2 1 1 1 0 1 1 0 1 2 0 1 0 2 1 0 0 0 0 0 0 1 0 1 2 0 1 1 1 0 0 1 0 2 0 1 1 0 0 0 0 0 0 4 2 1 1 1 2 0 0 1 1 1 1 3 0 1 2 3 0 0 2 0 1 2 0 0 2 1 1 1 0 2 1 0 1 0 1 1 0 1 0 3 1 0 0 1 1 0 0 1 0 0 1 1 0 1 1 1 1 0 0 0 0 0 3 0 1 0 1 1 1 2 1 2 1 1 1 1 2 0 0 1 0 2 1 0 0 0 3 1 3 0 0 0 3 0 0 0 0 0 0 1 1 1 0 0 0 1 1 0 0 1 1 0 0 1 1 0 0 1 0 0 1 2 0 0 0 0 0 2 4 0 1 1 1 0 0 2 0 0 1 1 1 1 0 0 1 1 3 0 1 0 0 1 0 0 1 1 1 1 0 0 0 1 1 1 1 1 0 1 1 1 1 0 2 0 0 2 0 0 0 2 5 1 0 0 1 1 3 0 1 1 1 0 0 1 2 2 1 1 1 2 2 1 0 365 4 0 2 1 4 1 0 2 1 1 1 4 0 0 0 1 0 3 2 0 1 3 0 1 8 1 1 2 1 0 1 3 0 1 3 0 1 2 1 2 1 1 3 0 0 1 3 1 1 2 1 2 1 0 2 2 2 0 1 1 1 1 1 2 488 0 1 0 1 1 0 0 1 1 2 5 2 0 0 0 1 2 2 1 1 2 0 2 1 0 0 2 1 1 0 0 0 0 2 2 0 1 3 0 1 2 1 1 1 0 1 0 984 1 1 3 9 2 2 1 2 0 1 1 2 1 0 0 1 0 0 1 0 0 3 0 1 0 0 0 1 0 0 0 0 1 1 0 1 1 0 1 1 0 0 0 0 2 1 0 2 29 0 1 190 4 1 2 1 1 3 0 1 1 0 0 0 1 3 1 1 1 2 1 0 1 1 0 0 2 1 2 2 2 1 2 1 2 0 1 2 0 1 1 3 2 1 1 2 3 1 0 3 1 1 2 1 1 1 973 3 1 1 1 0 0 1 3 0 1 2 0 0 1 1 2 0 1 1 2 1 2 3 3 1 1 2 2 1 0 1 1 1 0 1 1 2 2 0 2 0 2 0 0 974 0 1 2 983 1 973 2 2 0 0 0 0 972 973 3 0 1 0 2 1 1 2 0 1 2 0 0 1 0 0 0 0 2 2 1 1 0 0 0 1 1 2 0 1 1 2 1 1 3 0 0 1 2 0 0 1 1 2 1 1 2 1 2 2 0 3 0 0 1 2 0 3 1 1 0 0 1 0 982 0 0 1 1 0 0 1 1 1 1 0 1 2 0 1 1 0 0 1 3 0 0 3 1 2 3 2 1 1 0 0 2 3 1 2 1 1 2 1 1 3 0 0 0 2 0 0 2 0 1 1 0 2 1 0 0 1 0 0 1 0 1 0 0 0 1 0 0 0 0 0 1 1 0 0 2 1 0 2 0 1 1 1 1 0 0 1 0 2 0 2 0 0 1 0 2 1 0 0 1 2 1 2 2 0 0 1 2 0 2 0 0 2 0 0 2 0 2 2 0 3 0 2 0 0 489 0 0 0 0 0 2 2 0 14 0 3 2 4 4 1 3 4 3 0 0 0 0 0 1 4 0 1 2 1 0 0 1 1 1 2 0 0 3 1 0 0 1 0 0 0 1 0 0 1 0 0 4 1 1 2 2 0 2 982 2 1 0 0 2 0 0 1 2 0 0 1 0 3 0 1 1 2 1 2 0 998 0 2 1 3 1 3 0 1 0 2 2 1 0 1 1 0 0 2 2 0 0 1 1 5 1 2 2 0 0 3 0 2 0 1 1 3 1 1 0 3 0 1 2 7810 1 3 2 1 0 0 972 0 0 3 1 0 0 3 972 0 0 1 2 0 0 1 973 2 1 0 1 1 1 0 973 1 0 1 2 2 2 2 1 0 1 0 1 1 972 0 1 0 0 0 1 0 1 972 0 0 0 0 2 1 0 1 1 0 1 1 1 0 2 3 1 981 0 1 1 3 0 0 0 0 1 0 2 0 0 2 1 1 971 0 0 0 2 0 0 1 1 1 0 0 1 0 2 0 2 2 1 0 0 0 3 0 0 1 1 0 2 0 0 1 3 0 0 2 2 2 2 0 0 0 51 0 0 1 2 2 2 1 0 3 2 1 3 2 1 1 4 0 3 0 1 1 0 3 1 0 0 0 3 1 0 0 0 3 1 1 0 1 74 1 0 1 1 3 0 1 0 2 2 0 1 0 1 0 0 3 0 2 0 1 0 2 1 2 2 0 0 1 0 0 0 0 1 4 1 1 0 1 0 1 1 1 4 1 0 2 2 1 0 1 0 2 0 0 0 1 1 0 0 3 0 1 2 1 1 2 0 0 2 1 0 0 0 1 2 0 1 0 3 3 2 0 0 1 2 0 1 2 2 5 0 2 1 1 0 3 0 1 1 3 1 2 498 1 1 43 0 0 1 1 1 0 982 2 2 0 2 1 0 2 0 4 1 2 0 7 0 2 1 0 488 1 1 2 4 15 1 2 1 1 1 0 363 2 1 2 1 1 2 1 1 0 1 0 2 1 1 0 1 1 0 1 2 1 1 2 1 1 2 0 1 1 1 1 2 1 2 0 1 1946 0 2 0 1 3 2 4 1 2 2 0 3 2 0 2 2 0 0 0 0 2 1 0 2 0 0 0 0 0 2 0 1 2 0 1 2 1 1 0 0 0 4 0 0 364 0 0 1 2 0 1 1 0 0 0 0 1 1 3 0 1 3 0 0 1 4 0 1 0 1 1 2 1 0 2 1 1 2 2 2 2 1 0 0 0 2 1 1 1 1 4 0 0 2 0 0 0 488 0 1 0 2 3 1 1 1 1 0 2 4 2 0 1 1 0 2 0 0 3 1 1 1 1 0 3 0 1 2 1 0 2 0 0 0 4 1 0 0 0 1 1 1 0 0 1 2 1 1 0 2 0 0 0 2 0 1 1 1 3 0 1 5 0 0 3 1 1 0 0 0 3 0 3 0 0 0 1 2 0 0 0 488 0 0 1 0 1 0 0 0 487 1 1 1 0 0 0 1 2 0 1 2 0 0 1 0 0 0 1 2 1 0 0 0 1 0 0 2 0 0 972 1 0 1 1 0 3 0 2 0 0 0 3 1 1 0 1 0 0 1 1 1 3 2 1 0 0 2 0 0 0 1 1 0 0 1 1 1 1 0 0 0 2 0 1 4 0 0 1 0 0 3 1 2 0 0 0 0 1468 1 0 1 1 1 0 1 0 5 0 0 1 0 3 1 0 0 0 0 1 0 0 1 2 1 1 0 1 1 0 0 1 1 0 0 2 1 1 0 1 1 0 1 1 0 1 2 2 1 2 0 0 4 0 2 1 0 2 1 1 1 0 0 0 2 0 1 1 1 0 0 0 0 0 1 2 1 1 0 1 1 0 1 0 0 2 0 1 0 1 0 1 0 1 3 0 5 0 3 2 0 1 3 1 2 0 0 0 3 0 1 1 1 2 1 0 2 0 3 0 1 1 0 2 0 2 1 3 2 0 0 1 1 4 2 0 1 0 0 1 1469 0 0 1344 0 1 1 0 0 1 0 0 2 1343 0 1 0 2 1 0 0 0 0 0 0 0 0 0 0 0 2 0 2 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 2 0 0 0 0 0 0 2 21 0 0 0 2 0 0 0 1 1 141 0 2 0 0 0 0 0 1 0 1 0 1 0 0 1 1 0 0 0 0 1 0 1 0 0 26 1 1 1 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 1 1 0 2 1 1 2 1 0 1 0 1 0 1 0 0 0 1 0 2 1 0 0 0 0 2 0 0 0 0 1 0 0 0 0 1 0 0 1 1 1 1 2 3 0 2 0 0 0 1 1 1 0 1 1 1 1 1469 0 0 0 1469 0 0 1 0 1 1 0 2 0 0 0 1 0 1 1 2 0 0 2 0 2912 0 1 0 0 6 3 1 1 2 1 3 0 1 0 1 0 1 1 0 3 1 0 0 0 0 2 2 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 2 1 0 1 1 0 1 1 1 1 973 0 0 0 0 1 1 973 0 0 0 2 487 0 1 0 1 1 0 0 0 1 1 489 0 0 14680 972 0 1 2 1 0 0 0 0 0 2 2 0 0 0 0 1 2 0 0 1 0 0 1 1 0 1 1 0 2 2 0 0 0 2 0 1 1 1 0 0 0 0 0 0 3 0 1 0 1 0 1 0 2 1 1 1 0 3 0 1 0 1 0 1 1 0 0 0 0 1 1 0 0 1 0 0 982 1 1 2 0 1 2 0 2 0 0 0 1 1468 1 2 1 0 2 2 2 1 3 2 3 0 0 3 0 1 1 1 1 4 2 0 1 1 2 0 2 0 2 1470 1 3 0 0 1 0 0 1 0 2 0 1 1 2 1 1 3 1 1 1 983 0 1 0 4 0 2 2 2 2 2 1 0 0 1 0 0 0 1 1 0 0 0 1 0 0 0 3 0 1 2 2 2 1 2 0 0 2 2 1 1 1 1 0 0 2 2 1 1 0 0 1 0 0 0 0 0 1 0 1 2 0 0 1 0 0 0 1 1 1 1 0 1 0 2 2 1 0 1 2 1 1 1 2 1 2 1 0 1 0 2 1 0 1 0 1 1 0 1 2 0 1 0 1 0 0 2 1 0 2 1470 2 0 1 0 2 1 0 0 1 5 1 1 1 3 1 2 0 0 0 2 4 0 3 1 0 2 0 2 1 1 1 0 1 0 1 0 1 2 1 1 0 0 2 2 1 0 0 0 3 1 0 2 2 1 0 3 1 0 0 1 2 0 0 0 2 1 0 2 0 0 0 1 2 2 0 1 0 1 1 2 1 0 2 1472 1 4 0 1 1 0 1 0 0 1 0 0 0 0 0 3 0 0 1 1 0 2 2 2 2 1 1 2 1 0 2 1 1 3 1 2 2 2 2 0 3 1 1 1 1 1 2 983 2 1 3 0 1 1 1 1 0 0 1 1 0 3 1 0 1 0 1 1 0 0 3 1 3 0 0 0 2 0 2 0 0 0 2 1 0 0 0 0 2 0 2 0 1 2 1 0 1 0 0 2 0 1 1 1 1 1 0 1 0 0 1 0 2 0 0 0 4 1 2 0 2 1 0 2 1 0 0 0 1 1 0 1 2 2 2 2 0 2 2 0 1 2 1 1 1 0 1 1 5 0 2 0 1 1 2 1 2 0 0 1 1 0 1 2 3 3 1 1 0 0 1 1 1 1 1 1 2 0 1 2 3 0 0 1 0 0 2 3 3 1 1 0 1 1 0 0 1 2 2 1 1 2 3 0 0 2 2 0 2 1 2 0 1 0 0 1 2 2 0 0 1 1 0 1 2 1 1 1 1 1 1 0 1 4 1 2 1 2 1 1 2 1 1 0 0 3 1 3 3 0 1 0 1 1 0 0 3 2 1 1 2 1 1 0 1 2 0 0 2 0 1 2 1 1 0 0 1 1 0 0 1 0 1 1 0 3 1 1 2 0 2 0 0 0 1 0 2 0 0 0 1 1 1 1 1 1 1 0 0 0 0 3 1 0 0 0 0 1 0 3 1 1 1 3 2 0 1 1 0 1 1 1 0 0 0 0 2 2 0 1 1 1 0 1 0 0 2 0 0 0 2 2 1 1 0 1 0 1 2 1 0 1 1 1 1 0 0 0 1 0 0 2 0 0 1 0 4 0 1 0 1 0 1 3 3 0 1 2 1 2 1 2 0 1 1 1 0 1 0 2 0 0 0 1 1 1 1 1 2 1 0 1 0 1 1 4 0 0 2 0 0 0 0 0 0 0 1 1 0 3 0 0 0 123 1 2 1 0 1 1 2 3 0 2 0 1 0 2 4 1 1 1 1 0 3 0 1 0 0 0 0 3 0 0 1 0 3 0 2 1 1 0 0 0 1 2 1 0 0 2 1 1 0 0 0 0 0 0 1 0 0 2 0 0 0 2 0 0 1 1 1 0 0 1 7 1 0 0 0 0 1 1 0 0 0 1 1 0 0 1 1 3 0 2 1 1 2 3 0 0 1 2 1 0 2 1 5 2 0 0 0 0 0 3 0 3 2 0 0 1 0 2 4 2 3 0 2 1 2 3 0 1 2 1 3 3 0 1 2 3 1 0 2 0 2 2 5 1 2 1 0 1 4 3 0 1 0 0 0 0 10 1 0 2 2 2 0 0 1 1 2 0 0 1 0 1 1 0 1 2 3 0 0 3 1 0 1 0 0 0 0 1 0 1 1 1 2 0 0 0 2 0 3 1 1 2 0 1 0 0 0 1 0 2 0 1 1 0 0 2 2 0 2 2 1 1 0 2 0 1 3 0 0 2 0 2 0 3 1 1 0 2 1 1 2 4 0 1 4 2 0 0 1 1 1 0 0 3 0 3 1 2 1 0 1 1 1 1 0 0 1 0 26 0 2 0 0 2 1 1 0 2 1 1 0 0 0 0 0 2 1 0 1 0 0 0 0 0 1 0 3 1 1 1 1 1 1 2 1 0 0 0 2 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 1 3 1 2 1 1 0 4 2 6 0 2 1 3 0 0 97 0 2 0 0 0 2 1 2 0 3 3 0 0 0 0 2 1 0 2 0 1 3 2 1 1 2 1 0 2 0 1945 2 1 0 2 1 0 1 2 0 2 1 0 1 0 1 2 1 2 1 0 1 1 0 1 0 0 0 0 0 3 4 1 1 2 0 1 0 3 1 1 4 6 1 2 1 2 2 2 1 2 2 3 1 2 1 2 2 2 0 3 0 0 1 3 2 0 0 0 3 3 0 0 1 0 1 1 2 0 4 4 1 0 1 2 2 0 2 2 1 1 0 2 4 1 0 1 1 0 45 3 0 3 2 2 0 0 0 1 1 0 2 0 1 3 0 1 3 1 1 4 1 0 1 1 3 1 490 2 2 2 2 4 1 1 4 1 0 1 1 2 3 2 2 2 2 2 1 1 1 0 2 2 2 0 0 1 1 1 3 0 0 0 3 3 0 2 1 0 3 2 0 1 0 0 1 0 2 487 1 0 0 0 1 1 1 1 2 1 1944 1 3 2 2 0 1 3 2 2 0 0 1 1 0 2 1 1 2 0 362 978 0 2 0 1 2 2 0 1 0 2 0 1 1 0 1 0 0 2 3 0 2 1 1 2 0 0 1 2 0 2 1 1 3 1 1 0 1 0 0 1469 1 0 0 1 1 3 0 0 1 2 1 1 1 0 1 0 1 1 1 1 0 0 1 1 1 0 1 1 102 1 2 0 1 2 1 0 1 1 0 0 1 0 0 2 1 1 2 1 1 1 3 1 0 0 2 3 0 1 1 1 2 1 0 2 0 2 1 1 0 2 2 2 4 0 1 2 3 2 1 2 0 0 2 0 3 0 0 0 0 1 1 0 0 2 0 0 2 1 1 2 0 3 1 1 2 0 0 2 1 1 3 0 1 0 1 1 1 3 1 0 2 2 1 0 3 0 1 2 1 0 2 2 0 0 1 0 0 0 2 1 0 0 0 1 1 1 0 0 2 1 1 1 1 0 0 0 0 1 1 0 1 2 2 0 1 1 0 1 0 1 3 2 1 0 1 0 0 1 0 0 0 2 0 1 1 0 2 2 0 2 0 0 1 1 2 2 1 1 1469 3 2 0 0 0 2 2 2 0 0 3 3 0 1 2 2 0 2 1 1 0 4 1 2 2 4 0 0 2 0 0 0 2 1 2 1209 982 4 0 1 1 4 0 3 0 4 3 1 0 1 0 0 1 1 1 2 1 2 2 1 3 1 488 1 0 2 0 98 2 3 1 0 0 2 1 0 1 1 4 0 1 0 0 0 0 1 1 4 1 0 0 2 1 2 2 1 3 1 1 0 1 1 2 0 2 1 3 1 1 0 2 2 0 0 0 3 0 3 4 0 0 0 1 0 2 2 3 0 1 33 1 4 1 2 0 1 0 1 1 1 2 2 3 0 0 0 3 0 0 2 3 2 2 10 0 0 1 0 2 1 0 0 0 0 0 0 0 2 0 1 0 2 0 4 1 0 1 3 1 0 2 0 3 0 0 1 2 1 0 2 0 3 2 0 0 1 1 2 1 1 0 1 4 1 0 2 2 0 1 0 1 0 3 0 0 1 1 982 1 0 0 0 0 0 1 2 0 2 1 2 0 0 0 1 1 1 1 0 0 1 0 1 0 2 0 2 0 0 0 0 0 0 0 2 0 0 257 2 1 0 31 0 0 2 0 0 0 1 0 1 0 0 1 0 0 1 0 0 2 2 0 1 1 1 0 2 0 3 2 1 1 0 2 0 1 2 2 2 0 1 0 0 0 2 0 0 3 0 1 1 1 1 0 0 0 1 0 4 3 2 2 1 3 0 1 1 2 1 0 0 0 0 1 0 1 1 1 2 3 0 1 1 2 1 2 0 0 4 0 0 2 2 0 4 1 1 1 3 2 2 0 1 0 4 1 1 0 1 1 2 3 1 1 1 2 0 0 3 1 2 0 2 2 0 3 0 1 1 0 4 3 1 362 0 1468 1 2 0 1 1 1 0 1 2 0 2 0 0 0 0 1 2 0 0 1 2 2 0 488 0 3 0 3 1 1 0 4 0 489 1 2 1 1 4 0 1 2 4 3 3 0 3 0 4 3 0 488 3 1 1 3 1 1 1 0 5 0 362 0 2 0 2 0 1 2 2 1 1 0 4 1 1 1 1 1 3 0 1 0 1 1 2 0 3 0 3 1 1 1 3 1 2 2 1 2 0 2 2 0 1459 0 4 3 1 1 1 1 0 2 1 2 1 2 2 1 2 2 1 0 4 2 1 2 1 0 2 0 1 4 982 1 2 3 1 1 1 3 2 1 1 1 3 0 1 0 0 0 1 0 0 2 0 1 1 0 0 0 1 0 2 0 1 2 2 0 1 1 2 1 1 1 0 0 0 0 1 1 2 1 4 0 0 0 1 0 1 0 1 2 3 0 0 1 0 1 1 0 1 1 1 1 1 0 0 18 1 0 2 1 0 0 1 1 1 1 0 2 0 0 1 1 2 0 1 1 2 1 1 0 0 3 0 0 0 2 2 0 972 2 4 2 1 1 1 1 0 0 1 2 0 0 1 2 1 3 0 1 0 0 0 2 1 1 1 1 0 0 4 1 0 3 1 1 2 0 1 1 2 2 1 2 0 2 0 1 2 2 973 1 3 0 0 1 0 3 2 2 1 0 2 0 0 0 0 0 0 1 1 1 0 1 0 3 0 2 1 0 0 0 1 1 1 4 1 1 0 0 489 0 0 0 4 1 0 0 1 0 1 1 1 0 0 0 2 1 2 0 0 0 1 2 0 1 1 1 2 0 0 2 2 2 4 1 1 0 4 0 2 7 0 1 0 0 1 5 1 1 1 1 1 1 1 3 0 2 1 1 0 0 1 7 0 1 0 

@@ -670,7 +670,7 @@ void finish_warmup() {
 #if defined(SHOTGUN_BTB)
     reset_btb_stats(i, &ooo_cpu[i].BTB);
 #else
-#if defined(SKEWED_BTB) || defined(BASELINEBTB) ||                  \
+#if defined(SKEWED_BTB) || defined(BASELINEBTB) ||   defined(PDEDEBTB) ||               \
     defined(DIV_CONQ) || defined(MICRO_BTB) || defined(PERFECT_BTB)
     reset_cache_stats(i, &ooo_cpu[i].BTB.L1BTB);
     reset_cache_stats(i, &ooo_cpu[i].BTB.L2BTB);
@@ -1504,7 +1504,7 @@ int main(int argc, char **argv) {
 #if defined(DIV_CONQ)
     ooo_cpu[i].btb_prefetch_buffer.condfile = condfile;
 #endif
-#if !defined(SKEWED_BTB) && !defined(BASELINEBTB) &&                \
+#if !defined(SKEWED_BTB) && !defined(BASELINEBTB) &&  !defined(PDEDEBTB) &&    \
     !defined(DIV_CONQ) && !defined(MICRO_BTB) && !defined(FDIPX_BTB) &&        \
     !defined(PERFECT_BTB)
     ooo_cpu[i].BTB.cache_type = IS_BTB;
@@ -1938,7 +1938,7 @@ int main(int argc, char **argv) {
 #if defined(SHOTGUN_BTB)
         btb_record_roi_stats(i, &ooo_cpu[i].BTB);
 #else
-#if defined(SKEWED_BTB) || defined(BASELINEBTB) ||                  \
+#if defined(SKEWED_BTB) || defined(BASELINEBTB) || defined(PDEDEBTB) ||        \
     defined(DIV_CONQ) || defined(MICRO_BTB) || defined(PERFECT_BTB)
         record_roi_stats(i, &ooo_cpu[i].BTB.L1BTB);
         record_roi_stats(i, &ooo_cpu[i].BTB.L2BTB);
@@ -1996,7 +1996,7 @@ int main(int argc, char **argv) {
       print_sim_stats(i, &ooo_cpu[i].L1I);
 #if defined(SHOTGUN_BTB)
       btb_print_sim_stats(i, &ooo_cpu[i].BTB);
-#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||                \
+#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||  defined(PDEDEBTB) ||     \
     defined(DIV_CONQ) || defined(MICRO_BTB) || defined(PERFECT_BTB)
       print_sim_stats(i, &ooo_cpu[i].BTB.L1BTB);
       print_sim_stats(i, &ooo_cpu[i].BTB.L2BTB);
@@ -2062,7 +2062,7 @@ int main(int argc, char **argv) {
     print_roi_stats(i, &ooo_cpu[i].L1I);
 #if defined(SHOTGUN_BTB)
     btb_print_roi_stats(i, &ooo_cpu[i].BTB);
-#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||                \
+#elif defined(SKEWED_BTB) || defined(BASELINEBTB) || defined(PDEDEBTB) ||    \
     defined(DIV_CONQ) || defined(MICRO_BTB) || defined(PERFECT_BTB)
     print_roi_stats(i, &ooo_cpu[i].BTB.L1BTB);
     print_roi_stats(i, &ooo_cpu[i].BTB.L2BTB);

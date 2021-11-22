@@ -420,7 +420,7 @@ void O3_CPU::read_from_trace() {
           offsets_per_branch_type[arch_instr.branch_type][bits_required].insert(
               arch_instr.ip);
 
-#if defined(BASELINEBTB)
+#if (defined(BASELINEBTB) || defined(PDEDEBTB) )
           unique_trigger_per_target[next_instr.ip].insert(
               BTB.get_tag(arch_instr.ip, IS_L2BTB));
 #endif
@@ -535,17 +535,20 @@ void O3_CPU::read_from_trace() {
             }
 #endif
 
-#if (defined(SKEWED_BTB) || defined(BASELINEBTB) ||                 \
+//// adding functionality for PDEDE_BTB here
+
+#if (defined(SKEWED_BTB) || defined(BASELINEBTB) || defined(PDEDEBTB) ||      \
      defined(DIV_CONQ) || defined(MICRO_BTB)) &&                               \
     !defined(PERFECT_BTB)
             if (arch_instr.branch_taken) {
               uint32_t btb_set = BTB.get_set(arch_instr.ip, IS_L1BTB);
               int btb_way = BTB.get_way(arch_instr.ip, btb_set, IS_L1BTB);
 
-              if (btb_way == L1BTB_WAY) {
+              if (btb_way == L1BTB_WAY) { //tag did not match with L1 BTB so going to L2 BTB
                 BTB.L1BTB.sim_miss[cpu][arch_instr.branch_type - 1]++;
                 BTB.L1BTB.sim_access[cpu][arch_instr.branch_type - 1]++;
 
+                //Checking in L2 BTB
                 btb_set = BTB.get_set(arch_instr.ip, IS_L2BTB);
                 btb_way = BTB.get_way(arch_instr.ip, btb_set, IS_L2BTB);
 
@@ -555,7 +558,7 @@ void O3_CPU::read_from_trace() {
                       cpu, arch_instr.ip, arch_instr.branch_type);
 #endif
 
-                if (btb_way == L2BTB_WAY) {
+                if (btb_way == L2BTB_WAY) { //L2 BTB miss here
                   BTB.L2BTB.sim_miss[cpu][arch_instr.branch_type - 1]++;
                   BTB.L2BTB.sim_access[cpu][arch_instr.branch_type - 1]++;
 
@@ -575,10 +578,13 @@ void O3_CPU::read_from_trace() {
                                  arch_instr.branch_type, IS_BTB_BOTH);
                   }
                 } else {
+                  //L2 BTB hit here so we'll extract the target
                   // Partial target
                   uint64_t target = 0;
 #if defined(MICRO_BTB)
                   target = BTB.get_target(arch_instr.ip, btb_set, btb_way);
+#elif defined(PDEDEBTB)
+                  target = BTB.reconstruct_target_data(btb_set,btb_way);
 #else
                   target = (BTB.L2BTB.block[btb_set][btb_way].data) |
                            ((arch_instr.ip >> L2BTB_PARTIAL_TARGET_BITS)
@@ -588,7 +594,7 @@ void O3_CPU::read_from_trace() {
                   if (arch_instr.branch_type == BRANCH_RETURN)
                     target = BTB.ras.return_address[BTB.ras.head];
 
-                  if (target == curr_ftq_instr->branch_target) {
+                  if (target == curr_ftq_instr->branch_target) { //L2 BTB predicted correctly
 
                     if (warmup_complete[cpu]) {
                       fetch_stall = 1;
@@ -600,9 +606,10 @@ void O3_CPU::read_from_trace() {
                     BTB.L2BTB.sim_hit[cpu][arch_instr.branch_type - 1]++;
                     BTB.L2BTB.sim_access[cpu][arch_instr.branch_type - 1]++;
                     BTB.update_replacement_state(IS_L2BTB, btb_set, btb_way);
+                    //L2 BTB predicted correctly so put it in L1 BTB
                     BTB.fill_btb(arch_instr.ip, arch_instr.branch_target,
                                  arch_instr.branch_type, IS_L1BTB);
-                  } else {
+                  } else { //mispredict L2 BTB target
                     BTB.L2BTB.sim_miss[cpu][arch_instr.branch_type - 1]++;
                     BTB.L2BTB.sim_access[cpu][arch_instr.branch_type - 1]++;
                     if (warmup_complete[cpu]) {
@@ -619,16 +626,16 @@ void O3_CPU::read_from_trace() {
                   }
                 }
 
-              } else {
+              } else { //tag matches in L1 BTB
                 uint64_t target = BTB.L1BTB.block[btb_set][btb_way].data;
                 if (arch_instr.branch_type == BRANCH_RETURN)
                   target = BTB.ras.return_address[BTB.ras.head];
 
-                if (target == curr_ftq_instr->branch_target) {
+                if (target == curr_ftq_instr->branch_target) { //predicted target is right,, BTB hit
                   BTB.L1BTB.sim_hit[cpu][arch_instr.branch_type - 1]++;
                   BTB.L1BTB.sim_access[cpu][arch_instr.branch_type - 1]++;
                   BTB.update_replacement_state(IS_L1BTB, btb_set, btb_way);
-                } else {
+                } else { //predicted target is wrong,, BTB miss
                   BTB.L1BTB.sim_miss[cpu][arch_instr.branch_type - 1]++;
                   BTB.L1BTB.sim_access[cpu][arch_instr.branch_type - 1]++;
                   if (warmup_complete[cpu]) {
@@ -648,7 +655,8 @@ void O3_CPU::read_from_trace() {
                   }
                 }
               }
-            } else {
+            } 
+            else {
               uint32_t btb_set = BTB.get_set(arch_instr.ip, IS_L1BTB);
               int btb_way = BTB.get_way(arch_instr.ip, btb_set, IS_L1BTB);
 
@@ -1295,7 +1303,7 @@ void O3_CPU::decode_and_dispatch() {
 #if defined(SHOTGUN_BTB)
           fill_btb(entry.ip, entry.branch_target, entry.branch_type);
 
-#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||                \
+#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||  defined(PDEDEBTB) ||              \
     defined(MICRO_BTB) || defined(FDIPX_BTB) || defined(DIV_CONQ)
           BTB.fill_btb(entry.ip, entry.branch_target, entry.branch_type,
                        IS_BTB_BOTH);
@@ -1317,7 +1325,7 @@ void O3_CPU::decode_and_dispatch() {
 #if defined(SHOTGUN_BTB)
           fill_btb(entry.ip, entry.branch_target, entry.branch_type);
 
-#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||                \
+#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||  defined(PDEDEBTB) ||              \
     defined(MICRO_BTB) || defined(FDIPX_BTB) || defined(DIV_CONQ)
           BTB.fill_btb(entry.ip, entry.branch_target, entry.branch_type,
                        IS_BTB_BOTH);
@@ -2248,7 +2256,7 @@ void O3_CPU::complete_execution(uint32_t rob_index) {
 #if defined(SHOTGUN_BTB)
           fill_btb(ROB.entry[rob_index].ip, ROB.entry[rob_index].branch_target,
                    ROB.entry[rob_index].branch_type);
-#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||                \
+#elif defined(SKEWED_BTB) || defined(BASELINEBTB) || defined(PDEDEBTB) ||               \
     defined(MICRO_BTB) || defined(FDIPX_BTB) || defined(DIV_CONQ)
           BTB.fill_btb(ROB.entry[rob_index].ip,
                        ROB.entry[rob_index].branch_target,
@@ -2275,7 +2283,7 @@ void O3_CPU::complete_execution(uint32_t rob_index) {
 #if defined(SHOTGUN_BTB)
         fill_btb(ROB.entry[rob_index].ip, ROB.entry[rob_index].branch_target,
                  ROB.entry[rob_index].branch_type);
-#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||                \
+#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||  defined(PDEDEBTB) ||     \
     defined(MICRO_BTB) || defined(FDIPX_BTB) || defined(DIV_CONQ)
         BTB.fill_btb(ROB.entry[rob_index].ip,
                      ROB.entry[rob_index].branch_target,
@@ -2324,7 +2332,7 @@ void O3_CPU::complete_execution(uint32_t rob_index) {
             fill_btb(ROB.entry[rob_index].ip,
                      ROB.entry[rob_index].branch_target,
                      ROB.entry[rob_index].branch_type);
-#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||                \
+#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||  defined(PDEDEBTB) ||    \
     defined(MICRO_BTB) || defined(FDIPX_BTB) || defined(DIV_CONQ)
             BTB.fill_btb(ROB.entry[rob_index].ip,
                          ROB.entry[rob_index].branch_target,
@@ -2350,7 +2358,7 @@ void O3_CPU::complete_execution(uint32_t rob_index) {
 #if defined(SHOTGUN_BTB)
           fill_btb(ROB.entry[rob_index].ip, ROB.entry[rob_index].branch_target,
                    ROB.entry[rob_index].branch_type);
-#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||                \
+#elif defined(SKEWED_BTB) || defined(BASELINEBTB) ||  defined(PDEDEBTB) ||   \
     defined(MICRO_BTB) || defined(FDIPX_BTB) || defined(DIV_CONQ)
           BTB.fill_btb(ROB.entry[rob_index].ip,
                        ROB.entry[rob_index].branch_target,

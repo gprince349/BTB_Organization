@@ -9,6 +9,10 @@
 #include "mbtb.h"
 #include "page_table_walker.h"
 
+/////////////////// Adding pdede file ///////
+#include "pdede.h"
+///////////////////////////////////////
+
 #ifdef CRC2_COMPILE
 #define STAT_PRINTING_PERIOD 1000000
 #else
@@ -168,6 +172,11 @@ public:
   FDIPX BTB;
 #elif defined(BASELINEBTB) || defined(PERFECT_BTB)
   BASELINE_BTB BTB;
+  
+//////////////////////// PDEDE BTB //////////////////
+#elif defined(PDEDEBTB)
+  PDEDE_BTB BTB;
+////////////////////////////////////////
 #endif
 
 #ifdef PUSH_DTLB_PB

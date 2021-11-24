@@ -1,8 +1,6 @@
 # BTB_Organization
 This is Computer Architechture course project.
-Here we're implementing a Branch-Target-Buffer given in Pdede research paper.
-
-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
+Here we're implementing a Branch-Target-Buffer given in Pdede research paper. Pdede stands for Partition, Deduplication, and Decoding these are the three main idea presented in the paper also the implementaion for that is here.
 
 <p align="center">
   <h1 align="center"> ChampSim </h1>

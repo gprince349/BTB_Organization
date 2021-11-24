@@ -1,0 +1,439 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 10000000
+Simulation Instructions: 10000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 6400 MT/s
+CPU 0 runs /media/ashish/Windows1/Ashish/traces/public/server_003.champsimtrace.xz
+.xz
+ITLB has LRU replacement policy
+DTLB has LRU replacement policy
+STLB has LRU replacement policy
+FDIP Prefetcher at L1I
+L1I has LRU replacement policy
+L1D has LRU replacement policy
+Initialize SRRIP state for L2C
+Initialize DRRIP state for LLC
+Heartbeat CPU 0 instructions: 10000002 cycles: 2763351 heartbeat IPC: 3.6188 cumulative IPC: 3.6188 (Simulation time: 0 hr 4 min 45 sec) 
+
+Warmup complete CPU 0 instructions: 10000002 cycles: 2763351 (Simulation time: 0 hr 4 min 45 sec) 
+
+Cycle: 10000000 FTQ IN: 14349708 FTQ occupancy: 9.50978 DECODE IN: 14349708 DECODE occupancy: 23.7727 ROB IN: 14349708 ROB occupancy: 181.02 ROB OUT: 14349590
+Heartbeat CPU 0 instructions: 20000003 cycles: 19427100 heartbeat IPC: 0.600105 cumulative IPC: 0.600105 (Simulation time: 0 hr 7 min 2 sec) 
+Finished CPU 0 instructions: 10000001 cycles: 16663749 cumulative IPC: 0.600105 (Simulation time: 0 hr 7 min 2 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 0.600105 instructions: 10000001 cycles: 16663749
+ Fetch stage stalled: 80.5373  Sim cycles: 16663749 fetch stall cycle: 13420535
+ Empty decode stage: 50.2956  Sim cycles: 16663749 fetch stall cycle: 8381140
+ITLB TOTAL     ACCESS:    1149389  HIT:    1118445  MISS:      30944  HIT %:    97.3078  MISS %:    2.69221   MPKI: 3.0944
+ITLB LOAD TRANSLATION INSTRUCTION	ACCESS:    1126232  HIT:    1095288  MISS:      30944  HIT %:    97.2524  MISS %:    2.74757  MPKI: 3.0944
+ITLB TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:      23157  HIT:      23157  MISS:          0  HIT %:        100  MISS %:          0  MPKI: 0
+
+ITLB AVERAGE MISS LATENCY: 21.9278 cycles
+ITLB RQ	ACCESS:    1428163	FORWARD:          0	MERGED:     245789	TO_CACHE:    1182374
+
+DTLB TOTAL     ACCESS:    1796182  HIT:    1699541  MISS:      96641  HIT %:    94.6196  MISS %:    5.38036   MPKI: 9.6641
+DTLB LOAD TRANSLATION DATA	ACCESS:    1796182  HIT:    1699541  MISS:      96641  HIT %:    94.6196  MISS %:    5.38036  MPKI: 9.6641
+
+DTLB AVERAGE MISS LATENCY: 19.3417 cycles
+DTLB RQ	ACCESS:    2299755	FORWARD:          0	MERGED:     497529	TO_CACHE:    1802226
+
+STLB TOTAL     ACCESS:     160916  HIT:     139229  MISS:      21687  HIT %:    86.5228  MISS %:    13.4772   MPKI: 2.1687
+STLB LOAD TRANSLATION INSTRUCTION	ACCESS:      30944  HIT:      22889  MISS:       8055  HIT %:    73.9691  MISS %:    26.0309  MPKI: 0.8055
+STLB LOAD TRANSLATION DATA	ACCESS:      96641  HIT:      83020  MISS:      13621  HIT %:    85.9056  MISS %:    14.0944  MPKI: 1.3621
+STLB TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:      33331  HIT:      33320  MISS:         11  HIT %:     99.967  MISS %:  0.0330023  MPKI: 0.0011
+
+STLB AVERAGE MISS LATENCY: 64.3032 cycles
+STLB RQ	ACCESS:     168901	FORWARD:          0	MERGED:       7939	TO_CACHE:     160962
+
+STLB Hit, L1D data hit: 0
+STLB Hit, L2C data hit: 0
+STLB Hit, LLC data hit: 0
+STLB Hit, LLC data miss: 0
+STLB STLB hints to L2: 0
+L1D TOTAL     ACCESS:    2303650  HIT:    2176075  MISS:     127575  HIT %:     94.462  MISS %:    5.53795   MPKI: 12.7575
+L1D LOAD DATA	ACCESS:    1300919  HIT:    1205422  MISS:      95497  HIT %:    92.6593  MISS %:    7.34073  MPKI: 9.5497
+L1D RFO DATA	ACCESS:     963455  HIT:     945257  MISS:      18198  HIT %:    98.1112  MISS %:    1.88883  MPKI: 1.8198
+L1D PREFETCH DATA	ACCESS:      39276  HIT:      25396  MISS:      13880  HIT %:    64.6604  MISS %:    35.3396  MPKI: 1.388
+
+L1D PREFETCH  REQUESTED:      82650  ISSUED:      82650  USEFUL:       5098  USELESS:       9441
+L1D USEFUL LOAD PREFETCHES:       5098 PREFETCH ISSUED TO LOWER LEVEL:      14539  ACCURACY: 35.0643
+ TIMELY PREFETCHES:       5098 LATE PREFETCHES: 641 DROPPED PREFETCHES: 39
+L1D AVERAGE MISS LATENCY: 60077.6 cycles
+L1D RQ	ACCESS:    2172906	FORWARD:          0	MERGED:     847367	TO_CACHE:    1306940
+L1D WQ	ACCESS:    1036189	FORWARD:      18617	MERGED:      43374	TO_CACHE:     992815
+L1D PQ	ACCESS:      41334	FORWARD:          0	MERGED:          0	TO_CACHE:      41316
+
+L1D UNIQUE REGIONS ACCESSED: 0
+L1D REGIONS CONFLICTS: 0
+L1D Cross Page Prefetch Requests: 683
+L1D Same Page Prefetch Requests: 66782
+L1D ROI Sum of L1D PQ occupancy: 539513
+L1D PREFETCHES PUSHED FROM L2C: 0
+L1I TOTAL     ACCESS:    1396301  HIT:    1186353  MISS:     209948  HIT %:     84.964  MISS %:     15.036   MPKI: 20.9948
+L1I LOAD INSTRUCTION	ACCESS:    1276644  HIT:    1066696  MISS:     209948  HIT %:    83.5547  MISS %:    16.4453  MPKI: 20.9948
+L1I PREFETCH INSTRUCTION	ACCESS:     119657  HIT:     119657  MISS:          0  HIT %:        100  MISS %:          0  MPKI: 0
+
+L1I PREFETCH  REQUESTED:     195037  ISSUED:     195037  USEFUL:          0  USELESS:          0
+L1I USEFUL LOAD PREFETCHES:          0 PREFETCH ISSUED TO LOWER LEVEL:          0  ACCURACY: -nan
+ TIMELY PREFETCHES:          0 LATE PREFETCHES: 0 DROPPED PREFETCHES: 0
+L1I AVERAGE MISS LATENCY: 45.6348 cycles
+L1I RQ	ACCESS:    1862787	FORWARD:          0	MERGED:     571978	TO_CACHE:    1290809
+L1I PQ	ACCESS:     195037	FORWARD:          0	MERGED:      57683	TO_CACHE:     137354
+
+L1BTB TOTAL     ACCESS:    1053030  HIT:     658738  MISS:     394292  HIT %:    62.5564  MISS %:    37.4436   MPKI: 39.4292
+L1BTB BRANCH_DIRECT_JUMP	ACCESS:     108716 HIT:      70053 MISS:      38663 AVERAGE STALL: 68.0773 AVERAGE FETCH STALL: 51.2381 AVERAGE FETCH QUEUE STALL: 10.0198 AVERAGE DECODE STALL: 6.04954 AVERAGE EXECUTE STALL: 2.93832e+15
+L1BTB BRANCH_INDIRECT	ACCESS:      32802 HIT:      16503 MISS:      16299 AVERAGE STALL: 96.923 AVERAGE FETCH STALL: 15.6694 AVERAGE FETCH QUEUE STALL: 12.5789 AVERAGE DECODE STALL: 8.52866 AVERAGE EXECUTE STALL: 59.2885
+L1BTB BRANCH_CONDITIONAL	ACCESS:     533824 HIT:     386387 MISS:     147437 AVERAGE STALL: 77.7376 AVERAGE FETCH STALL: 59.9038 AVERAGE FETCH QUEUE STALL: 9.23286 AVERAGE DECODE STALL: 7.94494 AVERAGE EXECUTE STALL: 8.68123e+14
+L1BTB BRANCH_DIRECT_CALL	ACCESS:     136607 HIT:      51377 MISS:      85230 AVERAGE STALL: 64.7789 AVERAGE FETCH STALL: 45.6968 AVERAGE FETCH QUEUE STALL: 11.1457 AVERAGE DECODE STALL: 7.23301 AVERAGE EXECUTE STALL: 9.93363e+14
+L1BTB BRANCH_INDIRECT_CALL	ACCESS:      49740 HIT:      23817 MISS:      25923 AVERAGE STALL: 65.1804 AVERAGE FETCH STALL: 16.3996 AVERAGE FETCH QUEUE STALL: 5.38039 AVERAGE DECODE STALL: 5.79748 AVERAGE EXECUTE STALL: 36.938
+L1BTB BRANCH_RETURN	ACCESS:     191341 HIT:     110601 MISS:      80740 AVERAGE STALL: 95.9302 AVERAGE FETCH STALL: 32.1162 AVERAGE FETCH QUEUE STALL: 9.16892 AVERAGE DECODE STALL: 7.30363 AVERAGE EXECUTE STALL: 1.07524e+15
+L1BTB BRANCH_OTHER ACCESS:          0 HIT:          0 MISS:          0 AVERAGE STALL: -nan AVERAGE FETCH STALL: -nan AVERAGE FETCH QUEUE STALL: -nan AVERAGE DECODE STALL: -nan AVERAGE EXECUTE STALL: -nan
+L1BTB TOTAL ROB OCCUPANCY AT BTB MISS: 20.1649
+
+L2BTB TOTAL     ACCESS:     365079  HIT:     292144  MISS:      72935  HIT %:    80.0221  MISS %:    19.9779   MPKI: 7.2935
+L2BTB BRANCH_DIRECT_JUMP	ACCESS:      38430 HIT:      30624 MISS:       7806 AVERAGE STALL: 68.0773 AVERAGE FETCH STALL: 51.2381 AVERAGE FETCH QUEUE STALL: 10.0198 AVERAGE DECODE STALL: 6.04954 AVERAGE EXECUTE STALL: 2.93832e+15
+L2BTB BRANCH_INDIRECT	ACCESS:      10373 HIT:       6295 MISS:       4078 AVERAGE STALL: 96.923 AVERAGE FETCH STALL: 15.6694 AVERAGE FETCH QUEUE STALL: 12.5789 AVERAGE DECODE STALL: 8.52866 AVERAGE EXECUTE STALL: 59.2885
+L2BTB BRANCH_CONDITIONAL	ACCESS:     147437 HIT:     118974 MISS:      28463 AVERAGE STALL: 77.7376 AVERAGE FETCH STALL: 59.9038 AVERAGE FETCH QUEUE STALL: 9.23286 AVERAGE DECODE STALL: 7.94494 AVERAGE EXECUTE STALL: 8.68123e+14
+L2BTB BRANCH_DIRECT_CALL	ACCESS:      78061 HIT:      63350 MISS:      14711 AVERAGE STALL: 64.7789 AVERAGE FETCH STALL: 45.6968 AVERAGE FETCH QUEUE STALL: 11.1457 AVERAGE DECODE STALL: 7.23301 AVERAGE EXECUTE STALL: 9.93363e+14
+L2BTB BRANCH_INDIRECT_CALL	ACCESS:      15475 HIT:      11321 MISS:       4154 AVERAGE STALL: 65.1804 AVERAGE FETCH STALL: 16.3996 AVERAGE FETCH QUEUE STALL: 5.38039 AVERAGE DECODE STALL: 5.79748 AVERAGE EXECUTE STALL: 36.938
+L2BTB BRANCH_RETURN	ACCESS:      75303 HIT:      61580 MISS:      13723 AVERAGE STALL: 95.9302 AVERAGE FETCH STALL: 32.1162 AVERAGE FETCH QUEUE STALL: 9.16892 AVERAGE DECODE STALL: 7.30363 AVERAGE EXECUTE STALL: 1.07524e+15
+L2BTB BRANCH_OTHER ACCESS:          0 HIT:          0 MISS:          0 AVERAGE STALL: -nan AVERAGE FETCH STALL: -nan AVERAGE FETCH QUEUE STALL: -nan AVERAGE DECODE STALL: -nan AVERAGE EXECUTE STALL: -nan
+L2BTB TOTAL ROB OCCUPANCY AT BTB MISS: 109.013
+
+L2C TOTAL     ACCESS:     446083  HIT:     225189  MISS:     220894  HIT %:    50.4814  MISS %:    49.5186   MPKI: 22.0894
+L2C LOAD INSTRUCTION	ACCESS:     209948  HIT:      97053  MISS:     112895  HIT %:    46.2272  MISS %:    53.7728  MPKI: 11.2895
+L2C LOAD TRANSLATION INSTRUCTION	ACCESS:       8933  HIT:       6093  MISS:       2840  HIT %:    68.2078  MISS %:    31.7922  MPKI: 0.284
+L2C LOAD DATA	ACCESS:      94855  HIT:      46857  MISS:      47998  HIT %:    49.3986  MISS %:    50.6014  MPKI: 4.7998
+L2C RFO DATA	ACCESS:      18178  HIT:       8715  MISS:       9463  HIT %:    47.9426  MISS %:    52.0574  MPKI: 0.9463
+L2C PREFETCH DATA	ACCESS:      53759  HIT:      15955  MISS:      37804  HIT %:    29.6788  MISS %:    70.3212  MPKI: 3.7804
+L2C WRITEBACK DATA	ACCESS:      42650  HIT:      40526  MISS:       2124  HIT %:    95.0199  MISS %:    4.98007  MPKI: 0.2124
+L2C LOAD TRANSLATION DATA	ACCESS:      17701  HIT:       9948  MISS:       7753  HIT %:    56.2002  MISS %:    43.7998  MPKI: 0.7753
+L2C TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         59  HIT:         42  MISS:         17  HIT %:    71.1864  MISS %:    28.8136  MPKI: 0.0017
+
+L2C PREFETCH  REQUESTED:      45881  ISSUED:      45881  USEFUL:       9182  USELESS:      29281
+L2C USEFUL LOAD PREFETCHES:       9182 PREFETCH ISSUED TO LOWER LEVEL:      38525  ACCURACY: 23.8339
+ TIMELY PREFETCHES:       9182 LATE PREFETCHES: 721 DROPPED PREFETCHES: 0
+L2C AVERAGE MISS LATENCY: 69.0267 cycles
+L2C RQ	ACCESS:     349676	FORWARD:          0	MERGED:          0	TO_CACHE:     349673
+L2C WQ	ACCESS:      42650	FORWARD:          3	MERGED:          0	TO_CACHE:      42650
+L2C PQ	ACCESS:      60420	FORWARD:          0	MERGED:       2848	TO_CACHE:      57572
+
+L2C Dense regions hint from L2: 0
+PSCL5 TOTAL     ACCESS:      43452  HIT:      21726  MISS:      21726  HIT %:         50  MISS %:         50   MPKI: 2.1726
+PSCL5 LOAD TRANSLATION INSTRUCTION	ACCESS:      43348  HIT:      21674  MISS:      21674  HIT %:         50  MISS %:         50  MPKI: 2.1674
+PSCL5 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:        104  HIT:         52  MISS:         52  HIT %:         50  MISS %:         50  MPKI: 0.0052
+
+
+PSCL4 TOTAL     ACCESS:      42893  HIT:      21422  MISS:      21471  HIT %:    49.9429  MISS %:    50.0571   MPKI: 2.1471
+PSCL4 LOAD TRANSLATION INSTRUCTION	ACCESS:      31605  HIT:      21370  MISS:      10235  HIT %:    67.6159  MISS %:    32.3841  MPKI: 1.0235
+PSCL4 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:         66  HIT:         52  MISS:         14  HIT %:    78.7879  MISS %:    21.2121  MPKI: 0.0014
+PSCL4 LOAD TRANSLATION DATA	ACCESS:      11184  HIT:          0  MISS:      11184  HIT %:          0  MISS %:        100  MPKI: 1.1184
+PSCL4 TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         38  HIT:          0  MISS:         38  HIT %:          0  MISS %:        100  MPKI: 0.0038
+
+
+PSCL3 TOTAL     ACCESS:      42874  HIT:      21355  MISS:      21519  HIT %:    49.8087  MISS %:    50.1913   MPKI: 2.1519
+PSCL3 LOAD TRANSLATION INSTRUCTION	ACCESS:      30234  HIT:      21303  MISS:       8931  HIT %:    70.4604  MISS %:    29.5396  MPKI: 0.8931
+PSCL3 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:         66  HIT:         52  MISS:         14  HIT %:    78.7879  MISS %:    21.2121  MPKI: 0.0014
+PSCL3 LOAD TRANSLATION DATA	ACCESS:      12536  HIT:          0  MISS:      12536  HIT %:          0  MISS %:        100  MPKI: 1.2536
+PSCL3 TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         38  HIT:          0  MISS:         38  HIT %:          0  MISS %:        100  MPKI: 0.0038
+
+
+PSCL2 TOTAL     ACCESS:      38664  HIT:      16945  MISS:      21719  HIT %:    43.8263  MISS %:    56.1737   MPKI: 2.1719
+PSCL2 LOAD TRANSLATION INSTRUCTION	ACCESS:      25429  HIT:      16900  MISS:       8529  HIT %:    66.4596  MISS %:    33.5404  MPKI: 0.8529
+PSCL2 TRANSLATION FROM L1D PREFETCHER INSTRUCTION	ACCESS:         46  HIT:         45  MISS:          1  HIT %:    97.8261  MISS %:    2.17391  MPKI: 0.0001
+PSCL2 LOAD TRANSLATION DATA	ACCESS:      13145  HIT:          0  MISS:      13145  HIT %:          0  MISS %:        100  MPKI: 1.3145
+PSCL2 TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         44  HIT:          0  MISS:         44  HIT %:          0  MISS %:        100  MPKI: 0.0044
+
+
+LLC TOTAL     ACCESS:     242674  HIT:     183169  MISS:      59505  HIT %:    75.4794  MISS %:    24.5206   MPKI: 5.9505
+LLC LOAD INSTRUCTION	ACCESS:     112895  HIT:      92179  MISS:      20716  HIT %:    81.6502  MISS %:    18.3498  MPKI: 2.0716
+LLC LOAD TRANSLATION INSTRUCTION	ACCESS:       2840  HIT:       2544  MISS:        296  HIT %:    89.5775  MISS %:    10.4225  MPKI: 0.0296
+LLC LOAD DATA	ACCESS:      47288  HIT:      31162  MISS:      16126  HIT %:    65.8983  MISS %:    34.1017  MPKI: 1.6126
+LLC RFO DATA	ACCESS:       9451  HIT:       4117  MISS:       5334  HIT %:    43.5615  MISS %:    56.4385  MPKI: 0.5334
+LLC PREFETCH DATA	ACCESS:      38525  HIT:      24529  MISS:      13996  HIT %:    63.6703  MISS %:    36.3297  MPKI: 1.3996
+LLC WRITEBACK DATA	ACCESS:      23905  HIT:      21984  MISS:       1921  HIT %:     91.964  MISS %:    8.03598  MPKI: 0.1921
+LLC LOAD TRANSLATION DATA	ACCESS:       7753  HIT:       6639  MISS:       1114  HIT %:    85.6314  MISS %:    14.3686  MPKI: 0.1114
+LLC TRANSLATION FROM L1D PREFETCHER DATA	ACCESS:         17  HIT:         15  MISS:          2  HIT %:    88.2353  MISS %:    11.7647  MPKI: 0.0002
+
+LLC AVERAGE MISS LATENCY: 146.04 cycles
+LLC RQ	ACCESS:     180244	FORWARD:          0	MERGED:          0	TO_CACHE:     180243
+LLC WQ	ACCESS:      23905	FORWARD:          1	MERGED:          0	TO_CACHE:      23905
+LLC PQ	ACCESS:      38525	FORWARD:          0	MERGED:          0	TO_CACHE:      38525
+
+LLC Dense regions hint to LLC: 0
+
+RAW hits: 268821
+Loads Generated: 2441728
+Loads sent to L1D: 2172906
+Stores Generated: 1036185
+Stores sent to L1D: 1036189
+Major fault: 0 Minor fault: 5569
+Allocated PAGES: 5569
+
+stream: 
+stream:times selected: 91261
+stream:pref_filled: 15599
+stream:pref_useful: 3691
+stream:pref_late: 418
+stream:misses: 1205
+stream:misses_by_poll: 0
+
+CS: 
+CS:times selected: 9751
+CS:pref_filled: 4744
+CS:pref_useful: 3839
+CS:pref_late: 1001
+CS:misses: 1809
+CS:misses_by_poll: 1
+
+CPLX: 
+CPLX:times selected: 80764
+CPLX:pref_filled: 5374
+CPLX:pref_useful: 756
+CPLX:pref_late: 106
+CPLX:misses: 6482
+CPLX:misses_by_poll: 1
+
+NL_L1: 
+NL:times selected: 1963
+NL:pref_filled: 373
+NL:pref_useful: 67
+NL:pref_late: 76
+NL:misses: 247
+NL:misses_by_poll: 0
+
+total selections: 183739
+total_filled: 13880
+total_useful: 5098
+total_late: 1705
+total_polluted: 2
+total_misses_after_warmup: 101518
+conflicts: 1112739
+
+test: 29002
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:      14401  ROW_BUFFER_MISS:      43183
+ DBUS_CONGESTED:         35
+ WQ ROW_BUFFER_HIT:       4765  ROW_BUFFER_MISS:      11534  FULL:          0
+
+ AVG_CONGESTED_CYCLE: 4
+
+CPU 0 Branch Prediction Accuracy: 94.2515% MPKI: 11.1272 Average ROB Occupancy at Mispredict: 66.4712
+Branch types
+NOT_BRANCH: 8063876 80.6388%
+BRANCH_DIRECT_JUMP: 108716 1.08716%
+BRANCH_INDIRECT: 32802 0.32802%
+BRANCH_CONDITIONAL: 1416454 14.1645%
+BRANCH_DIRECT_CALL: 136607 1.36607%
+BRANCH_INDIRECT_CALL: 49740 0.4974%
+BRANCH_RETURN: 191341 1.91341%
+BRANCH_OTHER: 0 0%
+
+DRAM PAGES: 1048576
+Allocated PAGES: 5569
+Average_ROB_Occupancy: 123.414
+Average_Decode_Occupancy: 10.0956
+Average_FTQ_Occupancy: 4.30193
+Indirect max targets: 40 Average targets: 3.22127
+Branch_type:  BRANCH_DIRECT_JUMP:  Count Percentage: 14.3995 6.79975 1.47249 11.8257 4.75815 3.00406 3.12172 54.6186 
+Branch_type:  BRANCH_INDIRECT:  Count Percentage: 6.63089 0.929577 1.8677 43.925 4.70056 5.93193 2.55954 33.4548 
+Branch_type:  BRANCH_CONDITIONAL:  Count Percentage: 15.1605 5.33623 1.37057 10.6432 5.02433 2.30961 5.25685 54.8987 
+Branch_type:  BRANCH_DIRECT_CALL:  Count Percentage: 0.975883 6.06602 1.31807 2.38312 4.41072 1.40533 7.74648 75.6944 
+Branch_type:  BRANCH_INDIRECT_CALL:  Count Percentage: 6.47031 1.06684 2.63065 48.359 4.23213 1.4824 11.2796 24.479 
+Branch_type:  BRANCH_RETURN:  Count Percentage: 4.91623 5.2125 2.02065 22.3707 3.70706 2.4541 4.53045 54.7883 
+Branch_type:  BRANCH_DIRECT_JUMP:  Total Count: 29249 13812 2991 24021 9665 6102 6341 110944 
+Branch_type:  BRANCH_INDIRECT:  Total Count: 4658 653 1312 30856 3302 4167 1798 23501 
+Branch_type:  BRANCH_CONDITIONAL:  Total Count: 420148 147885 37983 294959 139241 64007 145685 1521428 
+Branch_type:  BRANCH_DIRECT_CALL:  Total Count: 2561 15919 3459 6254 11575 3688 20329 198644 
+Branch_type:  BRANCH_INDIRECT_CALL:  Total Count: 5325 878 2165 39799 3483 1220 9283 20146 
+Branch_type:  BRANCH_RETURN:  Total Count: 17739 18808 7291 80719 13376 8855 16347 197690 
+Number of unique branch instructions: 41070
+Upper 32 bits: 
+ffff
+ffff0000
+Unique upper 32 bits: 2
+Unique upper 36 bits: 4
+Unique upper 40 bits: 6
+Unique upper 44 bits: 30
+Unique upper 48 bits: 259
+Offset_3 21443
+Offset_4 2306
+Offset_5 1879
+Offset_6 1673
+Offset_7 1696
+Offset_8 1676
+Offset_9 1582
+Offset_10 1445
+Offset_11 1132
+Offset_12 810
+Offset_13 510
+Offset_14 552
+Offset_15 548
+Offset_16 462
+Offset_17 362
+Offset_18 514
+Offset_19 759
+Offset_20 1133
+Offset_21 1675
+Offset_22 2290
+Offset_23 2121
+Offset_24 130
+Offset_25 28
+Offset_26 52
+Offset_27 44
+Offset_28 13
+Offset_29 11
+Offset_64 10
+decode_dispatch_called: 4901737 29.4156
+Dispatch_width: 0 2696435 55.0098 16.1814
+Dispatch_width: 1 178663 3.64489 1.07217
+Dispatch_width: 2 173222 3.53389 1.03951
+Dispatch_width: 3 165505 3.37646 0.993204
+Dispatch_width: 4 527804 10.7677 3.16738
+Dispatch_width: 5 93723 1.91204 0.562436
+Dispatch_width: 6 1066385 21.7552 6.39943
+Empty_decode_cycles: 11762012 70.5844
+ROB_full_cycles: 1616221 9.69902
+Starvation_cycles_per_kilo_instr: 699.057
+Starvation_cycles_per_kilo_instr_3: 667.981
+Starvation_cycles_per_kilo_instr_0: 642.111
+Branch_type_1  (4,184)  (5,211)  (6,207)  (7,311)  (8,411)  (9,454)  (10,440)  (11,346)  (12,202)  (13,78)  (14,52)  (15,19)  (16,29)  (17,2)  (18,4)  (19,8)  (20,7)  (21,19)  (22,41)  (23,52) 
+Branch_type_2  (3,16)  (4,2)  (5,11)  (6,14)  (7,25)  (8,26)  (9,26)  (10,27)  (11,33)  (12,45)  (13,36)  (14,53)  (15,67)  (16,80)  (17,25)  (18,17)  (19,17)  (20,25)  (21,24)  (22,28)  (23,14)  (25,25)  (29,6) 
+Branch_type_3  (3,21427)  (4,2118)  (5,1648)  (6,1438)  (7,1317)  (8,1171)  (9,1005)  (10,762)  (11,484)  (12,225)  (13,56)  (14,15)  (64,7) 
+Branch_type_4  (6,2)  (7,10)  (8,26)  (9,33)  (10,91)  (11,126)  (12,159)  (13,150)  (14,199)  (15,227)  (16,155)  (17,148)  (18,216)  (19,375)  (20,506)  (21,908)  (22,1151)  (23,958)  (24,50)  (26,39)  (27,15)  (64,2) 
+Branch_type_5  (4,1)  (5,1)  (6,1)  (7,3)  (8,5)  (9,4)  (10,12)  (11,18)  (12,23)  (13,21)  (14,38)  (15,44)  (16,46)  (17,46)  (18,71)  (19,80)  (20,106)  (21,149)  (22,228)  (23,310)  (24,11)  (28,1)  (64,1) 
+Branch_type_6  (4,1)  (5,8)  (6,11)  (7,30)  (8,37)  (9,60)  (10,113)  (11,125)  (12,156)  (13,169)  (14,195)  (15,191)  (16,152)  (17,141)  (18,206)  (19,279)  (20,489)  (21,575)  (22,842)  (23,787)  (24,69)  (25,3)  (26,13)  (27,29)  (28,12)  (29,5) 
+ffffb3005940: 2cc06c65 2cc18fd3 2cc1a502 2cc1d262 2cc1e4c2 2cc2040d 2cc21ab9 2cc22d3d 2cc26132 2cc2b09d 2cc2c752 2cc32e97 2cc4805c 2cc49382 2cc5cb30 2cc63e38 2cc77fab 2cc922a5 2cc99312 2ccad481 2cccca5b 2cd0853b 2cd594fb 2cdc365b 
+ffffb301edb4: 2cc016b1 2cc03dc7 2cc0408f 2cc0522a 2cc052b4 2cc052c4 2cc052f4 2cc053c5 2cc053dd 2cc05422 2cc054c7 2cc0552c 2cc0555d 2cc05ac8 2cc05b3b 2cc05bac 2cc05d75 2cc06179 2cc061ea 2cc06496 2cc065ed 2cc066d1 2cc06747 2cc068a3 2cc06db0 2cc076df 2cc07750 2cc077c3 2cc07a37 2cc07a7f 2cc07b0e 2cc07b69 2cc07b6b 
+ffffb303ab10: 2cc2b167 2cc7a0f8 2cc7a103 2cc8a677 2cc8ef86 2cc8ef8d 2cc96222 2cc962db 2cca333b 2ccc4061 2ccc4067 2ccf6f10 2cd07fdb 2cd094af 2cd094b6 2cd17e3b 2cd275b7 2cd275d5 2cd3fe4e 2cd47b05 2cd59f58 2cd60f87 2cd6b7d5 2cd86bb2 2cd9de53 2cda60ad 2cda8e22 2cdad3d3 2cdad3df 2cdad3ec 2cdadbb9 2cdadee7 
+ffffb307e6e0: 2cc286a3 2cc286db 2cc3b05c 2cc49a72 2cc66ecd 2cc70113 2cc76864 2cca8bda 2cca8be1 2ccbfa7c 2cccf4f3 2ccd44f4 2ccd4536 2ccd45dd 2ccdd2c9 2cd08043 2cd360cd 2cd8222f 2cd82271 2cd8231d 2cd9de1c 2cdad5a2 2cdc1ee9 
+ffffb30b9980: 2cc2a57a 2cc6218f 2cc6f877 2cc6f89a 2cca2732 2cca6431 2ccb6d12 2ccc0aef 2ccc0b0c 2ccc4ea9 2ccc4eca 2cced7be 2cd00e26 2cd65cb1 2cd65cf5 2cd92f40 2cdad958 2cdada9f 2cdb5eaa 2cdbfadc 2cdc33d2 2cdc3420 2cdc3580 
+ffffb3244020: 2cc19bd7 2cc1cbf3 2cc1cbf9 2cc29a13 2cc64255 2cc66258 2cc9c34f 2cc9c3d2 2cc9c468 2cc9c46f 2cc9c475 2cc9c4fb 2cc9c591 2cc9f39a 2cc9f3a1 2ccc8e11 2cd75b08 2cd75b80 2cd75c21 2cd75d9a 2cd9210b 
+ffffb6d72920: 2db8260d 2db83bb6 2db83bc8 2db83bda 2db83bfe 2db844b5 2db84701 2db84710 2db84716 2dbaf645 2dbb5d9a 2dbb5ec4 2dbb7280 2dbc7f55 2dbc7f68 2dbceb91 2dbcebde 2dbf2117 2dbf2163 2dbf216f 2dbf2199 2dbf66db 2dc21c7e 2dc271ac 2dc81bf8 2dc892ea 2dc8932c 2dc89391 2dc96468 2dc9756f 2dc9cc11 2dc9cc15 2dc9cc19 2dca84e0 2dca8809 2dca8811 2dca8819 2dca8821 2dca882e 2dca8fbe 2dca8fc6 2dca8ff6 2dca9748 2dca9750 2dcb004e 2dcb03b9 2dcb101d 2dcb103d 2dcb107a 2dcbef0d 2dcbf4a7 2dcbf4ab 2dcbf4af 2dcbf4b3 2dcc5600 2dccd1f1 2dccd42f 2dccd433 2dccd71e 2dccd722 2dcce001 2dcce0c9 2dcce0cd 2dcce31a 2dcce31e 2dcce6e0 2dcce6e4 2dccefe9 2dcceff6 2dcda587 2dd09fdb 2dd0ed33 2dd0ed93 
+ffffb6d72a60: 2db690cc 2db690d1 2db6ad4f 2db802c4 2db8284c 2db82ac3 2db82b10 2db83b09 2db83b1f 2db83b94 2db83b9c 2db84459 2db8445d 2db86573 2dba8f7c 2dbacc82 2dbacfb7 2dbad3e2 2dbad3ec 2dbad4a7 2dbad4b0 2dbaeb15 2dbaeb1a 2dbaeb24 2dbafa2f 2dbb01ea 2dbb02db 2dbb02e0 2dbb02e6 2dbb0356 2dbb05ae 2dbb06e3 2dbb0907 2dbb0a02 2dbb0e38 2dbb0e3e 2dbb0eb6 2dbb11e7 2dbb1316 2dbb138d 2dbb1cd6 2dbb1e43 2dbb2098 2dbb2256 2dbb2670 2dbb273e 2dbb2857 2dbb29f0 2dbb2b73 2dbb2b97 2dbb2e78 2dbb2e80 2dbb2f35 2dbb320c 2dbb3b8e 2dbb3bca 2dbb3c48 2dbb3e71 2dbb3f86 2dbb421c 2dbb4220 2dbb4222 2dbb4235 2dbb430e 2dbb44dc 2dbb4577 2dbb4588 2dbb45f5 2dbb4953 2dbb49d7 2dbb49ed 2dbb4aa6 2dbb4b34 2dbb4cba 2dbb4d79 2dbb4dc6 2dbb4deb 2dbb4e60 2dbb5017 2dbb5098 2dbb5118 2dbb5218 2dbb5298 2dbb531a 2dbb549e 2dbb54cb 2dbb55b1 2dbb55b9 2dbb591a 2dbb6775 2dbb6799 2dbb74ed 2dbb77c1 2dbb7ff3 2dbb8044 2dbb83de 2dbb83e4 2dbb8aa4 2dbb8acc 2dbb8ad9 2dbb8efa 2dbb8f83 2dbb9263 2dbb928a 2dbb9525 2dbb9987 2dbb99ae 2dbb99be 2dbb9bcd 2dbb9bf0 2dbb9bf8 2dbbc7c4 2dbbc8b2 2dbc1a26 2dbc6fda 2dbc717a 2dbc7d84 2dbc9175 2dbc9eed 2dbceaeb 2dbcf3f7 2dbcf69c 2dbcf6b8 2dbcfd76 2dbcfd96 2dbd01f5 2dbd0245 2dbd025b 2dbd02db 2dbd04e8 2dbd04ed 2dbd050d 2dbd0637 2dbd064b 2dbd083c 2dbd0859 2dbd0c13 2dbd0e9a 2dbd136f 2dbd19a1 2dbd2065 2dbd2594 2dbd2b3f 2dbd2b82 2dbd2c79 2dbd2f5d 2dbd412f 2dbdfdeb 2dbdfe67 2dbdff15 2dbdff4f 2dbdff89 2dbe4770 2dbe6e8e 2dbe6f0b 2dbe7866 2dbe7896 2dbe78c4 2dbe8036 2dbf20e2 2dbf6279 2dbf66b1 2dbf66de 2dbf7c0d 2dbf7c2c 2dbf97bb 2dbf97dd 2dbf9c7c 2dbfab12 2dbfadc9 2dc0efa9 2dc0f0dc 2dc0f608 2dc0fd29 2dc101ea 2dc1020e 2dc16ae1 2dc20b92 2dc23890 2dc238a3 2dc238a8 2dc238d9 2dc238df 2dc23907 2dc23c5a 2dc295e8 2dc50192 2dc523a2 2dc6cdc2 2dc77f9b 2dc77fb4 2dc81b5a 2dc81b82 2dc81bcd 2dc81bff 2dc81d66 2dc892c8 2dc892d7 2dc892fb 2dc8c0df 2dc8d342 2dc95639 2dc95681 2dc95947 2dc96658 2dc96675 2dc96cba 2dc99e95 2dc9cbb9 2dc9cd9f 2dc9cf7e 2dc9d07b 2dc9d086 2dc9d205 2dc9d485 2dc9d4a3 2dca2f0b 2dca5915 2dcabe9d 2dcabeb4 2dcabec4 2dcac004 2dcadc43 2dcadf70 2dcadfe7 2dcae07c 2dcb00bc 2dcb00fa 2dcb0170 2dcb021f 2dcb023f 2dcb03a0 2dcb03e6 2dcb0487 2dcb0537 2dcb0626 2dcb0658 2dcb14d1 2dcb72c0 2dcbbf96 2dcbfdb5 2dcc94b6 2dcccdd8 2dccd1c8 2dccd3e3 2dcce0a4 2dcce189 2dcce1a8 2dccefce 2dccf566 2dccf58c 2dccf730 2dcd8cf9 2dcd8d19 2dcd9c3a 2dcdc48b 2dcdc4e5 2dce10b1 2dce509c 2dce9928 2dcf430c 2dcf437e 2dcf4628 2dcf4bff 2dd068eb 2dd06934 2dd069d1 2dd06a96 2dd06aec 2dd06b0f 2dd06bed 2dd06bfb 2dd06f6b 2dd0709a 2dd0716f 2dd07576 2dd07659 2dd07696 2dd0773c 2dd0776b 2dd07a8b 2dd07b00 2dd07b4a 2dd07b6c 2dd07b74 2dd07e3c 2dd08464 2dd08770 2dd088b4 2dd088e1 2dd0893f 2dd0898f 2dd08ddf 2dd09225 2dd09253 2dd09331 2dd0989b 2dd099d4 2dd09a04 2dd09a15 2dd09a7e 2dd09aab 2dd09b36 2dd0c1ce 2dd14a3b 2dd14bc8 2dd14e3c 
+ffffb6db4e2c: 2db6d444 2db6d56f 2db6d5a3 2db6d5bd 2db6d5f5 2db6d610 2db6d62d 2db6d64d 2db6d6a6 2db6d6de 2db6d739 2db6d8ae 2db6d93c 2db6da06 2db6da20 2db6daea 2db6db27 2db6db82 2db6dbd4 2db6ddd5 2db6de0d 2db6dfa5 2db6e059 2db6e0b3 2db6e167 2db6e181 
+ffffb6db98f0: 2db6f06c 2db6f2a2 2db6f4f3 2db6f5e4 2db6f8c4 2db6fa1e 2db6fe58 2db7039c 2db70924 2db7099e 2db70e98 2db70f0c 2db70fcd 2db710ce 2db71120 2db71313 2db71391 2db713bb 2db7164e 2db71821 2db719ad 2db71d19 2db71d69 2db71dff 2db71eab 2db71f7d 2db722a2 2db722bc 
+ffffb6dceab4: 2db82786 2db82887 2db82fc3 2dbaf669 2dbc628f 2dbc6885 2dbf60f9 2dc0ede6 2dc0f814 2dc0fa0d 2dc0fa7e 2dc0fe94 2dc22034 2dc22224 2dc77b54 2dc77f2e 2dc78056 2dc78337 2dcd8fa2 2dcd8ff4 
+ffffb6dcefa4: 2db82786 2db82887 2db8297b 2db82fc3 2dbaf669 2dbc628f 2dbc6885 2dbf60f9 2dc0ede6 2dc0f814 2dc0fa0d 2dc0fe94 2dc22034 2dc22224 2dc77b54 2dc77f2e 2dc78056 2dc78337 2dcc0d3b 2dcc0dae 2dcd8fa2 2dcd8ff4 
+ffffb6dcf01c: 2db82786 2db82887 2db8297b 2db82fc3 2dbaf669 2dbc628f 2dbf60f9 2dc0ede6 2dc0f814 2dc0fa0d 2dc0fe94 2dc10171 2dc22034 2dc22224 2dc77f2e 2dc78056 2dc78337 2dcc0d3b 2dcc0dae 2dcd8874 2dcd8fa2 2dcd8ff4 
+ffffb6dd14ac: 2db7435d 2db74679 2db74698 2db74768 2db747b8 2db747d0 2db74870 2db74878 2db748a8 2db748d8 2db748f8 2db74920 2db74948 2db74a70 2db74a78 2db74ad0 2db74af0 2db74c70 2db74f70 2db74fd8 2db74ff0 2db75010 2db75030 2db75078 
+ffffb6dd14e8: 2db7435d 2db74679 2db74698 2db74768 2db747d0 2db74830 2db74848 2db74870 2db74878 2db74880 2db74948 2db74a78 2db74ad0 2db74af0 2db74c70 2db74f70 2db74ff0 2db75010 2db75068 2db75080 
+ffffb6df6cfc: 2db5f674 2db5f6ed 2db5f783 2db5f846 2db5fb07 2db5fe64 2db5fe92 2db6011a 2db6118f 2db615f3 2db61672 2db619e9 2db61b9e 2db61ee7 2db61f84 2db62021 2db6226c 2db62340 2db62381 2db6243a 2db634c9 2db635ed 2db64bd4 2db669a7 2db66e13 2db66ecc 2db67011 2db67185 2db67366 2db673ae 2dc20bde 2dcc0801 2dcc0bac 
+ffffb6e9afb0: 2dbb152d 2dbd25aa 2dbd25b3 2dbd264c 2dbd265e 2dbd2661 2dbd273c 2dbd2776 2dbd280d 2dbd2810 2dbd2b68 2dbd2b76 2dbd5fb6 2dc342a8 2dc342ab 2dc7fcaa 2dc7ff27 2dc808d2 2dc80ab0 2dc80fff 2dc81002 2dc8102e 2dc8119a 2dc8134e 2dc81353 2dc813b9 2dc813bc 2dc8146b 2dcaf022 2dce1564 2dce1567 2dce1576 2dce1c58 2dce1c73 2dce1cc6 2dce1cec 
+ffffb6e9b114: 2dbb0fe8 2dbb14b8 2dbb14d3 2dbb1532 2dbb4240 2dbb5037 2dbb5039 2dbb50b7 2dbb50b9 2dbb5137 2dbb5139 2dbb5237 2dbb5239 2dbb52b9 2dbb52bb 2dbb5341 2dbb5348 2dbb55c4 2dbb593c 2dbb593e 2dbd1d49 2dbd2471 2dbd2473 2dbd257a 2dbd258f 2dbd25af 2dbd25ba 2dbd2655 2dbd266e 2dbd2670 2dbd26ba 2dbd2741 2dbd277d 2dbd281a 2dbd281c 2dbd2b70 2dbd2b7d 2dbd2b7f 2dbd2cb2 2dbd2f2c 2dc342b7 2dc342b9 2dc342c0 2dc7fc82 2dc7fc95 2dc7fcb0 2dc7fd92 2dc7fd94 2dc7fe59 2dc7fe5b 2dc7ff32 2dc7ff34 2dc807cd 2dc807de 2dc808da 2dc80ab8 2dc80e06 2dc80f6b 2dc80ff8 2dc80ffa 2dc81038 2dc8103a 2dc811a1 2dc811a3 2dc81335 2dc8133e 2dc81340 2dc8135c 2dc8138c 2dc813c6 2dc813c8 2dc813ca 2dc81475 2dc81477 2dcadfb8 2dcaeef8 2dcaef83 2dcaefaf 2dcaf029 2dce1578 2dce157c 2dce15b4 2dce15b6 2dce1674 2dce1c3e 2dce1c40 2dce1c5e 2dce1cd0 2dce1cdc 2dce1d36 2dce1d47 2dce1d52 
+ffffb6eb93bc: 2db82786 2db82887 2db828cd 2db8297b 2db82fc3 2dbaf669 2dbc628f 2dbc6885 2dbf60f9 2dc0ede6 2dc0ee1b 2dc0ee46 2dc0f814 2dc0fa0d 2dc0fa7e 2dc0fe94 2dc0fef3 2dc10171 2dc22034 2dc22224 2dc2265b 2dc22683 2dc77b54 2dc77f2e 2dc78056 2dc78337 2dcd8874 2dcd8fa2 2dcd8ff4 
+ffffb6eb9418: 2dc180e4 2dc180ea 2dc1819a 2dc181a0 2dc18fb2 2dc18fe9 2dc18fef 2dc8d985 2dc8dcdf 2dc8dd73 2dc8dd7a 2dc8ddd7 2dc8dddc 2dc8dde4 2dc8ddea 2dc8de6a 2dc8de71 2dc8de78 2dc8de7f 2dc8dfe9 2dc8dfef 2dc8dff5 
+ffffb6eb9e04: 2db6915c 2db691c4 2db72f29 2db7301f 2db730e9 2db73101 2db73129 2db73131 2db73139 2db7315d 2db7340e 2db73462 2db73480 2db73aa8 2db73afc 2db73b70 2db73ba9 2db73be4 2db73bfa 2db73c02 
+ffffb6ebb3dc: 2db729b9 2db72a07 2db72a25 2db72a2e 2db72a52 2db72a5b 2db72a6a 2db72a6d 2db72a70 2db72a7f 2db72a91 2db72a9d 2db72aac 2db72abb 2db72b2a 2db72b2d 2db72b4e 2db72b5a 2db72bea 2db72d0a 2db72d37 2db72d40 2db72d4c 2db72d58 2db72d6d 2db72d73 2db72d76 2dbacc32 2dbacc38 2dbacc7e 2dbacc8a 2dbc4f8c 2dbc52de 2dc99c89 2dcaacae 
+ffffb6ebdd3c: 2db72f27 2db7301d 2db73065 2db7308f 2db730e7 2db730ff 2db73127 2db7312f 2db73137 2db7315b 2db7318b 2db731b3 2db731e5 2db73215 2db733fb 2db73405 2db73460 2db7347e 2db7365e 2db73a1e 2db73aa6 2db73aeb 2db73b5f 2db73ba7 2db73be2 2db73bf8 2db73c00 
+ffffb6f13400: 2dbcf0a9 2dbf8747 2dc888a3 2dc88929 2dc89fea 2dc8a0d2 2dc95d98 2dc96691 2dc96715 2dc9672a 2dca9e7e 2dca9e86 2dca9e96 2dcafe01 2dcb0d63 2dcccf5a 2dccd323 2dccd7b4 2dccdd04 2dcce222 2dcce492 
+ffffb6f13410: 2db82fd0 2dbcf0a9 2dbf610b 2dbf8747 2dc0f822 2dc0fa1b 2dc0fa8c 2dc222b9 2dc235d0 2dc88068 2dc88283 2dc888a3 2dc88929 2dc89fea 2dc8a0d2 2dc96691 2dc96715 2dc9672a 2dc96c2d 2dcafe01 2dcce222 2dcce492 
+ffffb6f13478: 2dbcf0a9 2dbf8747 2dbf99bb 2dbf99c1 2dc22775 2dc228bc 2dc22ce4 2dc236ee 2dc89fea 2dc95d98 2dc96691 2dc96715 2dc9672a 2dc96c3b 2dcafe01 2dcb0d63 2dcb0d9c 2dcccf5a 2dccd0d1 2dccd7b4 2dccdd04 2dccde48 2dcce222 2dcce492 2dcf0c57 
+ffffb6f13658: 2dbcf0a9 2dbf8747 2dc228b1 2dc235c2 2dc88068 2dc88283 2dc888a3 2dc88929 2dc89fea 2dc8a0d2 2dc95d98 2dc96691 2dc96715 2dc96c2d 2dcb0d63 2dcccf5a 2dccd7b4 2dccdd04 2dcce222 2dcce492 
+ffffb6f13660: 2db8322a 2dbad25a 2dbad69d 2dbcf0a9 2dbf6148 2dbf8747 2dc0f898 2dc88068 2dc88283 2dc888a3 2dc89fea 2dc8a0d2 2dc96691 2dc96715 2dc9672a 2dcb0d63 2dccd7b4 2dccdd04 2dcce222 2dcce492 
+ffffb6f13670: 2dbcf0a9 2dbf8747 2dbf9990 2dc0f17f 2dc222b9 2dc235d0 2dc77b42 2dc88068 2dc88283 2dc888a3 2dc89fea 2dc8a0d2 2dc96691 2dc96715 2dc9672a 2dc96c2d 2dcb0d79 2dcbf73e 2dccdd04 2dcce222 2dcce492 
+ffffb6f13698: 2dbcf0a9 2dbf83e2 2dbf8747 2dc888a3 2dc89fea 2dc8a0d2 2dc95d98 2dc96691 2dc96715 2dc9672a 2dcb0d63 2dcccf5a 2dccd323 2dccd7b4 2dccdd04 2dcce222 2dcce492 2dcf0653 2dcf0c83 2dcf0c9e 2dcf0cf1 
+ffffb6f13868: 2dbadd08 2dbcf03e 2dbcf0a9 2dbcf182 2dbcf1c9 2dbe0adc 2dbf8747 2dc235d0 2dc88068 2dc88283 2dc888a3 2dc89fea 2dc8a0d2 2dc96691 2dc96715 2dc9672a 2dc96dd0 2dc9a9d1 2dc9c7a8 2dcb0d63 2dccd323 2dccd33d 2dccd7b4 2dcce222 2dcce492 
+ffffb6f138b8: 2db827a0 2dbad685 2dbcf0a9 2dbf8747 2dc235d0 2dc88068 2dc88283 2dc888a3 2dc89fea 2dc8a0d2 2dc96691 2dc96715 2dc9672a 2dcb0d63 2dcccf5a 2dccd7b4 2dccdaaa 2dccdd04 2dcce222 2dcce492 
+ffffb6f13c80: 2dbcf0a9 2dbcf1c9 2dbf8747 2dc0f17f 2dc888a3 2dc89fea 2dc8a0d2 2dc96691 2dc96715 2dc9672a 2dcafe4f 2dcb0d63 2dcb0d79 2dcccf5a 2dccd323 2dccd7b4 2dccdaaa 2dccdd04 2dcce222 2dcce492 
+ffffb6f13c88: 2dbadd08 2dbcf03e 2dbcf0a9 2dbf810d 2dbf8747 2dc235d0 2dc88068 2dc88283 2dc888a3 2dc89fea 2dc8a0d2 2dc96691 2dc96715 2dc9672a 2dc9c7a8 2dcb0d63 2dccd323 2dccd33d 2dccdd04 2dcce222 2dcce492 
+ffffb6f3c2a8: 2dbc4ce1 2dbc4d01 2dbc4d05 2dbc4d1f 2dbc4d27 2dbc4d43 2dbc4d49 2dbc4d4b 2dbc4d4d 2dbc4d77 2dbc4d8d 2dbc4d97 2dbc4d99 2dbc4d9b 2dbc4d9d 2dbc4da7 2dbc4dbd 2dbc4ddb 2dbc4de3 2dbc4e1b 2dbc4e25 2dbc4e2f 2dbc4e31 2dbc4e33 2dbc4e35 2dbc4e47 2dbc4e57 2dbc4e59 2dbc4e5b 2dbc4e71 2dbc4e77 2dbc4efb 2dbc4f03 2dbc4f07 2dbc4f09 2dbc4f17 2dbc4f21 2dbc4f23 2dbc4f29 
+ffffb6fbd328: 2dbef63f 2dbef649 2dbef6cb 2dbef6df 2dbef6e4 2dbef766 2dbef7bc 2dbef7c5 2dbef7e7 2dbef9cc 2dbef9f7 2dbefa9f 2dbefb63 2dbefb80 2dbefb92 2dbefbc4 2dbefbe7 2dbefc68 2dbefc6d 2dbefc72 2dbefc92 2dbefcce 2dbefce2 2dbefd23 2dbefd2d 2dbefd62 2dbefd79 2dbefe57 2dbeff22 
+ffffb6fe1d20: 2dbc4ce1 2dbc4d01 2dbc4d05 2dbc4d1f 2dbc4d49 2dbc4d4b 2dbc4d4d 2dbc4d77 2dbc4d8d 2dbc4d97 2dbc4d99 2dbc4d9b 2dbc4d9d 2dbc4da7 2dbc4ddb 2dbc4e1b 2dbc4e2f 2dbc4e31 2dbc4e33 2dbc4e35 2dbc4e47 2dbc4e59 2dbc4e77 2dbc4efb 2dbc4f07 2dbc4f09 2dbc4f17 2dbc4f21 2dbc4f23 2dbc4f29 
+ffffb70403f4: 2db72f27 2db7301d 2db73065 2db7308f 2db730e7 2db730ff 2db73127 2db7312f 2db73137 2db7315b 2db7318b 2db731b3 2db731e5 2db73215 2db733fb 2db73405 2db73460 2db7347e 2db7365e 2db73a1e 2db73ba7 
+ffffb7040588: 2db72f27 2db7301d 2db73065 2db7308f 2db730e7 2db730ff 2db73127 2db7312f 2db73137 2db7315b 2db7318b 2db731b3 2db731e5 2db73215 2db733fb 2db73405 2db73460 2db7347e 2db7365e 2db73a1e 2db73ba7 2db73bf8 
+ffffb706ace0: 2db83780 2db83be7 2db86078 2dbaeb2e 2dbaeb54 2dbaec79 2dbaff5d 2dbaff93 2dbb2efc 2dbb5d61 2dbb5e15 2dbb729c 2dbb72ea 2dbb731f 2dbb7355 2dbb738a 2dbb73c0 2dbb83fd 2dbba6cc 2dbbbb0b 2dbbbbb7 2dbbbbed 2dbbc0ff 2dbbc704 2dbbc729 2dbbc8fc 2dbc7cd2 2dbcebf7 2dbcec2c 2dbcec61 2dbcec96 2dbd0ab3 2dbd0ae0 2dbd0b07 2dbd0b2f 2dbe4880 2dbe48b2 2dbe4b9f 2dbe4bbe 2dbe7eb2 2dbe875e 2dbe8796 2dbf652a 2dbf74f7 2dbf7523 2dbf7b51 2dbf7b7b 2dbf7bd0 2dbf7bf8 2dbf7c39 2dbf86b9 2dbf86e3 2dbf8afd 2dbf8b2d 2dbf97ea 2dbf97fb 2dbf980d 2dbf981e 2dbf9830 2dbf9842 2dbf9853 2dbf99b1 2dbf9a90 2dbf9bb3 2dbf9dfe 2dc0f4c7 2dc0f4f8 2dc0f5e6 2dc0f5f7 2dc0f666 2dc1021f 2dc10300 2dc1033f 2dc20f86 2dc88a4e 2dca87ac 2dca87e3 2dca90e5 2dca9126 2dca9144 2dcb856a 2dcb85a3 2dcb85d3 2dcb85fd 2dcb87ae 2dcb87e7 2dcbf24b 2dcbf263 2dcc04f3 2dcc051e 2dcc054c 2dcc057b 2dccce67 2dccefff 2dccf747 2dcd8c94 2dcd8cc0 2dcdfa45 2dcdfad0 2dce4f2e 2dd14f3a 2dd14f9d 2dd153de 2dd15480 2dd1556a 
+ffffb7222290: 2dbc4d01 2dbc4d05 2dbc4d3f 2dbc4d49 2dbc4d4b 2dbc4d4d 2dbc4d77 2dbc4d97 2dbc4d99 2dbc4d9b 2dbc4d9d 2dbc4da7 2dbc4ddb 2dbc4e1b 2dbc4e2f 2dbc4e31 2dbc4e33 2dbc4e35 2dbc4e47 2dbc4e59 2dbc4ef9 2dbc4f07 2dbc4f09 2dbc4f21 2dbc4f23 2dbc4f29 
+ffffb7227fac: 2dbc4ce1 2dbc4d01 2dbc4d05 2dbc4d1f 2dbc4d49 2dbc4d4b 2dbc4d4d 2dbc4d77 2dbc4d8d 2dbc4d97 2dbc4d99 2dbc4d9b 2dbc4d9d 2dbc4da7 2dbc4ddb 2dbc4e1b 2dbc4e2f 2dbc4e31 2dbc4e33 2dbc4e35 2dbc4e47 2dbc4e59 2dbc4e77 2dbc4ef9 2dbc4efb 2dbc4f07 2dbc4f09 2dbc4f17 2dbc4f21 2dbc4f23 2dbc4f29 
+ffffb722834c: 2dbc4ce1 2dbc4d01 2dbc4d05 2dbc4d77 2dbc4d8d 2dbc4d97 2dbc4d99 2dbc4d9b 2dbc4d9d 2dbc4da7 2dbc4ddb 2dbc4e1b 2dbc4e2f 2dbc4e31 2dbc4e33 2dbc4e35 2dbc4e47 2dbc4e59 2dbc4e77 2dbc4ef9 2dbc4efb 2dbc4f07 2dbc4f09 2dbc4f17 2dbc4f21 2dbc4f23 2dbc4f29 
+ffffb7257664: 2dbc4ce1 2dbc4d01 2dbc4d1f 2dbc4d27 2dbc4d43 2dbc4d49 2dbc4d4b 2dbc4d4d 2dbc4d77 2dbc4d8d 2dbc4d93 2dbc4d97 2dbc4da7 2dbc4dbd 2dbc4ddb 2dbc4de3 2dbc4e25 2dbc4e31 2dbc4e33 2dbc4e47 2dbc4e57 2dbc4e59 2dbc4e5b 2dbc4e71 2dbc4e77 2dbc4efb 2dbc4f03 2dbc4f09 
+ffffb7259a48: 2dbc4ce1 2dbc4d01 2dbc4d05 2dbc4d1f 2dbc4d27 2dbc4d3f 2dbc4d43 2dbc4d49 2dbc4d4b 2dbc4d4d 2dbc4d77 2dbc4d8d 2dbc4d97 2dbc4d99 2dbc4d9b 2dbc4d9d 2dbc4da7 2dbc4dbd 2dbc4ddb 2dbc4de3 2dbc4e1b 2dbc4e25 2dbc4e2f 2dbc4e31 2dbc4e33 2dbc4e35 2dbc4e47 2dbc4e57 2dbc4e59 2dbc4e5b 2dbc4e71 2dbc4e77 2dbc4efb 2dbc4f03 2dbc4f07 2dbc4f09 2dbc4f17 2dbc4f21 2dbc4f23 2dbc4f29 
+ffffb7259bdc: 2dbab67d 2dbab690 2dbae4d8 2dbc4f55 2dbc4f95 2dbc4fe7 2dbc4ff3 2dbc50b5 2dbc50d5 2dbc5109 2dbc519f 2dbc51b9 2dbc51d7 2dbc51e1 2dbc521a 2dbc5257 2dbe0d8b 2dcafdd4 2dcafe18 2dcf1443 
+ffffb7259c58: 2dbc4ce1 2dbc4d01 2dbc4d05 2dbc4d1f 2dbc4d27 2dbc4d3f 2dbc4d43 2dbc4d49 2dbc4d4b 2dbc4d4d 2dbc4d77 2dbc4d8d 2dbc4d97 2dbc4d99 2dbc4d9b 2dbc4d9d 2dbc4da7 2dbc4dbd 2dbc4ddb 2dbc4de3 2dbc4e1b 2dbc4e25 2dbc4e2f 2dbc4e31 2dbc4e33 2dbc4e35 2dbc4e47 2dbc4e57 2dbc4e59 2dbc4e5b 2dbc4e77 2dbc4f03 2dbc4f07 2dbc4f09 2dbc4f17 2dbc4f21 2dbc4f23 2dbc4f29 
+ffffb7259cac: 2dbc4ce1 2dbc4d01 2dbc4d05 2dbc4d1f 2dbc4d27 2dbc4d3f 2dbc4d43 2dbc4d49 2dbc4d4b 2dbc4d4d 2dbc4d77 2dbc4d8d 2dbc4d99 2dbc4d9b 2dbc4d9d 2dbc4da7 2dbc4dbd 2dbc4ddb 2dbc4de3 2dbc4e1b 2dbc4e25 2dbc4e2f 2dbc4e31 2dbc4e33 2dbc4e35 2dbc4e47 2dbc4e57 2dbc4e59 2dbc4e5b 2dbc4e71 2dbc4e77 2dbc4efb 2dbc4f03 2dbc4f07 2dbc4f09 2dbc4f17 2dbc4f21 2dbc4f23 2dbc4f29 
+ffffb72afbac: 2dbb0388 2dbb07b5 2dbb14d5 2dbb14d7 2dbc7013 2dbc7193 2dbd19d3 2dbd1b05 2dbd21a0 2dbd2445 2dbd2672 2dbd2b9a 2dbd307a 2dbd39d1 2dbdf1a9 2dbe869a 2dbe86ff 2dc20a87 2dc20ac8 2dc5030d 2dcadfb1 2dcae037 2dcaf00f 2dcbc03c 2dce1ce9 2dceff27 2dcf4338 2dcf434c 2dcf43f5 2dcf43ff 2dcf4535 2dcf4585 
+ffffb72bf838: 2db6d554 2db6d632 2db6e098 2db6fa1b 2db7138e 2db71d57 2db71e8f 2db71f61 2db7229f 2db75a7f 2db75a89 2db75c15 2dbae5eb 2dbae804 2dbcf240 2dbcf247 2dbed60a 2dbed62a 2dbf7cf3 2dc10183 2dc21015 2dc95d32 2dc9b2cd 2dc9b6a8 2dc9b74f 2dcc3ed6 2dcc3ee6 2dcc3f5f 2dcc56e6 2dcc5aa9 2dcc5b33 2dcc5b7b 2dcce20c 2dcce276 2dcce459 2dcce5bc 2dcce679 
+ffffb72c000c: 2db6fa08 2db6fe42 2db7038a 2db7090e 2db70988 2db70e86 2db70efa 2db70fb7 2db710b8 2db7110b 2db712fd 2db7137b 2db713a5 2db71635 2db7180c 2db7199b 2db71d07 2db71d40 2db71dd6 2db71e78 2db71f4a 2db7228c 2db722aa 2db72935 2db72945 2db7295e 2db745a4 2db745cb 2db745f0 2db74615 2db7463b 2db829d7 2db82bbe 2dbaa9d7 2dbaaa44 2dbaaeb5 2dbacfcc 2dbcea9f 2dbceadc 2dbd0d18 2dbdfddc 2dbdfe58 2dbdff06 2dbdff40 2dbdff7a 2dc180d3 2dc18189 2dc18fd8 2dc20ee9 2dc2108e 2dc21141 2dc21762 2dc21776 2dc22c20 2dc8dab2 2dc8dadf 2dc8db19 2dc8db56 2dc8dc40 2dc8de2d 2dc9b2e8 2dc9b52a 2dc9b6b9 2dc9bc0b 2dc9d1fc 2dcbef27 2dcbf444 2dcc07c0 2dcc0880 2dcc0c7f 2dcc0d62 2dcc0d9a 2dcc3e18 2dcc3e7c 2dcc3eb3 2dcc3f3c 2dcc4034 2dcc4623 2dcc57a6 2dcc57e9 2dcc5bb5 2dccdc59 2dcd877e 2dcd8918 
+ffffb72c0184: 2db6ad64 2db82b29 2dbaa6e2 2dbaa718 2dbaa870 2dbaa8b1 2dbaa8eb 2dbaa924 2dc17232 2dc180b6 2dc18100 2dc18128 2dc18a12 2dc18abd 2dc18af3 2dc18eee 2dc18f0a 2dc18f31 2dc18f52 2dc18f86 2dc2117c 2dc211a8 2dc22c6b 2dc22c8c 2dc77e4a 2dc8d347 2dc8dc84 2dc8dcc0 2dc8dd3b 2dc8dd58 2dc8dd84 2dc8dd9e 2dc96530 2dc99d6b 2dcc40ca 2dcc581d 2dcc5852 2dccd1dd 
+ffffb72c0f74: 2db767ea 2db82a3d 2db82aa0 2db82b81 2db82b87 2db82d3a 2db82d4c 2dbaaaa2 2dbaaf8c 2dbaaf96 2dbaaf9b 2dbae517 2dbced17 2dbd0e60 2dbdffda 2dbe001d 2dbe0022 2dc0ee89 2dc0f090 2dc164af 2dc16986 2dc17151 2dc181e9 2dc181ee 2dc18a4e 2dc18b5c 2dc19068 2dc1906e 2dc210d6 2dc212ae 2dc212f2 2dc212f7 2dc212fc 2dc2163b 2dc217ae 2dc22e98 2dc8c706 2dc8e398 2dc8e40c 2dc8e411 2dc96e23 2dc9b34b 2dc9bc51 2dc9cb97 2dc9cb9c 2dc9d066 2dc9d18e 2dc9d294 2dcb0480 2dcb0530 2dcb061f 2dcb0a86 2dcb0d26 2dcc3fca 2dcc3fe1 2dcc3feb 2dcc3ffa 2dcc4112 2dcc475e 2dcc5a0f 2dcc5a22 2dcc9fd8 2dccdc9c 2dccdca7 2dcd8a5f 
+ffffb72c293c: 2dc16584 2dc181b5 2dc8c72e 2dc95e99 2dc95ed2 2dc95f6e 2dc96024 2dc9612c 2dc9679e 2dc9cf8a 2dc9d169 2dc9d1b7 2dcb0b1a 2dcc41ec 2dcc41ef 2dcc4276 2dcc5a75 2dcc5a7c 2dcc5b48 2dcc5bd6 2dcd8798 2dcd879b 2dcd8933 2dcd8936 
+ffffb72c3590: 2dbc4ce1 2dbc4d01 2dbc4d1f 2dbc4d27 2dbc4d49 2dbc4d4b 2dbc4d4d 2dbc4d77 2dbc4d8d 2dbc4d97 2dbc4d99 2dbc4da7 2dbc4e1b 2dbc4e2f 2dbc4e31 2dbc4e33 2dbc4e47 2dbc4e59 2dbc4e77 2dbc4efb 2dbc4f09 2dbc4f17 2dbc4f21 2dbc4f23 
+ffffb72c4078: 2dbad53b 2dbce1d6 2dbcfdf4 2dbf9a85 2dc0f1aa 2dc0f1b5 2dc103b9 2dc16981 2dc172a7 2dc21044 2dc88246 2dc88a0c 2dc8935c 2dc89453 2dc89698 2dc95f9c 2dc97562 2dcbf767 2dcbf774 2dcbf841 2dcc3fa3 2dcc40e5 2dcc4743 2dccceca 2dcce290 2dcce2d5 2dccf5af 2dccf5b8 
+ffffb72e8cd4: 2cc27028 2cc27036 2cc27126 2cc2713e 2cc541af 2cc5b38b 2cc9e01d 2ccae6e3 2ccbfa6e 2ccbfac9 2ccbfb35 2ccbfb39 2ccbfb42 2cce4ff7 2cce7148 2cce72f4 2cd0496b 2cd049a1 2cd098d6 2cd0f63a 2cd0f726 2cd2ae40 2cd34d30 2cd34d44 2cd41bf0 2cd48c7d 2cd66fc2 2cd66fd0 2cd670b4 2cd670cc 2cd68686 2cdac2b7 2cdc57b9 2cdc57db 2cdc583c 2cdc58af 
+ffffb72fbdb0: 2db5f693 2db5fb00 2db601a1 2db61219 2db61a68 2db61c26 2db61f72 2db6200f 2db620ac 2db6234e 2db6238f 2db623c6 2db6322c 2db63231 2db634fd 2db6362e 2db64c00 2db669e9 2db66e2e 2db66f0b 2db67041 2db673a8 2dbce537 2dcafdda 
+ffffb72fdc2c: 2db7435d 2db74679 2db7467c 2db74698 2db74768 2db747b8 2db747d0 2db74830 2db74848 2db74870 2db74878 2db74880 2db748a8 2db748d8 2db748f8 2db74920 2db74948 2db74a70 2db74a78 2db74ad0 2db74af0 2db74c70 2db74f70 2db74fd8 2db74ff0 2db75010 2db75068 2db75080 
+ffffb72fec98: 2db69187 2db72f27 2db7301d 2db73065 2db7308f 2db730e7 2db730ff 2db73127 2db7312f 2db73137 2db7315b 2db7318b 2db731b3 2db731e5 2db73215 2db733fb 2db73405 2db73460 2db7347e 2db7365e 2db73a1e 2db73be2 2db73c00 
+ffffb73027ec: 2db5f71f 2db5f7bd 2db5f8cc 2db5fb00 2db60176 2db611eb 2db61614 2db61620 2db61689 2db61a33 2db61bfb 2db61f44 2db61fe1 2db6207e 2db62286 2db6234c 2db6238d 2db623c4 2db62473 2db6322a 2db6322f 2db634f9 2db63629 2db64bfe 2db669d2 2db66e2c 2db66ef4 2db67034 2db6715d 2db67370 2db673a6 2db673bb 2dcafdd8 
+ffffb7302aa0: 2db69187 2db72f27 2db7301d 2db73065 2db7308f 2db730e7 2db730ff 2db73127 2db7312f 2db73137 2db7315b 2db7318b 2db731b3 2db731e5 2db73215 2db733fb 2db73405 2db73460 2db7347e 2db7365e 2db73a1e 2db73be2 2db73bf8 2db73c00 
+ffffb7337414: 2dbc4ce1 2dbc4d01 2dbc4d1f 2dbc4d97 2dbc4d99 2dbc4d9b 2dbc4d9d 2dbc4da7 2dbc4e25 2dbc4e2f 2dbc4e47 2dbc4e57 2dbc4e59 2dbc4e5b 2dbc4e77 2dbc4efb 2dbc4f03 2dbc4f09 2dbc4f17 2dbc4f21 2dbc4f23 
+ffffb7338768: 2db75ace 2dbaa451 2dbaa47a 2dbaa48a 2dbaa4a9 2dbacc2e 2dbacda8 2dbae447 2dbc5372 2dbdfa0e 2dbdfa37 2dbe0ab3 2dc2271f 2dc22727 2dc99c1b 2dc99c5f 2dc9b8eb 2dc9c2de 2dc9c318 2dca9a74 2dcaac58 2dcafde8 2dcafe11 2dcf0410 2dcf0726 2dcf0737 2dd06c0d 
+ffffb733888c: 2dbc4ce1 2dbc4d01 2dbc4d05 2dbc4d1f 2dbc4d3f 2dbc4d41 2dbc4d49 2dbc4d4b 2dbc4d4d 2dbc4d77 2dbc4d8d 2dbc4d97 2dbc4d99 2dbc4d9b 2dbc4d9d 2dbc4da7 2dbc4ddb 2dbc4e1b 2dbc4e2f 2dbc4e31 2dbc4e33 2dbc4e35 2dbc4e47 2dbc4e59 2dbc4e77 2dbc4ef9 2dbc4efb 2dbc4f07 2dbc4f09 2dbc4f17 2dbc4f21 2dbc4f23 2dbc4f29 
+ffffb7338e44: 2db75c2a 2dbaa562 2dbaa56d 2dbaa778 2dbacced 2dbad60f 2dbadcdf 2dbdf9d5 2dbe0acf 2dbe0ad3 2dc22cc4 2dc22ccd 2dc99fae 2dc9a203 2dc9a29c 2dc9c7a0 2dc9d2d2 2dc9d2e7 2dc9d3f5 2dca9e6e 2dcafdea 2dcf04b4 2dcf065e 2dcf0c90 
+ffffb7338ed4: 2db75ace 2dbaa47a 2dbaa48a 2dbaa4a9 2dbacc2e 2dbacda8 2dbdfa37 2dbe0ab3 2dc2271f 2dc99c1b 2dc99c5f 2dc9b8eb 2dc9c318 2dcaac58 2dcafde8 2dcafe11 2dcf0410 2dcf0737 2dd06c08 2dd06c0d 
+ffffb733924c: 2dbc4ce1 2dbc4d01 2dbc4d05 2dbc4d1f 2dbc4d77 2dbc4d8d 2dbc4d97 2dbc4d99 2dbc4d9b 2dbc4d9d 2dbc4da7 2dbc4ddb 2dbc4e1b 2dbc4e2f 2dbc4e31 2dbc4e33 2dbc4e35 2dbc4e47 2dbc4e59 2dbc4e77 2dbc4ef9 2dbc4efb 2dbc4f07 2dbc4f09 2dbc4f17 2dbc4f21 2dbc4f23 2dbc4f29 
+ffffb73396c0: 2dc22ca3 2dc22ca7 2dc8d34f 2dc8d377 2dc8d39f 2dc8d47e 2dc8d4a9 2dc8d4ee 2dc8d6d1 2dc8d6ee 2dc8da9e 2dc8dbb2 2dc8dbda 2dc8dc05 2dc8dc29 2dc8dc6a 2dc8dc9d 2dc8dcd8 2dc8dd09 2dc8dd32 2dc8dd4f 2dc8dd6c 2dc8dd95 2dc8ddb1 2dc8deab 2dc8dfc3 2dc8dfd7 2dc8dff9 2dc8dffd 2dc8e001 2dc8e005 
+ffffb7339948: 2dc16dc4 2dc17117 2dc17242 2dc1728e 2dc1731e 2dc180c4 2dc180f3 2dc18119 2dc18136 2dc181a5 2dc189e8 2dc189fa 2dc18a20 2dc18aa5 2dc18acb 2dc18b02 2dc18ee2 2dc18efb 2dc18f18 2dc18f40 2dc18f60 2dc18f94 2dc18ff4 2dc190a2 2dc1985c 2dc9b2c9 2dc9b54c 2dc9ca88 2dc9cb4e 2dcc4094 2dcc4352 2dcc4374 2dcc441e 2dcc4459 2dcc55f5 2dcc5707 2dcc574e 2dcc5776 2dcc5794 2dcc5833 2dcc5868 2dcc589a 2dcc5bd2 
+ffffb7371208: 2db83697 2db836d1 2db83bdd 2db83bf2 2db83bfa 2db84293 2db84484 2db864f3 2db86579 2dba9875 2dbaeb7d 2dbaeb89 2dbb6048 2dbbc438 2dbbc71a 2dbbc71f 2dbbc8bd 2dbbc8ed 2dbbc8f2 2dbc7a56 2dbc814b 2dbceb0b 2dbceb18 2dbceb21 2dbd634d 2dbe483c 2dbe4848 2dbe48a1 2dbe494e 2dbe495d 2dbe4969 2dbe4b78 2dbe4b7f 2dbe4b95 2dbe4bb4 2dbe7ea8 2dbf6176 2dbf6287 2dbf63ca 2dbf66c5 2dbf66d4 2dbf67df 2dbfa13f 2dbfa2a8 2dc0f5d0 2dc102f6 2dc1ab8e 2dc20bda 2dc762a8 2dc81b62 2dc81be0 2dc81bf2 2dc81ded 2dc892ef 2dc89327 2dc89386 2dc8938b 2dc8c71f 2dc96464 2dc9648b 2dc96492 2dc96fde 2dc97013 2dc97082 2dc970af 2dc9712c 2dc9740f 2dc97413 2dc97417 2dc9741d 2dca1eb4 2dca571b 2dca5748 2dca8f95 2dca911c 2dca913a 2dcadc24 2dcadcc1 2dcae87d 2dcb6ed1 2dcb70ad 2dcb72d2 2dcb85c9 2dcb85f3 2dcbee51 2dcbeefd 2dcbef01 2dcbef05 2dcbef09 2dcc04e9 2dcc0515 2dcc0543 2dcc0571 2dcc0795 2dcc07a6 2dcc07aa 2dcc07d9 2dcc0d17 2dcc55fb 2dccefe2 2dccefef 2dccf560 2dccf586 2dcd8cf3 2dcd8d13 2dcd8ef1 2dcd9ceb 2dcdfa29 2dcdfa3c 2dcdfac6 2dcdfada 2dcdfb25 2dce1ca5 2dce4f24 2dce50ac 2dce98dc 2dce9900 2dce9913 2dce993b 2dce999b 2dcf4ae4 2dcf4c0e 2dcf4cff 2dd0d654 2dd140d1 2dd14f2c 2dd14f31 2dd14f70 2dd14f8f 2dd14f94 2dd1501e 2dd1505a 2dd150b8 2dd153d5 2dd15472 2dd15477 2dd1555c 2dd15561 
+ffffb7426998: 2dbacd83 2dbaceaf 2dbce71e 2dbce72a 2dbce9dc 2dc19036 2dc1a065 2dc1a06a 2dc9c540 2dcc3f1c 2dcc5966 2dcc5b6a 2dcc5b71 2dcc5b82 2dcc5b89 2dd06b44 2dd073b4 2dd073c1 2dd07e21 2dd083ca 2dd083cf 2dd084b1 2dd08519 2dd08c91 2dd08c96 2dd08c9c 2dd08ca1 2dd08d19 2dd08e2d 
+ffffb743b5a4: 2db82a29 2dbad450 2dbad54a 2dbaf498 2dbafad5 2dbce1af 2dbce217 2dbcf463 2dbcf51c 2dbcfdeb 2dbf656e 2dbf98d0 2dbf9ce4 2dc102a5 2dc1729e 2dc20ff8 2dc882e6 2dc968fc 2dc96abb 2dc96ae3 2dc96b03 2dccdac6 2dcce287 2dcce2cc 2dcce5e7 
+ffffb743cbc4: 2db82850 2dbad40a 2dbad4c8 2dbaeb18 2dbaeb1d 2dbcf416 2dbcfd99 2dbd04eb 2dbd0aa1 2dbd0bec 2dbf66e1 2dbf7c02 2dbf7c2f 2dbf97e0 2dc10212 2dc21c4e 2dc81c02 2dc892dc 2dc9561b 2dc9561e 2dc95621 2dc96678 2dc9d4a6 2dccd402 2dcce1ab 2dcd8ef5 2dcd9c3d 
+Unique trigger count: 
+1 38693
+2 2489
+3 571
+4 216
+5 132
+6 79
+7 59
+8 56
+9 34
+10 34
+11 21
+12 21
+13 10
+14 10
+15 18
+16 22
+17 12
+18 9
+19 6
+20 9
+21 7
+22 5
+23 3
+24 7
+25 3
+26 2
+27 4
+28 5
+29 3
+30 1
+31 2
+32 2
+33 4
+35 1
+36 2
+37 1
+38 2
+39 2
+40 1
+43 1
+65 1
+73 1
+84 1
+92 1
+105 1
+138 1
+307 1
+BTB PER SET UNIQUE ADDR: 9 13 8 12 9 12 10 10 16 11 14 8 12 8 22 14 10 15 6 7 14 13 14 15 6 13 10 12 17 15 13 12 12 10 9 10 11 15 13 12 14 12 15 11 11 15 10 18 10 7 12 17 9 10 7 16 17 14 11 9 10 12 11 10 12 7 15 10 17 11 11 16 13 9 9 16 10 4 18 13 15 13 10 18 13 10 13 16 15 12 10 15 11 12 14 8 16 10 15 11 9 10 8 9 12 16 13 10 8 9 13 11 17 9 10 7 11 10 10 13 8 12 11 6 12 16 17 16 14 14 12 7 10 9 20 10 15 14 9 8 7 10 17 9 16 16 7 13 15 12 12 11 17 13 15 10 14 11 9 13 9 11 14 11 14 9 13 7 15 10 13 14 10 10 14 14 10 6 10 9 10 12 20 7 17 12 9 7 12 8 12 12 19 7 10 10 14 10 13 7 15 12 12 13 16 9 8 9 11 18 14 9 15 12 13 9 13 12 14 10 19 11 18 8 15 7 7 14 8 12 10 7 13 19 15 9 10 10 7 15 13 13 7 13 13 13 13 9 8 7 11 12 6 15 8 8 9 8 12 13 14 14 13 14 10 10 7 9 13 11 10 13 9 8 13 9 14 5 14 9 11 7 6 11 13 8 9 6 8 12 13 16 17 9 8 9 9 8 13 9 9 21 11 17 8 10 7 14 14 13 15 8 7 9 9 9 8 18 13 11 10 12 14 10 12 12 11 12 14 10 5 12 12 12 8 12 6 8 12 9 9 13 11 9 11 12 15 7 14 7 12 2 12 8 12 8 8 15 11 7 10 6 16 7 9 8 8 10 10 22 7 11 10 8 10 10 3 13 6 12 8 16 19 10 11 7 13 11 6 14 12 11 10 13 9 8 11 9 14 12 15 7 8 5 12 12 15 10 9 9 8 7 12 11 6 8 9 9 16 9 12 10 6 7 9 15 11 14 11 14 15 11 7 12 12 18 8 13 11 9 5 18 12 13 13 13 6 7 13 7 11 3 12 15 12 10 15 13 12 17 15 15 5 9 12 10 15 16 8 9 7 22 11 12 14 11 11 14 6 11 8 13 16 11 12 9 16 10 10 15 11 17 17 5 10 6 15 19 17 12 10 16 15 14 17 13 15 14 11 10 11 7 9 10 8 13 9 14 10 4 10 12 10 16 17 13 17 13 13 9 13 8 11 17 8 11 9 13 17 12 11 12 11 7 11 10 15 13 15 10 8 5 15 4 14 5 7 5 9 10 14 8 13 17 18 19 13 16 11 13 13 13 10 14 10 10 15 6 13 9 12 8 9 9 8 10 8 11 10 11 6 11 12 6 9 10 4 13 9 13 10 8 5 12 10 6 11 11 16 8 11 13 10 7 10 10 8 12 14 8 11 11 13 11 14 6 8 11 7 13 13 9 10 9 9 13 8 9 14 17 7 9 14 8 3 10 18 21 14 8 12 13 11 19 9 18 12 7 15 16 10 7 14 12 7 12 8 11 11 11 18 14 12 9 19 14 14 14 10 10 15 6 10 11 11 10 12 10 9 14 8 11 11 16 11 10 12 11 15 16 13 12 13 16 10 16 18 13 12 5 6 15 12 13 9 15 11 15 11 18 10 11 7 14 8 10 17 15 10 19 10 5 14 16 17 10 6 16 14 12 17 6 8 14 6 13 11 14 4 13 11 10 9 9 9 6 12 8 14 12 9 16 6 11 8 18 11 13 11 11 7 13 16 9 10 14 5 11 13 13 14 12 9 16 10 8 12 9 9 11 12 12 14 14 8 6 20 9 11 8 11 6 8 8 15 7 17 10 7 16 12 9 10 8 12 13 18 7 12 15 9 5 15 14 10 10 13 15 13 9 12 18 16 11 9 16 11 11 12 7 13 14 12 11 14 13 15 16 23 6 13 13 9 10 13 17 15 18 11 14 18 10 12 13 12 13 10 12 10 13 15 13 15 14 13 18 12 7 10 11 14 14 14 7 13 14 10 13 14 15 8 14 12 8 12 15 13 11 12 12 13 10 11 6 13 6 13 14 15 10 14 12 6 12 11 15 20 15 12 15 12 14 8 6 13 8 13 10 11 9 18 11 17 16 14 14 12 11 14 16 12 10 10 15 13 10 13 14 8 14 7 13 12 9 16 9 16 7 16 12 10 12 9 13 15 17 8 13 8 12 12 8 14 12 18 17 12 11 10 8 8 13 13 7 14 19 13 9 13 11 15 11 15 7 8 12 12 10 22 12 9 16 15 19 15 10 17 14 15 15 12 10 8 4 15 6 9 13 10 17 13 12 14 14 12 13 13 14 12 14 4 11 13 16 9 4 16 10 17 8 8 11 10 13 7 15 6 10 8 6 16 7 13 9 9 5 26 7 10 13 11 10 11 11 15 9 12 9 10 17 13 17 7 17 15 14 11 12 18 14 8 8 12 8 7 13 10 11 14 10 5 18 13 14 11 8 14 11 13 14 12 11 14 17 12 8 5 8 17 10 13 13 6 18 8 10 11 9 15 9 10 9 16 10 10 12 11 15 15 9 11 11 11 12 11 10 14 16 9 16 14 16 12 12 7 12 21 7 17 12 11 16 10 7 8 4 14 17 10 8 5 15 12 5 9 13 16 11 8 8 8 5 14 7 5 13 10 10 14 13 14 8 11 4 12 10 10 12 14 9 14 8 9 12 12 7 13 8 15 14 16 17 8 11 15 8 15 7 12 9 8 11 11 8 14 12 15 12 12 10 12 14 8 7 14 15 11 12 12 11 10 14 9 14 11 18 10 10 15 9 15 14 8 9 11 12 12 17 8 12 12 12 9 14 11 11 10 16 10 12 9 14 7 9 4 11 10 7 11 7 7 9 8 10 8 12 9 9 16 8 6 10 14 9 8 18 10 20 14 12 13 11 13 10 10 9 8 10 10 13 13 14 11 5 11 13 7 12 13 3 15 12 13 14 7 14 7 15 16 7 7 11 7 14 10 12 7 15 8 10 11 10 5 13 14 9 10 10 13 10 7 10 13 14 9 12 17 9 7 13 12 13 16 14 11 12 15 11 9 9 8 10 16 11 11 12 10 9 7 18 10 15 8 10 11 14 9 14 15 9 11 7 13 10 4 7 9 7 8 10 10 16 11 13 12 6 14 11 11 11 12 13 8 17 12 15 14 13 17 7 14 12 6 11 16 14 15 13 12 14 18 9 9 15 15 10 15 9 8 15 16 10 20 12 14 9 12 10 14 18 5 14 12 17 9 12 14 15 10 18 7 8 14 14 16 16 11 12 15 12 13 12 11 14 11 14 18 9 17 11 11 11 12 11 5 10 15 14 11 4 7 13 13 16 10 18 15 7 8 14 14 8 7 11 12 17 12 10 9 13 11 4 14 15 11 12 8 15 11 11 12 17 14 16 10 16 13 16 11 16 9 12 16 14 13 19 15 12 12 8 11 12 9 14 11 12 9 13 8 5 10 14 12 14 13 14 6 13 10 13 9 10 11 11 10 10 8 9 14 12 9 3 6 9 11 12 12 13 13 14 10 21 15 10 14 16 12 10 9 6 7 11 12 7 19 14 10 10 7 16 9 12 14 8 10 8 8 6 10 8 13 8 9 11 12 17 10 8 6 12 11 17 7 8 9 10 8 12 10 7 7 9 16 13 8 6 14 6 10 8 9 13 9 8 9 4 11 17 9 9 11 18 14 7 6 10 15 13 15 9 8 15 14 14 8 9 12 12 10 15 10 15 8 12 9 18 9 13 11 11 14 12 8 16 12 10 10 12 17 13 15 16 20 11 15 11 9 12 11 15 11 11 6 12 12 16 10 11 10 11 13 16 14 8 9 12 7 11 8 12 7 8 7 14 10 8 3 11 12 9 9 14 22 12 9 8 10 12 8 14 6 8 13 11 18 9 8 4 6 15 14 11 5 9 9 9 11 9 5 9 7 16 13 6 9 9 10 8 9 9 12 8 11 5 10 12 10 12 14 8 15 11 9 15 7 14 11 17 14 10 12 10 10 11 7 14 13 13 9 15 13 10 15 7 14 9 8 16 11 13 15 11 6 15 10 18 5 9 15 10 11 13 12 9 8 8 12 12 13 13 16 7 11 15 12 7 18 16 15 11 8 7 15 14 15 19 19 10 11 15 10 13 11 11 14 2 10 12 15 14 10 11 10 12 11 16 8 22 17 14 10 16 15 11 17 12 13 12 11 10 10 16 18 12 16 17 12 12 10 14 14 10 13 15 16 12 14 7 14 6 12 11 13 11 9 10 8 14 8 13 14 14 16 10 7 9 8 10 11 9 9 13 6 10 12 6 11 8 8 6 14 11 9 8 20 8 16 18 9 5 16 14 7 13 7 16 14 12 6 12 8 18 5 15 8 11 14 11 11 15 10 17 9 9 15 13 10 12 18 12 5 12 9 13 9 11 13 13 11 12 17 9 9 14 6 14 9 14 9 11 18 12 11 13 7 16 12 9 6 13 18 8 8 11 9 13 12 11 11 12 10 11 9 15 14 9 9 9 12 15 13 11 11 5 12 15 10 14 12 10 9 15 12 16 11 9 6 19 11 15 12 8 15 10 10 8 14 14 15 14 15 6 10 9 19 15 21 8 
+BTB PER SET COUNT: 148 51 27 143 18 186 35 35 84 123 101 20 33 15 248 359 24 114 14 17 155 122 2002 200 18 32 34 43 106 163 46 24 40 99 25 24 79 140 97 121 122 27 86 89 95 121 96 307 231 24 82 109 93 39 22 41 79 95 192 78 18 136 51 101 159 17 228 150 198 62 32 56 166 43 53 57 32 10 127 132 84 157 27 240 44 27 185 99 153 111 21 37 91 159 58 18 296 86 246 107 22 132 23 117 116 204 45 44 25 1818 97 30 1287 40 38 30 85 138 30 168 93 49 44 36 37 188 376 4153 41 225 37 17 22 26 116 57 58 187 118 23 13 36 190 41 97 56 36 56 146 256 50 31 231 75 153 154 94 41 86 76 45 48 131 30 145 30 44 20 186 79 53 182 162 138 35 77 37 22 110 24 18 68 191 44 49 35 110 19 38 38 95 173 225 48 349 106 123 30 125 19 130 40 133 97 46 24 89 81 137 177 101 60 160 24 33 184 93 39 71 16 173 160 146 22 87 25 50 95 22 181 48 357 151 122 55 23 39 87 30 52 106 67 11 137 176 753 129 57 12 15 29 130 22 85 98 34 20 19 28 137 169 94 65 166 27 99 21 59 34 43 19 249 23 55 42 86 50 33 33 119 94 29 10 101 75 31 29 11 30 73 134 217 187 25 114 22 37 211 66 117 101 55 128 130 76 32 16 4078 291 157 343 134 14 30 35 21 18 217 29 58 16 65 140 56 32 142 70 28 121 38 16 38 27 48 20 47 13 22 35 36 17 38 88 21 130 48 60 10 34 40 99 4 33 42 60 34 40 154 27 60 31 12 117 93 62 66 19 43 40 127 16 21 44 36 45 74 3 47 16 87 16 112 269 351 93 20 78 51 22 186 213 31 32 715 26 27 25 22 38 179 102 23 20 33 48 123 54 59 31 24 18 20 80 107 59 38 55 41 211 71 26 85 21 25 21 41 40 38 27 68 61 43 26 65 80 205 399 45 268 51 16 266 89 63 152 118 16 15 27 12 26 7 365 78 32 42 92 134 41 119 278 48 49 24 45 26 55 203 81 56 16 57 84 25 51 33 96 139 56 46 13 31 185 127 88 72 129 190 29 201 181 113 431 17 30 14 55 256 171 35 23 143 100 182 49 80 57 90 63 135 20 10 129 61 17 241 74 109 29 40 92 143 76 41 719 33 104 103 162 19 49 100 56 52 4079 187 54 81 229 78 56 233 58 16 237 73 81 107 601 16 31 15 163 113 144 11 14 14 23 93 63 35 106 245 247 163 108 95 151 57 112 158 150 347 26 33 102 14 67 27 153 138 31 20 70 55 17 56 245 33 16 126 56 12 16 29 10 60 30 29 103 25 6 34 29 19 82 40 46 16 273 91 31 28 84 30 25 87 67 18 20 76 4162 53 91 541 18 29 43 42 40 46 19 64 53 33 26 32 100 282 106 19 103 25 14 25 197 152 261 24 236 38 101 120 27 420 50 36 262 364 30 25 43 82 23 251 13 17 59 26 174 167 36 18 166 46 127 124 96 68 225 10 29 77 132 90 97 206 99 43 17 25 626 195 104 32 67 38 40 353 312 117 118 63 24 1129 3870 34 51 13 20 155 75 107 25 46 46 136 27 160 43 88 17 56 26 37 193 62 49 146 32 17 174 60 122 94 131 196 27 191 175 43 23 445 14 47 57 134 13 39 131 33 70 31 69 17 88 41 157 38 23 118 39 52 35 708 62 29 65 31 22 41 197 36 36 165 51 135 45 121 59 78 19 155 32 116 177 24 27 50 175 112 51 197 24 25 188 27 167 36 65 11 29 29 224 34 141 29 11 187 68 86 37 14 36 66 115 23 54 594 47 11 125 95 35 105 114 63 140 20 47 138 139 93 19 230 58 24 158 22 46 173 82 325 41 76 1376 124 317 19 113 137 21 25 197 271 151 317 47 33 153 176 75 50 28 43 100 53 384 42 202 91 41 109 120 61 39 19 64 115 238 205 40 101 195 2105 56 80 37 198 61 267 118 59 3749 488 29 54 103 24 88 23 244 27 71 15 108 81 94 34 169 35 79 33 32 340 113 194 110 164 373 41 45 27 105 74 41 91 26 101 89 692 167 53 143 184 120 34 96 87 35 1057 203 50 26 57 45 857 31 134 20 112 66 22 115 43 330 31 186 29 26 38 22 44 160 174 49 44 21 83 34 49 96 133 64 87 40 65 35 44 15 39 36 34 179 151 60 154 46 31 102 65 130 84 12 31 132 22 158 31 22 99 96 148 38 116 56 258 221 363 41 260 21 12 53 279 41 82 77 114 74 47 57 246 94 113 235 31 62 148 7 31 197 184 128 8 53 74 151 14 71 47 167 4302 21 66 25 39 25 11 130 17 42 25 19 8 560 12 73 115 29 3972 98 63 300 40 141 16 25 266 36 134 106 144 129 239 139 155 275 138 24 109 71 17 42 35 482 98 127 29 23 268 171 145 305 122 51 144 29 149 1146 130 209 242 29 69 14 30 200 69 89 34 17 114 13 27 36 38 220 29 29 89 85 42 20 42 39 182 255 25 159 133 30 51 37 150 265 226 24 110 113 87 50 151 15 103 266 13 345 208 107 169 106 17 55 9 58 208 144 124 64 222 294 8 63 163 110 51 74 16 26 13 305 28 15 31 100 30 45 205 126 18 141 4 137 366 52 137 153 69 129 22 28 31 92 453 102 25 91 139 227 51 32 128 93 17 137 15 36 16 59 23 30 14 142 90 46 32 52 109 95 89 95 37 38 312 63 303 185 120 126 67 32 168 22 431 32 97 120 23 32 109 28 46 75 59 124 35 25 55 117 42 24 60 75 27 84 122 27 104 14 112 16 73 13 35 33 26 26 51 11 21 90 70 21 124 19 103 159 141 15 52 204 84 16 147 155 312 182 40 130 43 245 92 52 20 25 176 90 85 101 60 120 17 30 136 16 35 43 10 160 156 104 48 40 187 18 179 59 12 28 26 30 125 51 66 12 112 33 37 118 56 6 58 80 37 36 45 105 37 12 29 67 297 21 141 122 19 13 180 30 33 289 50 99 105 118 32 31 25 181 42 109 45 38 117 49 34 17 137 61 123 27 36 25 191 55 85 158 31 21 518 46 22 6 24 20 14 20 55 87 101 52 34 76 15 129 154 36 55 139 159 86 71 40 122 34 51 151 67 51 35 33 86 173 212 84 42 49 154 362 146 47 81 54 43 40 27 29 48 83 66 175 41 188 136 124 123 94 64 11 61 75 212 191 36 126 56 42 148 31 51 33 115 71 188 25 488 41 95 43 113 98 51 47 106 174 15 152 78 45 49 29 81 14 15 36 157 97 5 2120 102 129 158 89 151 171 14 28 45 597 17 23 25 34 60 93 84 22 153 104 16 95 135 114 28 16 54 67 118 38 106 249 644 45 40 129 193 45 62 50 26 132 83 38 111 427 139 43 21 34 247 25 188 44 36 18 202 19 15 57 227 116 156 95 155 11 178 36 109 194 34 23 64 50 217 107 132 151 33 24 3 22 47 96 49 45 691 4568 147 128 263 168 31 143 196 94 139 112 20 140 121 29 18 238 358 73 40 13 313 20 51 525 31 25 41 18 58 150 53 40 19 40 235 35 55 94 38 14 76 95 82 101 30 27 125 38 85 65 17 19 21 428 253 84 24 192 20 196 16 22 51 140 20 24 10 115 201 107 51 219 89 212 11 13 151 62 243 81 28 58 420 52 48 23 33 136 148 59 198 47 271 161 134 201 187 21 70 165 168 108 39 68 346 81 26 79 41 45 117 154 111 230 22 118 88 97 32 27 158 104 57 11 35 118 113 31 58 78 105 36 89 129 64 31 67 51 152 71 42 33 35 20 508 130 18 7 78 103 27 17 129 228 135 45 28 55 86 39 100 51 28 196 144 151 878 16 10 92 204 169 27 7 38 31 262 56 49 27 50 16 196 43 20 33 28 34 45 117 39 41 20 51 10 128 131 94 40 194 22 252 49 20 169 48 113 79 194 182 35 25 88 86 46 68 61 50 69 27 68 258 121 44 39 95 43 97 171 86 205 120 105 183 122 294 165 11 59 131 47 85 199 32 164 12 37 33 40 42 64 140 30 72 143 109 33 169 99 67 36 43 56 134 198 146 142 128 79 39 422 97 35 31 44 37 7 113 37 228 54 33 29 49 22 146 50 21 298 46 36 95 72 164 92 181 39 327 28 125 26 39 221 280 149 64 219 26 28 19 58 111 123 53 220 174 54 35 50 203 14 124 38 456 90 151 145 20 73 19 35 92 35 208 41 22 28 33 107 47 16 85 106 56 46 77 25 38 30 20 137 278 117 28 31 395 21 315 158 85 16 148 84 143 60 22 41 90 46 9 67 54 156 14 206 24 38 227 49 131 139 25 134 18 23 186 290 26 168 139 47 135 117 28 104 26 41 344 184 47 109 297 44 37 48 9 42 49 40 23 44 247 91 33 200 15 51 156 79 31 77 95 28 22 92 106 199 33 87 67 32 21 31 17 94 79 18 76 16 103 130 371 27 104 10 136 147 161 53 40 173 48 95 292 117 26 108 20 231 31 59 110 20 201 36 89 20 57 140 163 135 73 14 43 34 123 48 282 42 

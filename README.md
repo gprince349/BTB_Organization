@@ -73,8 +73,7 @@ ${TRACE}: trace name (400.perlbench-41B.champsimtrace.xz)
 ${OUTPUT_DIR}: Directory containing results file.
 ```
 
-# Replicating the results from the paper
+# Results
 
-The traces used in evalution can be found in `scripts/iccd_trace_list.txt`. For each trace, the results are captured for 50M instructions after a warmup of 50M instructions. The results for all the state-of-the-art BTB designs can be found in `iccd_sota_50M`. The scripts for generating plots can be found in `iccd_plots`.
-
+The traces used in evalution can be found in `scripts/pdede_trace_list.txt`. For each trace, the results are captured for 10M instructions after a warmup of 10M instructions. The results for PDEDE BTB designs can be found in `pdede_128s_4r_16p_res_10M` and `pdede_64s_2r_8p_res_10M`. Also the results for Baseline BTB having size comparable to PDEDE BTB can be found in `baseline_32s_2w_10M` and `baseline_64s_2w_10M`.
 

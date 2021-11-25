@@ -70,6 +70,30 @@ ${TRACE}: trace name (400.perlbench-41B.champsimtrace.xz)
 ${OUTPUT_DIR}: Directory containing results file.
 ```
 
+# Replicating the Results
+The binaries with various configuration are provided in `bin/`. you can use them or you can build your own.
+We first build the binary with baseline BTB with L1BTB_SET = 32 and L1BTB_WAY = 2. you can set these values in `inc/baseline_btb.h`. 
+Now the total size(in KB) of this L1 baseline BTB can be calculated as:
+```
+NUM_SET*NUM_WAY*(TAG_SIZE+ VALID_BIT_SIZE+ TARGET_SIZE + LRU)
+for our default baseline configuration we get-
+32*2*(56+1+64+1) = 7808 = ~1KB
+```
+
+Now we'll build binary with pdede BTB with configurations as follows:-
+L1BTB_SET = 64
+L1BTB_WAY = 2
+NUM_REGION = 2, NUM_PAGE = 8
+set these values in `inc/pdede.h`
+
+Total size(in KB) of this L1 PDEDE BTB can be calculated as:
+```
+NUM_SET*NUM_WAY*(TAG_BIT+ VALID_BIT+ (REGION_PTR+PAGE_PTR+OFFSET) + LRU) + NUM_REGION*(REGION_BIT+LRU) + NUM_PAGE*(PAGE_BIT+LRU)
+
+64*2*(56+1+ (1+3+19)+1) + 2*(29+3)+ 8*(16+3) = ~1.2KB (Actual storage requirement will be lesser because here while calculating we did not consider target encoding part which depends on percentage of branches sharing the same page).
+```
+
+
 # Results
 
 The traces used in evalution can be found in `scripts/pdede_trace_list.txt`. For each trace, the results are captured for 10M instructions after a warmup of 10M instructions. The results for PDEDE BTB designs can be found in `pdede_128s_4r_16p_res_10M` and `pdede_64s_2r_8p_res_10M`. Also the results for Baseline BTB having size comparable to PDEDE BTB can be found in `baseline_32s_2w_10M` and `baseline_64s_2w_10M`.

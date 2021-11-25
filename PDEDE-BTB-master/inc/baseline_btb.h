@@ -15,8 +15,10 @@ BASELINE BTB class methods declared here.
 
 using namespace std;
 
-#define L1BTB_SET 64
-#define L1BTB_WAY 2
+//change these values to try out different configuration
+#define L1BTB_SET 64 //
+#define L1BTB_WAY 2  //
+
 #define LOG2_L1BTB_SET (int)(ceil(log2(L1BTB_SET)))
 #define LOG2_L1BTB_WAY (int)(ceil(log2(L1BTB_WAY)))
 

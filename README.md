@@ -3,8 +3,7 @@ This is Computer Architechture course project.
 Here we're implementing a Branch-Target-Buffer given in Pdede research paper. Pdede stands for Partition, Deduplication, and Decoding these are the three main idea presented in the paper also the implementaion for that is here.
 
 <p align="center">
-  <h1 align="center"> ChampSim </h1>
-  <p> ChampSim is a trace-based simulator for a microarchitecture study. You can find more information about ChampSim here (https://github.com/ChampSim/ChampSim). This repository contains extension to ChampSim including a two-level Branch Target Buffer (BTB), a five-level Page Table Walker (PTW) (backed by four MMU Caches) and Virtually Indexed, Physically Tagged (VIPT) level 1 caches. <p>
+  <p> This repository contains extension to ChampSim including a two-level Branch Target Buffer (BTB), a five-level Page Table Walker (PTW) (backed by four MMU Caches) and Virtually Indexed, Physically Tagged (VIPT) level 1 caches. <p>
   <p> This repository contains implementation for state-of-the-art BTB designs including Shotgun, SN4L+Dis+BTB, FDIPX and Skewed BTB. This Repository also contains the implementation of PDede: Partitioned, Deduplicated, Delta Branch Target Buffer that is presented in the research paper attached in the repository. You can find more information about PDEDE in the paper.
 </p>
 

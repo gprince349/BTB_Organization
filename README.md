@@ -2,6 +2,12 @@
 This is Computer Architechture course project.
 Here we're implementing a Branch-Target-Buffer given in Pdede research paper. Pdede stands for Partition, Deduplication, and Decoding these are the three main idea presented in the paper also the implementaion for that is here.
 
+Presentation Link:
+https://youtu.be/lAzgtaEaW68
+
+Slides Link:
+https://docs.google.com/presentation/d/1i_Kw-M8OrToxMtKQowiJLcrr_9xy2GO1gi885BS0odM/edit?usp=sharing
+
 <p align="center">
   <p> This repository contains extension to ChampSim including a two-level Branch Target Buffer (BTB), a five-level Page Table Walker (PTW) (backed by four MMU Caches) and Virtually Indexed, Physically Tagged (VIPT) level 1 caches. <p>
   <p> This repository contains implementation for state-of-the-art BTB designs including Shotgun, SN4L+Dis+BTB, FDIPX and Skewed BTB. This Repository also contains the implementation of PDede: Partitioned, Deduplicated, Delta Branch Target Buffer that is presented in the research paper attached in the repository. You can find more information about PDEDE in the paper.
@@ -97,4 +103,12 @@ NUM_SET*NUM_WAY*(TAG_BIT+ VALID_BIT+ (REGION_PTR+PAGE_PTR+OFFSET) + LRU) + NUM_R
 # Results
 
 The traces used in evalution can be found in `scripts/pdede_trace_list.txt`. For each trace, the results are captured for 10M instructions after a warmup of 10M instructions. The results for PDEDE BTB designs can be found in `pdede_128s_4r_16p_res_10M` and `pdede_64s_2r_8p_res_10M`. Also the results for Baseline BTB having size comparable to PDEDE BTB can be found in `baseline_32s_2w_10M` and `baseline_64s_2w_10M`.
+
+# Division Of Labor
+
+Ashish (180050013) : Implementation, Github readme, Presentation.
+  
+Sudhir (170050053) : Testing and Plotting, Animation.
+
+
 
